@@ -32,7 +32,7 @@ app.get('/:range', async (req: Request, res: Response) => {
             htmls.push(`<div class="item" data-index="${i}"><h4 class="lova-title">Q ${i}</h4>${content}</div>`);
         }
     }
-    res.send(`<!DOCTYPE html><html><head><meta charset="utf-8"><title>page/${x}-${y}</title><link rel="stylesheet" href="css/css.css"></head><body><div id="all-html">${htmls.join('')}</div><script src="js/script.js"></script></body></html>`);
+    res.send(`<!DOCTYPE html><html><head><meta charset="utf-8"><title>.</title><link rel="stylesheet" href="css/css.css"></head><body><div id="all-html">${htmls.join('')}</div><script src="js/script.js"></script></body></html>`);
 });
 
 app.listen(PORT, () => {

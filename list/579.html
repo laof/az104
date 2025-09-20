@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 56 Topic: 6</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains a virtual machine named VM1.<div lova></div><div lova></div>You have an on-premises datacenter that contains a domain controller named DC1. ExpressRoute is used to connect the on-premises datacenter to Azure.<div lova></div><div lova></div>You need to use Connection Monitor to identify network latency between VM1 and DC1.<div lova></div><div lova></div>What should you install on DC1?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>the Azure Connected Machine agent for Azure Arc-enabled servers</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>the Azure Network Watcher Agent virtual machine extension</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>the Log Analytics agent</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>an Azure Monitor agent extension</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>A. the Azure Connected Machine agent for Azure Arc-enabled servers</b><div lova></div><div lova></div>The <b>Azure Connected Machine agent</b> for Azure Arc-enabled servers enables on-premises servers like DC1 to be managed as Azure resources. This is required for Connection Monitor to collect network latency data between Azure VMs and on-premises machines. By onboarding DC1 to Azure Arc using this agent, Connection Monitor can run probes and tests to measure network health and latency.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><h4>Explanation of Other Options</h4><div lova></div><b>B. the Azure Network Watcher Agent virtual machine extension</b><div lova></div>This agent is only for Azure virtual machines and cannot be installed on on-premises machines. It does not help monitor connectivity from on-premises servers like DC1.<div lova></div><div lova></div><b>C. the Log Analytics agent</b><div lova></div>This agent is used for collecting log and performance data for Azure Monitor, but it does not enable Connection Monitor network tests between Azure and on-premises servers.<div lova></div><div lova></div><b>D. an Azure Monitor agent extension</b><div lova></div>This extension is for monitoring Azure VMs or Arc-enabled servers, but specifically for Connection Monitor on on-premises servers, you need the Azure Connected Machine agent to onboard the machine to Azure Arc first.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>To make connection monitor regnizie your on-premises machines as sources for monitoring, follow these steps:<div lova></div><div lova></div> - Enable your hybrid endpoints to Azure Arc-enabled servers.<div lova></div><div lova></div> - Connect hybrid machines by installing the <b>Azure Connected Machine agent</b> on each machine.<div lova></div>This agent doesn't deliver any other functionality, and it doesn't replace Azure Monitor agent. The Azure Connected Machine agent simply enables you to manage the Windows and Linux machines that are hosted outside of Azure on your corporate network or other cloud providers.<div lova></div><div lova></div> - Install Azure Monitor agent to enable the Network Watcher extension. The agent collects monitoring logs and data from the hybrid sources and delivers them to <b>Azure Monitor</b>.</span></div></div></div>

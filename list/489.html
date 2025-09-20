@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 116 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have five Azure virtual machines that run Windows Server 2016. The virtual machines are configured as web servers.<div lova></div><div lova></div>You have an Azure load balancer named LB1 that provides load balancing services for the virtual machines.<div lova></div><div lova></div>You need to ensure that visitors are serviced by the same web server for each request.<div lova></div><div lova></div>What should you configure?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Session persistence to None</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>a health probe</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Session persistence to Client IP and protocol</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Idle Time-out (minutes) to 20</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>C..Session persistence to Client IP and protocol<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..Session persistence to None: <b>Incorrect</b> — If session persistence is set to None, each request from a client can be routed to any backend server, so visitors would not be serviced by the same web server for each request.<div lova></div><div lova></div>B..a health probe: <b>Incorrect</b> — A health probe is used to determine which backend servers are healthy and available, but it does not control whether a client is always routed to the same server.<div lova></div><div lova></div>C..Session persistence to Client IP and protocol: <b>Correct</b> — <b>Session persistence</b> (also known as "sticky sessions") set to <b>Client IP and protocol</b> ensures that requests from the same client IP address using the same protocol are always routed to the same backend server, meeting the requirement.<div lova></div><div lova></div>D..Idle Time-out (minutes) to 20: <b>Incorrect</b> — Changing the idle timeout setting only affects how long a TCP or HTTP connection can remain idle before being closed, and does not influence session persistence or server selection.<div lova></div></span></div></div></div>

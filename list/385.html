@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 12 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">DRAG DROP -<div lova></div>You have an Azure subscription that contains two virtual networks named VNet1 and VNet2. Virtual machines connect to the virtual networks.<div lova></div>The virtual networks have the address spaces and the subnets configured as shown in the following table.<div lova></div><img class="in-exam-image" src="img/385_0.png"><div lova></div>You need to add the address space of 10.33.0.0/16 to VNet1. The solution must ensure that the hosts on VNet1 and VNet2 can communicate.<div lova></div>Which three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.<div lova></div>Select and Place:<div lova></div><img class="in-exam-image" src="img/385_1.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/385_2.png"><h4><div lova></div>Q5-12: Which three actions should you perform in sequence? (Corrected Order)</h4><div lova></div><div lova></div>Remove peering between VNet1 and VNet2. <b>— First, you must remove the existing peering because peering connections must be removed before you can modify the address space of a virtual network.</b><div lova></div><div lova></div>Add the 10.33.0.0/16 address space to VNet1. <b>— Second, add the new address space to VNet1 after the peering has been removed. This updates VNet1’s address space as required.</b><div lova></div><div lova></div>Recreate peering between VNet1 and VNet2. <b>— Finally, re-create the peering so that both VNets are aware of each other's updated address spaces and communication can be restored.</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div>Remove VNet1. <b>— Incorrect. You do not need to delete the virtual network to add an address space or update peering.</b><div lova></div><div lova></div>Create a new virtual network named VNet1. <b>— Incorrect. The existing VNet1 should be updated, not recreated.</b><div lova></div><div lova></div>On the peering connection in VNet2, allow gateway transit. <b>— Incorrect. Gateway transit is not required for adding address space or updating peering in this scenario.</b><div lova></div><div lova></div>On the peering connection in VNet1, allow gateway transit. <b>— Incorrect. Gateway transit is not related to address space or basic peering updates.</b></span></div></div></div>

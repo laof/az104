@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 61 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription.<div lova></div>You plan to deploy an Azure Kubernetes Service (AKS) cluster to support an app named App1. On-premises clients connect to App1 by using the IP address of the pod.<div lova></div>For the AKS cluster, you need to choose a network type that will support App1.<div lova></div>What should you choose?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>kubenet</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Azure Container Networking Interface (CNI)</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Hybrid Connection endpoints</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Azure Private Link</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>B.. <b>Azure Container Networking Interface (CNI)</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of right option:</b><div lova></div><div lova></div><b>B.. Azure Container Networking Interface (CNI):</b> To allow on-premises clients to connect directly to the <b>IP address of a pod</b> in AKS, you must use <b>Azure CNI</b> networking. With <b>Azure CNI</b>, pods get routable IP addresses from the virtual network, making them directly accessible from on-premises networks if routing is configured. This fulfills the scenario requirement.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of the other options:</b><div lova></div><div lova></div><b>A.. kubenet:</b> With <b>kubenet</b>, pods receive IP addresses from an internal range that is not directly routable from on-premises, so it does not meet the requirement.<div lova></div><div lova></div><b>C.. Hybrid Connection endpoints:</b> <b>Hybrid Connections</b> are used for app services to connect to on-premises resources, not for exposing pod IPs for direct access.<div lova></div><div lova></div><b>D.. Azure Private Link:</b> <b>Azure Private Link</b> is used to provide private connectivity to Azure platform services, not for directly exposing pod IPs.<div lova></div></span></div></div></div>

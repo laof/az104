@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 59 Topic: 6</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div><div lova></div>You have an Azure subscription that contains two storage accounts named contoso101 and contoso102.<div lova></div><div lova></div>The subscription contains the virtual machines shown in the following table.<div lova></div><div lova></div><img src="img/582_0.png"><div lova></div><div lova></div>VNet1 has service endpoints configured as shown in the Service endpoints exhibit. (Click the Service endpoints tab.)<div lova></div><div lova></div><img src="img/582_1.png"><div lova></div><div lova></div>The Microsoft.Storage service endpoint has the service endpoint policy shown in the Microsoft.Storage exhibit. (Click the Microsoft.Storage tab.)<div lova></div><div lova></div><img src="img/582_2.png"><div lova></div><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/582_3.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/582_4.png"><div lova></div><div lova></div><b>No</b> for "VM1 can access contoso102."<div lova></div><div lova></div><b>No</b> for "VM2 can access contoso101."<div lova></div><div lova></div><b>Yes</b> for "VM2 uses a private IP address to access Azure AD."<h4><div lova></div>Explanations for Right Options</h4><b>VM1 can access contoso102. - No:</b> Subnet1 has a Microsoft.Storage service endpoint, but a service endpoint policy restricts access to only <b>contoso101</b>. When a policy is enforced, it blocks access to other storage accounts like contoso102, even if public access is available.<div lova></div><div lova></div><b>VM2 can access contoso101. - No:</b> Subnet2 does not have a Microsoft.Storage service endpoint, so VM2 cannot use private connectivity to reach <b>contoso101</b>. Service endpoint restriction will prevent access if contoso101's firewall only allows traffic from the service endpoint.<div lova></div><div lova></div><b>VM2 uses a private IP address to access Azure AD. - Yes:</b> Subnet2 has a Microsoft.AzureActiveDirectory service endpoint, so VM2 communicates with Azure AD using its private IP address over the Azure backbone.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>default, subnets in the same Virtual Network can access each other.</span></div></div></div>

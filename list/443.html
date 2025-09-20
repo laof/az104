@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 70 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription that contains the resources in the following table:<div lova></div><img class="in-exam-image" src="img/443_0.png"><div lova></div>In Azure, you create a private DNS zone named adatum.com. You set the registration virtual network to VNet2. The adatum.com zone is configured as shown in the following exhibit:<div lova></div><img class="in-exam-image" src="img/443_1.png"><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/443_2.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/443_3.jpg"><div lova></div><div lova></div><b>Statement 1: The A record for VM5 will be registered automatically in the adatum.com zone.</b> No<div lova></div><div lova></div><b>Explanation:</b> The registration virtual network for <b>adatum.com</b> is <b>VNet2</b>. Only VMs in the registration network (<b>VNet2</b>) have their DNS records automatically registered in the private DNS zone. <b>VM5</b> is in <b>VNet1</b>, so its A record will <b>not</b> be registered automatically.<div lova></div><div lova></div><b>Statement 2: VM5 can resolve VM9.adatum.com.</b> <b>No</b><div lova></div><div lova></div><b>Explanation:</b> There is <b>no evidence</b> in the information or screenshots provided that <b>VNet1</b> is linked to the <b>adatum.com</b> private DNS zone for resolution. Without this link, <b>VM5</b> cannot resolve records in the zone, including <b>VM9.adatum.com</b>.<div lova></div><div lova></div><b>Statement 3: VM6 can resolve VM9.adatum.com.</b> Yes<div lova></div><div lova></div><b>Explanation:</b> <b>VM6</b> is in <b>VNet2</b>, which is the registration virtual network for the zone. The A record for <b>VM9</b> is present in the DNS zone, so <b>VM6</b> can resolve <b>VM9.adatum.com</b>.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Option 1: The A record for VM5 will be registered automatically in the adatum.com zone.</b> No — Only VMs in the registration network (<b>VNet2</b>) are auto-registered. <b>VM5</b> in <b>VNet1</b> must be registered manually if needed.<div lova></div><div lova></div><b>Option 2: VM5 can resolve VM9.adatum.com.</b> No — There is <b>no information</b> or screenshot showing <b>VNet1</b> is linked for DNS zone resolution, so name resolution from <b>VM5</b> to <b>VM9.adatum.com</b> is <b>not</b> possible.<div lova></div><div lova></div><b>Option 3: VM6 can resolve VM9.adatum.com.</b> Yes — <b>VM6</b> is in <b>VNet2</b>, which is both the registration and resolution network, so it can resolve all records in the zone.</span></div></div></div>

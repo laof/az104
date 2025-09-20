@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 55 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains a storage account named storage1. The storage1 account contains a file share named share1.<div lova></div>The subscription is linked to a hybrid Azure Active Directory (Azure AD) tenant that contains a security group named Group1.<div lova></div>You need to grant Group1 the Storage File Data SMB Share Elevated Contributor role for share1.<div lova></div>What should you do first?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Enable Active Directory Domain Service (AD DS) authentication for storage1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Grant share-level permissions by using File Explorer.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Mount share1 by using File Explorer.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Create a private endpoint.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Correct Answer:</h4>A.. <b>Enable Active Directory Domain Service (AD DS) authentication for storage1.</b><div lova></div><div lova></div><b>Explanation:</b> To assign the <b>Storage File Data SMB Share Elevated Contributor</b> role to an Azure AD group for an Azure file share, the storage account must support <b>Azure AD DS authentication</b>. This enables identity-based access control using Azure AD credentials.<div lova></div><div lova></div>-----------------<h4><div lova></div>Other Options:</h4>B.. Grant share-level permissions by using File Explorer.<div lova></div><div lova></div>This step is necessary but only after enabling <b>AD DS authentication</b>. Without it, Azure AD-based permissions won’t be effective.<div lova></div><div lova></div>C.. Mount share1 by using File Explorer.<div lova></div><div lova></div>This is a usage step, not a configuration step. You must configure authentication and permissions before mounting the share.<div lova></div><div lova></div>D.. Create a private endpoint.<div lova></div><div lova></div>While useful for securing access, a <b>private endpoint</b> is not required for role assignment or enabling <b>AD DS authentication</b>.</span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 56 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You manage two Azure subscriptions named Subscription1 and Subscription2.<div lova></div>Subscription1 has following virtual networks:<div lova></div><img class="in-exam-image" src="img/429_0.png"><div lova></div>The virtual networks contain the following subnets:<div lova></div><img class="in-exam-image" src="img/429_1.png"><div lova></div>Subscription2 contains the following virtual network:<div lova></div>✑ Name: VNETA<div lova></div>✑ Address space: 10.10.128.0/17<div lova></div>✑ Location: Canada Central<div lova></div>VNETA contains the following subnets:<div lova></div><img class="in-exam-image" src="img/429_2.png"><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/429_3.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/429_4.png"><div lova></div><div lova></div>A Site-to-Site connection can be established between VNET1 and VNET2.&nbsp;&nbsp;&nbsp;<b>No</b><div lova></div><div lova></div>VNET1 and VNET2 can be peered.&nbsp;&nbsp;&nbsp;<b>Yes</b><div lova></div><div lova></div>VNET1 and VNETA can be peered.&nbsp;&nbsp;&nbsp;<b>No</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of right options:</b><div lova></div><div lova></div><b>A Site-to-Site connection can be established between VNET1 and VNET2.</b> <b>No</b>: To create a VNet-to-VNet VPN (Site-to-Site connection), you need a <b>special Gateway Subnet</b>. In this scenario, the VNet has <b>no sufficient address space</b> to create a Gateway Subnet and thus cannot establish a VNet-to-VNet VPN connection.<div lova></div><div lova></div><b>VNET1 and VNET2 can be peered.</b> <b>Yes</b>: Peering is supported because the address spaces of VNET1 (10.10.10.0/24) and VNET2 (172.16.0.0/16) do not overlap.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of the other option:</b><div lova></div><div lova></div><b>VNET1 and VNETA can be peered.</b> <b>No</b>: Peering is not allowed between VNET1 and VNETA due to overlapping address spaces. <b>VNETA</b> uses <b>10.10.128.0/17</b> which covers a much larger range including <b>10.10.10.0/24</b>, causing the overlap and making peering not possible.<div lova></div></span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 136 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains the virtual networks shown in the following table.<div lova></div><div lova></div><img src="img/509_0.png"><div lova></div><div lova></div>All the virtual networks are peered. Each virtual network contains nine virtual machines.<div lova></div><div lova></div>You need to configure secure RDP connections to the virtual machines by using Azure Bastion.<div lova></div><div lova></div>What is the minimum number of Bastion hosts required?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>1</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>3</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>9</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>10</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>B: <b>3</b> — <b>Azure Bastion</b> must be deployed in each Azure region where you want to provide secure RDP/SSH connectivity through Bastion. Since all VNets are peered (including global peering, which connects VNets across regions), this enables communication between VNets in different regions. <b>However, Bastion hosts cannot be shared across regions</b> even with global peering. You still need one Bastion host per Azure region. The table lists three regions: <b>US East</b>, <b>UK South</b>, and <b>Asia East</b>, so the minimum number of Bastion hosts required is 3.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A: 1 — Incorrect, because Bastion cannot span multiple Azure regions; you need one per region even if VNets are globally peered.<div lova></div>C: 9 — Incorrect, as this would imply more than one Bastion per region, which is unnecessary due to VNet peering.<div lova></div>D: 10 — Incorrect, as this would mean deploying a Bastion in every VNet, which is not required because peered VNets in the same region (and across regions with global peering) can share a single Bastion, but <b>not</b> across regions.<div lova></div></span></div></div></div>

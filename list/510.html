@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 137 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div><div lova></div>You have an Azure subscription that contains the virtual networks shown in the following table.<div lova></div><div lova></div><img src="img/510_0.png"><div lova></div><div lova></div>The subscription contains the virtual machines shown in the following table.<div lova></div><div lova></div><img src="img/510_1.png"><div lova></div><div lova></div>Each virtual machine contains only a private IP address.<div lova></div><div lova></div>You create an Azure bastion for VNet1 as shown in the following exhibit.<div lova></div><div lova></div><img src="img/510_2.png"><div lova></div><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/510_3.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/510_4.png"><div lova></div><div lova></div><b>The Remote Desktop Connection client (mstsc.exe) can be used to connect to VM1 through Bastion1.</b> — <b>No</b><div lova></div>Azure Bastion only supports RDP/SSH access through the Azure portal; native RDP clients like mstsc.exe are not supported for direct Bastion connections.<div lova></div><b>The Azure portal can use SSH to connect to VM2 through Bastion1.</b> — <b>Yes</b><div lova></div>Bastion1 in VNet1 can be used to connect to VM2 in VNet2 with SSH via the Azure portal, since VNet1 and VNet2 are peered and in the same region.<div lova></div><b>The Azure portal can be used to connect to VM3 through Bastion1.</b> — <b>No</b><div lova></div>VM3 is in VNet3 (West US), and Bastion1 is in East US. Bastion cannot be used across regions, even with peering.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>mstsc.exe</b> is not supported with Bastion; only browser-based connections via Azure portal are supported.<div lova></div><b>SSH via Azure portal</b> is supported for VMs in peered VNets in the same region, so VM2 is accessible.<div lova></div><b>Cross-region Bastion access</b> is not supported, so you cannot access VM3 in West US from a Bastion in East US.<div lova></div></span></div></div></div>

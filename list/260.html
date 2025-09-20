@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 8 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You create a virtual machine scale set named Scale1. Scale1 is configured as shown in the following exhibit.<div lova></div><img class="in-exam-image" src="img/260_0.png"><div lova></div>Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/260_1.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/260_2.jpg"><h4><div lova></div>Question 4-8 Part 2 Answers (Azure VMSS Scaling)</h4><div lova></div><div lova></div>If Scale1 is utilized at 85 percent for six minutes after it is deployed, Scale1 will be running <b>6 virtual machines</b>.<div lova></div>If Scale1 is first utilized at 25 percent for six minutes after it is deployed, and then utilized at 50 percent for six minutes, Scale1 will be running <b>2 virtual machines</b>.<div lova></div><div lova></div><b>Explanation of right options:</b><div lova></div><b>6 virtual machines:</b> The initial instance count is <b>4</b>. If utilization is <b>85%</b> (above the <b>80%</b> CPU threshold) for over <b>5 minutes</b>, the scale set increases by <b>2</b> VMs: <b>4 + 2 = 6</b>.<div lova></div><b>2 virtual machines:</b> The initial instance count is <b>4</b>. If utilization is <b>25%</b> (below the <b>30%</b> CPU threshold) for over <b>5 minutes</b>, the scale set decreases by <b>4</b> VMs. However, since the minimum is <b>2</b>, Scale1 will run <b>2</b> VMs. Utilization at <b>50%</b> does not trigger any scaling, so it remains at <b>2</b> VMs.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>2 virtual machines (for 85% scenario):</b> Incorrect because scaling out increases from 4, not decreases.<div lova></div><b>4 virtual machines (for 85% scenario):</b> Incorrect because the high utilization triggers scale out.<div lova></div><b>10 virtual machines (for 85% scenario):</b> Incorrect because only an increase of 2 VMs is triggered, not to 10.<div lova></div><b>20 virtual machines (for 85% scenario):</b> Incorrect because scaling does not reach maximum unless multiple scale-out events are triggered.<div lova></div><b>4 virtual machines (for 25% then 50% scenario):</b> Incorrect because utilization below 30% triggers scale in, reducing below initial count, but minimum VMs is 2.<div lova></div><b>6 virtual machines (for 25% then 50% scenario):</b> Incorrect because there is no scale-out event triggered at 25% or 50%.<div lova></div><b>8 virtual machines (for 25% then 50% scenario):</b> Incorrect because the scale set never increases from 4 in this scenario.<div lova></div><b>10 virtual machines (for 25% then 50% scenario):</b> Incorrect because scaling never increases that high; only scale in occurs.<div lova></div></span></div></div></div>

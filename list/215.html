@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 61 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription. The subscription contains a storage account named storage1 that has the lifecycle management rules shown in the following table.<div lova></div><div lova></div><img src="img/215_0.png"><div lova></div><div lova></div>On June 1, you store a blob named File1 in the Hot access tier of storage1.<div lova></div><div lova></div>What is the state of File1 on June 7?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>stored in the Cool access tier</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>stored in the Archive access tier</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>stored in the Hot access tier</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>deleted</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><b>D..deleted</b><div lova></div><div lova></div><b>Explanation of right option:</b><div lova></div>All three lifecycle rules are triggered after 5 days, but <b>delete</b> takes precedence over tier changes, so the blob is <b>deleted</b> on June 6.<div lova></div><div lova></div><b>Explanation of other options:</b><div lova></div><b>A..stored in the Cool access tier:</b> The blob would be moved to Cool, but it is deleted by Rule2 before this matters.<div lova></div><b>B..stored in the Archive access tier:</b> The blob would be moved to Archive by Rule3, but is deleted first.<div lova></div><b>C..stored in the Hot access tier:</b> The blob is not retained in Hot; deletion overrides any transition rules.<h4><div lova></div>Additional:</h4>If you define more than one action on the same blob, lifecycle management applies the <b>least expensive action</b> to the blob. For example, <b>action delete is cheaper than action tierToArchive</b>. Action tierToArchive is cheaper than action tierToCool.<div lova></div><div lova></div>When multiple lifecycle management actions are eligible for the same blob at the same time, <b>Azure applies the least expensive action</b> (in terms of storage cost). The priority is: <b>Delete</b> (least expensive), then <b>Archive</b>, then <b>Cool</b>. This means if "delete" is among the actions, delete will be executed over moving the blob to a different tier.</span></div></div></div>

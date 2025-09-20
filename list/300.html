@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 48 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription named Subscription1. Subscription1 contains a virtual machine named VM1.<div lova></div>You install and configure a web server and a DNS server on VM1.<div lova></div>VM1 has the effective network security rules shown in the following exhibit:<div lova></div><img class="in-exam-image" src="img/300_0.jpg"><div lova></div>Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/300_1.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/300_2.png"><div lova></div><div lova></div>Internet users <b>can connect to only the web server on VM1.</b><div lova></div>If you delete Rule2, Internet users <b>can connect to the web server and the DNS server on VM1.</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div>Explanation of correct options:<div lova></div><div lova></div><b>Internet users can connect to only the web server on VM1:</b> Rule2 (priority 100) denies all inbound traffic on ports 50-60, which includes DNS (port 53), so DNS is blocked from the internet. However, Rule1 (priority 400) allows inbound traffic on ports 50-500, so standard web server ports (80/443) are accessible.<div lova></div><div lova></div><b>If you delete Rule2, Internet users can connect to the web server and the DNS server on VM1:</b> With Rule2 removed, Rule1 (priority 400) allows inbound traffic to ports 50-500, which covers both DNS (port 53) and web server (ports 80/443), making both services accessible from the internet.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>Explanation of other options:<div lova></div><div lova></div>can connect to only the DNS server on VM1: This is incorrect because Rule2 specifically blocks DNS (port 53), so DNS is not accessible when Rule2 is present.<div lova></div><div lova></div>can connect to the web server and the DNS server on VM1: This is incorrect when Rule2 is present, because DNS (port 53) is denied by Rule2, so only the web server is accessible.<div lova></div><div lova></div>cannot connect to the web server and the DNS server on VM1: This is incorrect because Rule1 allows web server ports (80/443), so at least the web server remains accessible.<div lova></div></span></div></div></div>

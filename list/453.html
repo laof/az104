@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 80 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription that contains the virtual networks shown in the following table.<div lova></div><img class="in-exam-image" src="img/453_0.png"><div lova></div>You have the virtual machines shown in the following table.<div lova></div><img class="in-exam-image" src="img/453_1.png"><div lova></div>You have the virtual network interfaces shown in the following table.<div lova></div><img class="in-exam-image" src="img/453_2.png"><div lova></div>Server1 is a DNS server that contains the resources shown in the following table.<div lova></div><img class="in-exam-image" src="img/453_3.png"><div lova></div>You have an Azure private DNS zone named contoso.com that has a virtual network link to VNET2 and the records shown in the following table.<div lova></div><img class="in-exam-image" src="img/453_4.png"><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/453_5.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/453_6.png"><div lova></div><div lova></div><h4><div lova></div>Question 453 Answers and Explanations</h4><div lova></div><div lova></div><b>Server2 resolves host2.contoso.com to 131.107.50.50:</b> No<div lova></div><div lova></div><b>Server2 resolves host1.contoso.com to 131.107.10.15:</b> Yes<div lova></div><div lova></div><b>Server3 resolves host2.contoso.com to 131.107.50.50:</b> No<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of right options:</b><div lova></div><b>Server2 resolves host2.contoso.com to 131.107.50.50: No</b> — <b>Server2</b> uses <b>DNS server 10.10.0.4</b> (Server1), which only has a primary zone for <b>contoso.com</b> with an A record for <b>host1.contoso.com</b> and does not have a record for <b>host2.contoso.com</b>. There is no evidence of DNS forwarding to Azure Private DNS, so Server2 cannot resolve host2.contoso.com.<div lova></div><div lova></div><b>Server2 resolves host1.contoso.com to 131.107.10.15: Yes</b> — <b>Server1</b> (10.10.0.4) contains an A record for <b>host1.contoso.com</b> with the value <b>131.107.10.15</b>, so Server2 can resolve this name via its configured DNS.<div lova></div><div lova></div><b>Server3 resolves host2.contoso.com to 131.107.50.50: No</b> — <b>Server3</b> inherits the DNS server from VNET2, which is set to <b>10.10.0.4</b> (Server1). Server1 does not have a record for host2.contoso.com, and there is no DNS forwarding configured, so Server3 cannot resolve host2.contoso.com.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of other options:</b><div lova></div>Any option marking <b>Server2 resolves host2.contoso.com to 131.107.50.50: Yes</b> or <b>Server3 resolves host2.contoso.com to 131.107.50.50: Yes</b> is incorrect, because both Server2 and Server3 use Server1 (10.10.0.4) as their DNS, and Server1 does not have a record for host2.contoso.com nor is there any evidence of forwarding to the Azure Private DNS zone. Only <b>Server2 resolves host1.contoso.com to 131.107.10.15: Yes</b> is correct, as that record is present in Server1’s DNS.</span></div></div></div>

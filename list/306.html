@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 54 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have the App Service plan shown in the following exhibit.<div lova></div><img class="in-exam-image" src="img/306_0.jpg"><div lova></div>The scale-in settings for the App Service plan are configured as shown in the following exhibit.<div lova></div><img class="in-exam-image" src="img/306_1.jpg"><div lova></div>The scale out rule is configured with the same duration and cool down tile as the scale in rule.<div lova></div>Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/306_2.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/306_3.png"><div lova></div><div lova></div>1. If after deployment CPU usage is 70 percent for one hour and then reaches 90 percent for five minutes, at that time the total number of instances will be <b>[2]</b>.<div lova></div>2. If after deployment the CPU maintains constant usage of 90 percent for one hour, and then the average CPU usage is below 25 percent for nine minutes, at that point the number of instances will be <b>[4]</b>.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>Explanation of right options:<div lova></div><b>2</b>: For the first statement, after one hour at 70% CPU (no scale out), five minutes at 90% CPU triggers the scale out rule once (CPU &gt; 85% for 5 minutes), increasing the instance count from 1 to 2.<div lova></div><b>4</b>: For the second statement, after one hour at 90% CPU, scale out triggers repeatedly, reaching a maximum of 5 instances after about 35 minutes. When CPU drops below 25% for nine minutes, the scale in rule (CPU &lt; 30% for 5 minutes, cool down 5 minutes) can trigger only once in the 9 minute span, decreasing from 5 to 4 instances.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>Explanation of other options:<div lova></div><b>1</b>: Only possible if no scale out occurred or all scale ins completed, not applicable here.<div lova></div><b>3, 5</b>: 3 would require two scale-in triggers (needs at least 15 minutes below threshold due to cool down), 5 would mean no scale-in occurred.<div lova></div><div lova></div><b>Additional Explanation:</b><div lova></div>The trigger span for each scale action is the sum of the <b>evaluation time</b> (5 minutes under or over threshold) and the <b>cool down time</b> (5 minutes), so each scale action can occur at most once every 10 minutes.<div lova></div></span></div></div></div>

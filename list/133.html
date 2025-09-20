@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 93 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div><div lova></div>You have an Azure subscription named Sub1 that contains the blob containers shown in the following table.<div lova></div><div lova></div><img src="img/133_0.png"><div lova></div><div lova></div>Sub1 contains two users named User1 and User2. Both users are assigned the Reader role at the Sub1 scope.<div lova></div><div lova></div>You have a condition named Condition1 as shown in the following exhibit.<div lova></div><div lova></div><img src="img/133_1.png"><div lova></div><div lova></div>You have a condition named Condition2 as shown in the following exhibit.<div lova></div><div lova></div><img src="img/133_2.png"><div lova></div><div lova></div>You assign roles to User1 and User2 as shown in the following table.<div lova></div><div lova></div><img src="img/133_3.png"><div lova></div><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/133_4.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/133_5.png"><h4><div lova></div>Answer:</h4><b>User1 can read blob2.</b> | <b>No</b><div lova></div><b>User1 can read blob3.</b> | <b>No</b><div lova></div><b>User2 can read blob1.</b> | <b>Yes</b><div lova></div><div lova></div>-----------------<h4><div lova></div>Explanation of Correct Options:</h4><b>User2 can read blob1. | Yes</b><div lova></div>User2 has the <b>Storage Blob Data Owner</b> role with <b>Condition 2</b>, which allows access if the action is write or the resource path equals <b>'cont1'</b>. Since blob1 is in <b>cont1</b>, the condition is satisfied and access is granted.<div lova></div><div lova></div>-----------------<h4><div lova></div>Explanation of Incorrect Options:</h4><b>User1 can read blob2. | No</b><div lova></div>User1 has the <b>Storage Blob Data Reader</b> role with <b>Condition 1</b>, which requires the action to match read or the resource path to equal <b>'cont1'</b>. Blob2 is in <b>cont2</b>, and although the action matches, the condition is not satisfied, so access is denied.<div lova></div><div lova></div><b>User1 can read blob3. | No</b><div lova></div>Blob3 is in <b>cont3</b>, which does not match the required resource path <b>'cont1'</b>. Even though the action matches, the condition is not met, so the role does not apply and access is denied.<h4><div lova></div>Additional:</h4>the user with <b>Read role</b> can view storage account resources, but can't read the data within Azure Storage, such as <b>blobs</b>.</span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 135 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div><div lova></div>You have an Azure subscription that contains the virtual networks shown in the following table.<div lova></div><div lova></div><img src="img/508_0.png"><div lova></div><div lova></div>The subnets have the IP address spaces shown in the following table.<div lova></div><div lova></div><img src="img/508_1.png"><div lova></div><div lova></div>You plan to create a container app named contapp1 in the East US Azure region.<div lova></div><div lova></div>You need to create a container app environment named con-env1 that meets the following requirements:<div lova></div><div lova></div>•	Uses its own virtual network.<div lova></div>•	Uses its own subnet.<div lova></div>•	Is connected to the smallest possible subnet.<div lova></div><div lova></div>To which virtual networks can you connect con-env1, and which subnet mask should you use? To answer, select the appropriate options in the answer area.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/508_2.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/508_3.png"><div lova></div><div lova></div>Virtual network: <b>VNet3 only</b><div lova></div> — <b>VNet1</b> does not have enough contiguous address space for a new /23 subnet, and <b>VNet2</b> has all its address space already allocated to two /17 subnets. Only <b>VNet3</b> (172.16.0.0/16) has sufficient unallocated address space to create a new /23 subnet as required by Azure Container Apps' minimum subnet size.<div lova></div><div lova></div>Subnet mask: <b>/23</b><div lova></div> — Azure Container Apps requires a minimum subnet size of /23 to support integration and scaling; this provides enough IP addresses for infrastructure and scale-out scenarios.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>Virtual network: VNet1 only — <b>VNet1</b> only has 10.1.129.0/24 free, which is not enough for a /23 subnet. VNet2 only — <b>VNet2</b> has its entire address space allocated; no space is left for another subnet. VNet1 or VNet2 only — Neither has enough space for a /23 subnet. VNet2 or VNet3 only — <b>VNet2</b> cannot support a new /23 subnet, only <b>VNet3</b> can. VNet1 or VNet3 only — <b>VNet1</b> cannot support the required subnet size, only <b>VNet3</b> can. VNet1, VNet2, or VNet3 — Only <b>VNet3</b> meets the requirements, so this option is too broad.<div lova></div>Subnet mask: /16 — Larger than required and wastes address space; not needed for Container Apps. /23 — <b>Correct, meets minimum requirement.</b> /24 — Not sufficient, as it does not meet the Azure minimum subnet size for Container Apps. /26 and /28 — Much too small to support Container Apps infrastructure and scaling needs.<div lova></div></span></div></div></div>

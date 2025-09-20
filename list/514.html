@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 141 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div><div lova></div>You have the Azure virtual machines shown in the following table.<div lova></div><div lova></div><img src="img/514_0.png"><div lova></div><div lova></div>VNET1, VNET2, and VNET3 are peered.<div lova></div><div lova></div>VM4 has a DNS server that is authoritative for a zone named contoso.com and contains the records shown in the following table.<div lova></div><div lova></div><img src="img/514_1.png"><div lova></div><div lova></div>The virtual networks are configured to use the DNS servers shown in the following table.<div lova></div><div lova></div><img src="img/514_2.png"><div lova></div><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/514_3.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/514_4.png"><div lova></div><div lova></div>From VM1, server1.contoso.com resolves to 131.107.3.3.: <b>No</b><div lova></div><div lova></div>From VM2, server1.contoso.com resolves to 131.107.3.3.: <b>Yes</b><div lova></div><div lova></div>From VM3, server2.contoso.com resolves to 131.107.2.4.: <b>No</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><h4><div lova></div>Explanation of Right Options</h4><div lova></div><b>From VM2, server1.contoso.com resolves to 131.107.3.3.: Yes</b> VNET2 uses custom DNS 192.168.0.5 (VM4), which is authoritative for contoso.com and has an A record for server1.contoso.com pointing to 131.107.3.3, so VM2's queries are resolved by VM4.<div lova></div><div lova></div><h4><div lova></div>Explanation of Other Options</h4><div lova></div><b>From VM1, server1.contoso.com resolves to 131.107.3.3.: No</b> VNET1 uses the default Azure DNS and does not use the custom DNS server on VM4, so it cannot resolve names from the contoso.com zone hosted by VM4.<div lova></div><b>From VM3, server2.contoso.com resolves to 131.107.2.4.: No</b> VNET3 uses custom DNS 192.168.0.5 (VM4), but server2.contoso.com in VM4's DNS zone resolves to 131.107.3.4, not 131.107.2.4.</span></div></div></div>

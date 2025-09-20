@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 14 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have a sync group named Sync1 that has a cloud endpoint. The cloud endpoint includes a file named File1.txt.<div lova></div>Your on-premises network contains servers that run Windows Server 2016. The servers are configured as shown in the following table.<div lova></div><img class="in-exam-image" src="img/168_0.png"><div lova></div>You add Share1 as an endpoint for Sync1. One hour later, you add Share2 as an endpoint for Sync1.<div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/168_1.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/168_2.png"><h4><div lova></div>Question 3-14</h4>1. On the cloud endpoint, File1.txt is overwritten by File1.txt from Share1<div lova></div><div lova></div><b>Answer: No</b><div lova></div><div lova></div>2. On Server1, File1.txt is overwritten by File1.txt from the cloud endpoint<div lova></div><div lova></div><b>Answer: No</b><div lova></div><div lova></div>3. File2.txt from Share1 replicates to Share2<div lova></div><div lova></div><b>Answer: Yes</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of correct options:</b><div lova></div><div lova></div><b>No</b> (for Q1) — File1.txt already exists in the cloud endpoint before Share1 is added. Azure File Sync does <b>not overwrite existing files</b> in the cloud endpoint when a new server endpoint is added unless the file is newer or has a conflict resolution.<div lova></div><div lova></div><b>No</b> (for Q2) — Since File1.txt already exists on Server1 and in the cloud endpoint, and no newer version is introduced, no overwrite occurs.<div lova></div><div lova></div><b>Yes</b> (for Q3) — File2.txt exists in Share1 and is replicated to the cloud endpoint. When Share2 is added, it syncs with the cloud endpoint, so File2.txt is replicated to Share2.<div lova></div><div lova></div><b>Explanation of other options:</b><div lova></div><div lova></div><b>Yes</b> (for Q1) — Incorrect because Azure File Sync does not automatically overwrite files in the cloud endpoint when adding a new server endpoint unless there's a version conflict.<div lova></div><div lova></div><b>Yes</b> (for Q2) — Incorrect because no overwrite occurs unless the cloud version is newer or there's a sync conflict.<div lova></div><div lova></div><b>No</b> (for Q3) — Incorrect because File2.txt is present in both Share1 and the cloud endpoint, and it will sync to Share2 when added.<h4><div lova></div>Azure File Sync Conflict Resolution</h4><b>Azure File Sync</b> uses a simple <b>conflict-resolution strategy</b>: both changes are kept when echoed to two endpoints at the same time.<div lova></div><div lova></div>The <b>most recently written change</b> keeps the original file name.<div lova></div><div lova></div>The <b>older file</b> (determined by <b>LastWriteTime</b>) has the <b>endpoint name</b> and a <b>conflict number</b> appended to the filename.<div lova></div><div lova></div>For <b>server endpoints</b>, the endpoint name is the <b>name of the server</b>.<div lova></div><div lova></div>For <b>cloud endpoints</b>, the endpoint name is <b>Cloud</b>.<div lova></div><div lova></div>The naming format is: <b>&lt;FilenameWithoutExtension&gt;-&lt;endpointName&gt;( # )</b></span></div></div></div>

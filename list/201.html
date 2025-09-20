@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 47 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">DRAG DROP -<div lova></div>You have an Azure subscription that contains the storage accounts shown in the following table.<div lova></div><img class="in-exam-image" src="img/201_0.png"><div lova></div>You plan to use AzCopy to copy a blob from container1 directly to share1.<div lova></div>You need to identify which authentication method to use when you use AzCopy.<div lova></div>What should you identify for each account? To answer, drag the appropriate authentication methods to the correct accounts. Each method may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Select and Place:<div lova></div><img class="in-exam-image" src="img/201_1.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/201_2.jpg"><h4><div lova></div>Question 3-47: AzCopy Authentication for Copying from Blob to File Share</h4><div lova></div><div lova></div><b>storage1:</b> <b>A shared access signature (SAS) token</b><div lova></div><div lova></div><b>storage2:</b> <b>A shared access signature (SAS) token</b><div lova></div><div lova></div><b>Explanations of right options:</b><div lova></div><div lova></div><b>storage1: A shared access signature (SAS) token</b>: AzCopy supports authenticating to Blob Storage with a SAS token. When you provide the SAS token in the Blob Storage URL, AzCopy uses it for access, allowing simultaneous authentication to both the source and destination in a single operation.<div lova></div><div lova></div><b>storage2: A shared access signature (SAS) token</b>: AzCopy requires a SAS token for Azure File Storage because OAuth is not supported for file shares. By including a SAS token in the file share URL, AzCopy grants secure and granular access to the destination.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>storage1: OAuth</b>: <b>Incorrect</b>. While Blob Storage supports OAuth, you cannot use OAuth for both Blob and File endpoints in a single AzCopy command since File Storage does not support OAuth with AzCopy.<div lova></div><div lova></div><b>storage2: OAuth</b>: <b>Incorrect</b>. Azure File Storage does not support OAuth authentication with AzCopy. Attempting to use OAuth will result in authentication failure.<div lova></div><div lova></div><b>storage1: Anonymous</b>: <b>Incorrect</b>. Anonymous access is disabled in this scenario, so a SAS token or other secure method is required.<div lova></div><div lova></div><b>storage2: Anonymous</b>: <b>Incorrect</b>. Anonymous access is not allowed for file shares here.<div lova></div><div lova></div><b>storage1: A storage account access key</b>: <b>Not recommended</b>. While access keys work, SAS tokens provide more security and control for delegated access.<div lova></div><div lova></div><b>storage2: A storage account access key</b>: <b>Not recommended</b>. Like above, using a SAS token is more secure and preferred.<div lova></div></span></div></div></div>

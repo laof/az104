@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 72 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains the resources shown in the following table.<div lova></div><img class="in-exam-image" src="img/324_0.png"><div lova></div>All virtual machines run Windows Server 2016.<div lova></div>On VM1, you back up a folder named Folder1 as shown in the following exhibit.<div lova></div><img class="in-exam-image" src="img/324_1.jpg"><div lova></div>You plan to restore the backup to a different virtual machine.<div lova></div>You need to restore the backup to VM2.<div lova></div>What should you do first?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>From VM1, install the Windows Server Backup feature.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>From VM2, install the Microsoft Azure Recovery Services Agent.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>From VM1, install the Microsoft Azure Recovery Services Agent.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>From VM2, install the Windows Server Backup feature.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>B..From VM2, install the Microsoft Azure Recovery Services Agent.<div lova></div><div lova></div><b>B..From VM2, install the Microsoft Azure Recovery Services Agent.</b> – To restore a backup to a different virtual machine (VM2), you must first install the Microsoft Azure Recovery Services Agent on the target machine (VM2). This agent allows the VM to connect to the Recovery Services vault and initiate the restore process from the backup of Folder1 originally taken from VM1.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..From VM1, install the Windows Server Backup feature.<div lova></div><div lova></div><b>A..From VM1, install the Windows Server Backup feature.</b> – Incorrect because the backup feature on VM1 does not help restore the backup to VM2; you need to act on the target VM.<div lova></div><div lova></div>C..From VM1, install the Microsoft Azure Recovery Services Agent.<div lova></div><div lova></div><b>C..From VM1, install the Microsoft Azure Recovery Services Agent.</b> – Incorrect because the agent is already required on VM1 for the backup, but to restore to VM2, the agent must be installed there.<div lova></div><div lova></div>D..From VM2, install the Windows Server Backup feature.<div lova></div><div lova></div><b>D..From VM2, install the Windows Server Backup feature.</b> – Incorrect because the Windows Server Backup feature does not interact with the Azure Recovery Services vault for restore operations; the Azure Recovery Services Agent is required.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>We are announcing the support of <b>Cross Region Restore for Recovery Services Agent (MARS)</b> using Azure Backup.<div lova></div></span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 55 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<div lova></div>After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<div lova></div>You have an Azure subscription that contains 10 virtual networks. The virtual networks are hosted in separate resource groups.<div lova></div>Another administrator plans to create several network security groups (NSGs) in the subscription.<div lova></div>You need to ensure that when an NSG is created, it automatically blocks TCP port 8080 between the virtual networks.<div lova></div>Solution: From the Resource providers blade, you unregister the Microsoft.ClassicNetwork provider.<div lova></div>Does this meet the goal?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Yes</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>No</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>B..No — <b>Unregistering the Microsoft.ClassicNetwork provider</b> does <b>not</b> meet the goal. This action only prevents the use of classic (legacy) networking resources in Azure. It does not affect the behavior of network security groups (NSGs) or automatically block TCP port 8080 between virtual networks. NSGs and their rules are part of the Azure Resource Manager (ARM) model, not the classic model governed by Microsoft.ClassicNetwork.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..Yes — <b>Incorrect</b>: Unregistering the <b>Microsoft.ClassicNetwork</b> provider does not create or enforce any NSG rules, nor does it affect traffic between ARM-based virtual networks. It only disables the ability to create or manage classic networking resources.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>You should <b>use a policy definition</b>.<div lova></div>Resource policy definition used by Azure Policy enables you to establish conventions for resources in your organization by describing when the policy is enforced and what effect to take. By defining conventions, you can control costs and more easily manage your resources.<div lova></div></span></div></div></div>

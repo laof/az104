@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 31 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You need to deploy an Azure virtual machine scale set that contains five instances as quickly as possible.<div lova></div>What should you do?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Deploy five virtual machines. Modify the Availability Zones settings for each virtual machine.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Deploy five virtual machines. Modify the Size setting for each virtual machine.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Deploy one virtual machine scale set that is set to VM (virtual machines) orchestration mode.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Deploy one virtual machine scale set that is set to ScaleSetVM orchestration mode.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>D..Deploy one virtual machine scale set that is set to ScaleSetVM orchestration mode.</b><div lova></div><div lova></div>Explanation of right option:<b>ScaleSetVM orchestration mode</b> is the default and recommended approach for quickly deploying and managing multiple identical VMs as a group. It enables you to deploy five instances at once and provides built-in scaling and management capabilities for all instances together.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..Deploy five virtual machines. Modify the Availability Zones settings for each virtual machine.: This approach requires deploying and configuring each VM individually, which is slower and does not provide the benefits of scale sets.<div lova></div>B..Deploy five virtual machines. Modify the Size setting for each virtual machine.: Deploying VMs individually and then changing their sizes is inefficient and time-consuming, and does not leverage the orchestration and scaling features of scale sets.<div lova></div>C..Deploy one virtual machine scale set that is set to VM (virtual machines) orchestration mode.: VM orchestration mode is designed for stateful workloads and does not provide the fast, automated scaling and management features of <b>ScaleSetVM</b> mode. It is less suitable for quickly deploying multiple identical instances.<div lova></div><div lova></div>Additional:<div lova></div><div lova></div><b>VM (virtual machines) orchestration mode</b> allows you to manage each instance of a virtual machine as a separate entity. This is mainly used for situations where you want to customize the instances individually.<div lova></div><b>ScaleSetVM orchestration mode</b> (the default mode) treats the instances in the scale set as a set, making it easier to manage them as a group, which is ideal for deploying multiple instances quickly.<div lova></div><b>ScaleSetVM orchestration mode</b>: Virtual machine instances added to the scale set are based on the scale set configuration model. The virtual machine instance lifecycle - <b>creation, update, deletion - is managed by the scale set</b>. It is the current default VMSS behavior. (Scale set VMs are created in a single shot).<div lova></div><b>VM (virtual machines) orchestration mode</b>: Virtual machines created outside of the scale set can be <b>explicitly added to the scale set</b>. The orchestration mode VM will only create an <b>empty VMSS without any instances</b>, and you will have to <b>manually add new VMs</b> into it by specifying the VMSS ID during the creation of the VM. (Separately VMs are created and added to scale set later)<div lova></div></span></div></div></div>

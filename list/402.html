@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 29 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have two subscriptions named Subscription1 and Subscription2. Each subscription is associated to a different Azure AD tenant.<div lova></div>Subscription1 contains a virtual network named VNet1. VNet1 contains an Azure virtual machine named VM1 and has an IP address space of 10.0.0.0/16.<div lova></div>Subscription2 contains a virtual network named VNet2. VNet2 contains an Azure virtual machine named VM2 and has an IP address space of 10.10.0.0/24.<div lova></div>You need to connect VNet1 to VNet2.<div lova></div>What should you do first?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Move VM1 to Subscription2.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Move VNet1 to Subscription2.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Modify the IP address space of VNet2.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Provision virtual network gateways.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>D</b>..Provision virtual network gateways.<div lova></div><div lova></div><b>Explanation of right options:</b> Since <b>VNet1</b> and <b>VNet2</b> are in different Azure subscriptions and different Azure AD tenants, you cannot use VNet peering directly between them. The correct first step is to <b>provision virtual network gateways</b> in each VNet, enabling you to establish a VPN connection (VNet-to-VNet) across tenants.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Other options:</b> A..Move VM1 to Subscription2: Moving a VM does not connect the VNets and is not necessary for connectivity between VNets. B..Move VNet1 to Subscription2: Moving a VNet across subscriptions (especially across tenants) is complex, not required, and not the correct first step for cross-tenant connectivity. C..Modify the IP address space of VNet2: The address spaces do not overlap, so no change is needed; this does not help with connectivity setup between different tenants.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>The virtual networks can be in the same or different regions, and from the same or different subscriptions. When connecting VNets from different subscriptions, the subscriptions do not need to be associated with the same Active Directory tenant. <div lova></div><b>Configuring a VNet-to-VNet connection</b> is a good way to easily connect VNets. Connecting a virtual network to another virtual network using the VNet-to-VNet connection type (VNet2VNet) is similar to creating a Site-to-Site IPsec connection to an on-premises location. Both connectivity types <b>use a VPN gateway</b> to provide a secure tunnel using IPsec/IKE, and both function the same way when communicating. <div lova></div>The local network gateway for each VNet treats the other VNet as a local site. This lets you specify additional address space for the local network gateway in order to route traffic.</span></div></div></div>

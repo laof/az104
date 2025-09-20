@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 113 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have two Azure virtual machines named VM1 and VM2 that run Windows Server. The virtual machines are in a subnet named Subnet1. Subnet1 is in a virtual network named VNet1.<div lova></div><div lova></div>You need to prevent VM1 from accessing VM2 on port 3389.<div lova></div><div lova></div>What should you do?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Create a network security group (NSG) that has an outbound security rule to deny destination port 3389 and apply the NSG to the network interface of VM1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Configure Azure Bastion in VNet1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Create a network security group (NSG) that has an outbound security rule to deny source port 3389 and apply the NSG to Subnet1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Create a network security group (NSG) that has an inbound security rule to deny source port 3389 and apply the NSG to Subnet1.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>A..Create a network security group (NSG) that has an outbound security rule to deny destination port 3389 and apply the NSG to the network interface of VM1.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..Create a network security group (NSG) that has an outbound security rule to deny destination port 3389 and apply the NSG to the network interface of VM1: <b>Correct</b> — Denying outbound traffic on destination port 3389 from VM1 will prevent VM1 from initiating RDP connections to VM2. Applying the NSG to VM1's network interface targets traffic originating from VM1 specifically.<div lova></div><div lova></div>B..Configure Azure Bastion in VNet1: <b>Incorrect</b> — Azure Bastion provides secure RDP/SSH access to VMs without exposing public IPs, but does not restrict traffic between VMs or control port access at the network level.<div lova></div><div lova></div>C..Create a network security group (NSG) that has an outbound security rule to deny source port 3389 and apply the NSG to Subnet1: <b>Incorrect</b> — Security rules should filter on <b>destination port</b>, not source port, for access control to specific services like RDP. Blocking source port 3389 is not effective for this scenario.<div lova></div><div lova></div>D..Create a network security group (NSG) that has an inbound security rule to deny source port 3389 and apply the NSG to Subnet1: <b>Incorrect</b> — Inbound rules should filter on <b>destination port</b>, not source port. Also, the rule should target the VM or subnet where the traffic is being received, and source port control is not appropriate for RDP blocking.<div lova></div></span></div></div></div>

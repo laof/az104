@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 11 Topic: 6</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have two Azure App Service app named App1 and App2. Each app has a production deployment slot and a test deployment slot.<div lova></div>The Backup Configuration settings for the production slots are shown in the following table.<div lova></div><img class="in-exam-image" src="img/534_0.png"><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/534_1.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/534_2.png"><div lova></div><div lova></div><b>On January 15, 2021, App1 will have only one backup in storage:</b> Yes <div lova></div>App1 is backed up daily starting January 6, 2021, with retention set to 0 days, but with "Keep at least one backup" enabled. This means only the most recent backup is kept, so on January 15, only the backup from that day will be in storage.<div lova></div><div lova></div><b>On February 6, 2021, you can access the backup of the App2 test slot from January 15, 2021:</b> No <div lova></div>The backup configuration applies only to the production slots, not the test slots. There is no indication that the App2 test slot has its own backup or retention policy.<div lova></div><div lova></div><b>On January 15, 2021, you can restore the App2 production slot backup from January 6 to the App2 test slot:</b> Yes <div lova></div>App2's production slot backups are retained for 30 days, so the January 6 backup will still be available on January 15. Azure App Service allows restoring a production slot backup to a test slot.</span></div></div></div>

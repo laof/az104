@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 23 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription that contains a virtual network named VNET1 in the East US 2 region. A network interface named VM1-NI is connected to<div lova></div>VNET1.<div lova></div>You successfully deploy the following Azure Resource Manager template.<div lova></div><img class="in-exam-image" src="img/63_0.jpg"><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/63_1.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/63_2.png"><h4><div lova></div>Question 2-23</h4><div lova></div><div lova></div><b>Correct Answers:</b><div lova></div><div lova></div><b>VM1 and VM2 can connect to VNET1:</b> <b>Yes</b><div lova></div><div lova></div><b>If an Azure datacenter becomes unavailable, VM1 or VM2 will be available:</b> <b>Yes</b><div lova></div><div lova></div><b>If the East US 2 region becomes unavailable, VM1 or VM2 will be available:</b> <b>No</b><div lova></div><div lova></div><b>Explanation:</b><div lova></div><div lova></div><b>VM1 and VM2 can connect to VNET1:</b> <b>Yes</b> — The template shows that VM1 is connected to <b>VNI-NI1</b>, which is already connected to <b>VNET1</b>. It is implied that VM2 is similarly configured. INC and VNET must is in the same region.<div lova></div><div lova></div><b>If an Azure datacenter becomes unavailable, VM1 or VM2 will be available:</b> <b>Yes</b> — The use of <b>availability zones</b> (e.g., "zones": ["2"]) means the VMs are distributed across different datacenters within the same region, providing high availability.<div lova></div><div lova></div><b>If the East US 2 region becomes unavailable, VM1 or VM2 will be available:</b> <b>No</b> — Availability zones provide resiliency within a region, but if the entire <b>region</b> (East US 2) goes down, all VMs in that region will be unavailable.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>VM1 and VM2 can connect to VNET1</b>: Correct. The network interface VNI-NI1 is connected to VNET1, and VM1 depends on it.<div lova></div><div lova></div><b>If an Azure datacenter becomes unavailable, VM1 or VM2 will be available</b>: Correct. Availability zones protect against datacenter-level failures.<div lova></div><div lova></div><b>If the East US 2 region becomes unavailable, VM1 or VM2 will be available</b>: Incorrect. Regional outages affect all availability zones within that region.</span></div></div></div>

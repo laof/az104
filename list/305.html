@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 53 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You deploy an Azure Kubernetes Service (AKS) cluster that has the network profile shown in the following exhibit.<div lova></div><img class="in-exam-image" src="img/305_0.png"><div lova></div>Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/305_1.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/305_2.jpg"><div lova></div><div lova></div>Containers will be assigned an IP address in the <b>[10.244.0.0/16] subnet.</b><div lova></div>Services in the AKS cluster will be assigned an IP address in the <b>[10.0.0.0/16] subnet.</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div>Explanation of right options:<div lova></div><b>10.244.0.0/16</b>: This is the <b>Pod CIDR</b> specified in the AKS network profile. Each container (pod) in the cluster is assigned an IP address from this subnet, so <b>containers</b> will use this range.<div lova></div><b>10.0.0.0/16</b>: This is the <b>Service CIDR</b> in the network profile. Kubernetes <b>services</b> (cluster IPs for service access) are allocated from this subnet.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>Explanation of other options:<div lova></div><b>172.17.0.1/16</b>: This is the <b>Docker bridge CIDR</b>, used internally by Docker for container network bridge, not for pods or services in AKS.<div lova></div></span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 6 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You download an Azure Resource Manager template based on an existing virtual machine. The template will be used to deploy 100 virtual machines.<div lova></div>You need to modify the template to reference an administrative password. You must prevent the password from being stored in plain text.<div lova></div>What should you create to store the password?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>an Azure Key Vault and an access policy</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>an Azure Storage account and an access policy</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>a Recovery Services vault and a backup policy</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Azure Active Directory (AD) Identity Protection and an Azure policy</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Answer and Explanations</h4><div lova></div><div lova></div>A.. <b>an Azure Key Vault and an access policy</b><div lova></div><div lova></div><b>Explanation of right option:</b> <b>Azure Key Vault</b> is the recommended way to securely store secrets such as passwords, API keys, and certificates. By creating <b>an Azure Key Vault</b> and <b>setting an access policy</b>, you can reference the password securely in your ARM template without storing it in plain text. The VM deployment retrieves the secret at runtime, ensuring security and compliance.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>B.. an Azure Storage account and an access policy<div lova></div><b>Incorrect because Azure Storage accounts are for storing data like blobs, files, and tables, not secrets or passwords securely. They do not provide secret management or integration with ARM templates for secure secret retrieval.</b><div lova></div>C.. a Recovery Services vault and a backup policy<div lova></div><b>Incorrect because Recovery Services vaults are designed for backup and disaster recovery, not for storing or managing secrets such as administrative passwords.</b><div lova></div>D.. Azure Active Directory (AD) Identity Protection and an Azure policy<div lova></div><b>Incorrect because Azure AD Identity Protection is for monitoring and responding to identity-based risks, not for secret storage, and Azure Policy is for governance, not secret management.</b></span></div></div></div>

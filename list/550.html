@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 27 Topic: 6</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription that contains the resources shown in the following table.<div lova></div><img class="in-exam-image" src="img/550_0.png"><div lova></div>NSG1 is configured as shown in the following exhibit.<div lova></div><img class="in-exam-image" src="img/550_1.jpg"><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/550_2.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/550_3.png"><div lova></div><div lova></div>Yes - <b>VM1 can access storage1.</b>: The outbound NSG1 rule <b>Storage_Access</b> (priority 145) allows TCP traffic on port 443 from the virtual network to the storage account, and VM1 is within the virtual network. Therefore, VM1 can access storage1 over port 443.<div lova></div><div lova></div>Yes - <b>VM2 can access VM1 by using the HTTPS protocol.</b>: The inbound NSG rule <b>HTTPS_VM1_Deny</b> (priority 110) only blocks HTTPS (TCP 443) traffic from the Internet to VM1 (10.3.0.15), but VM2 is inside the virtual network. The <b>AllowVnetInBound</b> rule (priority 65000) allows all traffic within the virtual network, so VM2 can access VM1 over HTTPS.<div lova></div><div lova></div>No - <b>The security rules for NSG1 apply to any virtual machine on VNET1.</b>: NSG1 is associated with only one subnet, not all subnets in VNET1, so its rules do not apply to every VM in VNET1—only to those in the associated subnet.</span></div></div></div>

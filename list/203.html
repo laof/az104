@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 49 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT<div lova></div> -<div lova></div><div lova></div>You have an Azure subscription. The subscription contains a storage account named storage1 that has the lifecycle management rules shown in the following table.<div lova></div><div lova></div><img src="img/203_0.png"><div lova></div><div lova></div>On June 1, you store two blobs in storage1 as shown in the following table.<div lova></div><div lova></div><img src="img/203_1.png"><div lova></div><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/203_2.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/203_3.png"><div lova></div><div lova></div><b>Statement 1: On June 6, File1 will be stored in the Cool access tier.</b> No<div lova></div><div lova></div><b>Statement 2: On June 1, File2 will be stored in the Cool access tier.</b> No<div lova></div><div lova></div><b>Statement 3: On June 16, File2 will be stored in the Archive access tier.</b> No<div lova></div><div lova></div><b>Explanations of right options:</b><div lova></div><div lova></div><b>Statement 1: No</b>: File1 is in <b>container1</b>. Rule1 moves it to <b>Archive</b> after 3 days (June 4), and Rule2 moves blobs older than 5 days to <b>Cool</b> storage, but by June 6, File1 has already been moved to Archive by Rule1. So, File1 will not be in the Cool tier on June 6.<div lova></div><div lova></div><b>Statement 2: No</b>: File2 is in <b>container2</b> and starts in the Hot tier on June 1; there is no rule to move it to Cool on June 1. No lifecycle management rule applies to move it to Cool on that day.<div lova></div><div lova></div><b>Statement 3: No</b>: File2 is in <b>container2</b>. Rule3 will delete File2 after 10 days (June 11), so by June 16, File2 will have already been deleted and cannot be in the Archive tier.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Statement 1: Yes</b>: <b>Incorrect</b>. File1 is moved to Archive on June 4 and cannot be in the Cool tier on June 6.<div lova></div><div lova></div><b>Statement 2: Yes</b>: <b>Incorrect</b>. There is no rule that moves File2 to the Cool tier on June 1.<div lova></div><div lova></div><b>Statement 3: Yes</b>: <b>Incorrect</b>. File2 is deleted on June 11, so it cannot be moved to Archive on June 16.<h4><div lova></div>Additional:</h4> - If you define more than one action on the same blob, lifecycle management applies the <b>least expensive action to the blob</b>. For example, action delete is cheaper than action tierToArchive. Action tierToArchive is cheaper than action tierToCool.<div lova></div><div lova></div> - If no prefix match is specified, then the policy will apply to all the blobs in the storage account.<div lova></div></span></div></div></div>

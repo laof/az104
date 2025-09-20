@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 87 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT<div lova></div> -<div lova></div><div lova></div>You have an Azure Storage account named storage1 that contains a container named container1. The container1 container stores thousands of image files.<div lova></div><div lova></div>You plan to use an Azure Resource Manager (ARM) template to create a blob inventory rule named rule1.<div lova></div><div lova></div>You need to ensure that only blobs whose names start with the word finance are stored daily as a CSV file in container1.<div lova></div><div lova></div>How should you complete rule1? To answer, select the options in the answer area.<div lova></div><div lova></div>NOTE: Each correct answer is worth one point.<div lova></div><div lova></div><img src="img/241_0.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/241_1.png"><div lova></div><div lova></div><b>blobTypes:</b> blockBlob<div lova></div><div lova></div><b>prefixMatch:</b> container1/finance<div lova></div><div lova></div><h4>Explanation of right options:</h4><div lova></div><div lova></div><b>blockBlob</b> is the correct blob type because image files are typically stored as block blobs in Azure Storage.<div lova></div><div lova></div><b>container1/finance</b> is the correct prefix match because it will filter blobs whose names start with "finance" in the "container1" container (e.g., "container1/finance..."), meeting the requirement to only inventory those blobs.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>appendBlob</b> and <b>pageBlob</b> are incorrect because image files are not stored as append blobs or page blobs; those types are used for scenarios like log data or virtual hard disks.<div lova></div><div lova></div><b>container1/*</b> is incorrect because it would match all blobs in the container, not just those starting with "finance".<div lova></div><div lova></div><b>finance</b> alone is incorrect because it does not specify the full path in the container and may not correctly filter only the blobs in "container1" whose names start with "finance".<div lova></div></span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 26 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure virtual machine that runs Windows Server 2019 and has the following configurations:<div lova></div>✑ Name: VM1<div lova></div>✑ Location: West US<div lova></div>✑ Connected to: VNET1<div lova></div>✑ Private IP address: 10.1.0.4<div lova></div>✑ Public IP addresses: 52.186.85.63<div lova></div>✑ DNS suffix in Windows Server: Adatum.com<div lova></div>You create the Azure DNS zones shown in the following table.<div lova></div><img class="in-exam-image" src="img/399_0.png"><div lova></div>You need to identify which DNS zones you can link to VNET1 and the DNS zones to which VM1 can automatically register.<div lova></div>Which zones should you identify? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/399_1.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/399_2.png"><div lova></div><div lova></div>DNS zones that you can link to VNET1: <b>The private zones only</b><div lova></div><div lova></div><b>Explanation of right options:</b> You can only link <b>Private DNS zones</b> to a <b>VNet</b> in Azure. Public DNS zones cannot be linked to VNets for name resolution or registration. In the table, <b>Adatum.pri</b> and <b>Contoso.pri</b> are private zones, so only the private zones can be linked to VNET1.<div lova></div><div lova></div><b>Other options:</b> Selecting <b>Adatum.com only</b>, <b>Adatum.pri and adatum.com only</b>, or <b>The public zones only</b> is incorrect because public zones cannot be linked to a VNet.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>DNS zones to which VM1 can automatically register: <b>The private zones only</b><div lova></div><div lova></div><b>Explanation of right options:</b> <b>Automatic DNS registration</b> (auto-registration of VM hostnames) is only supported for <b>Private DNS zones</b> linked to the VNet. Public DNS zones do not support automatic registration of VM names.<div lova></div><div lova></div><b>Other options:</b> Selecting <b>Adatum.com only</b>, <b>Adatum.pri and adatum.com only</b>, or <b>The public zones only</b> is incorrect because auto-registration is not available for public DNS zones.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>You can <b>only link VNETs to private DNS zones</b> and accordingly <b>auto register a VNET only to a private DNS zone</b>. Private DNS zones can be linked with VNETs (not public ones). And VM can auto-register to any private DNS zone linked with the VNet and with auto-registration option set. To resolve the records of a private DNS zone from your virtual network, you must link the virtual network with the zone. Linked virtual networks have full access and can resolve all DNS records published in the private zone.</span></div></div></div>

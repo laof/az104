@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 23 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Your company has an Azure subscription named Subscription1.<div lova></div>The company also has two on-premises servers named Server1 and Server2 that run Windows Server 2016. Server1 is configured as a DNS server that has a primary DNS zone named adatum.com. Adatum.com contains 1,000 DNS records.<div lova></div>You manage Server1 and Subscription1 from Server2. Server2 has the following tools installed:<div lova></div>✑ The DNS Manager console<div lova></div>✑ Azure PowerShell<div lova></div>✑ Azure CLI 2.0<div lova></div>You need to move the adatum.com zone to an Azure DNS zone in Subscription1. The solution must minimize administrative effort.<div lova></div>What should you use?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Azure CLI</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Azure PowerShell</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>the Azure portal</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>the DNS Manager console</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>B. <b>Azure PowerShell</b>: Azure PowerShell provides cmdlets that can automate the export and import of DNS zones and records. You can use the Export-DnsServerZone cmdlet to export the DNS zone from Server1, and then use Azure PowerShell cmdlets (like New-AzDnsZone and New-AzDnsRecordSet) to create the zone and import records into Azure DNS. This approach is efficient for handling a large number of DNS records (1,000 in this case) and minimizes manual effort.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Other options:</b><div lova></div>A. Azure CLI: While Azure CLI can manage DNS zones, it does not provide built-in commands to import large sets of DNS records directly from Windows DNS exports; it would require more scripting and manual processing.<div lova></div>C. the Azure portal: The Azure portal is not suitable for bulk DNS record import/export; it is only practical for small numbers of records and manual entry.<div lova></div>D. the DNS Manager console: The DNS Manager console cannot move or import DNS zones directly into Azure DNS; it is meant for managing on-premises Windows DNS servers.<div lova></div><div lova></div><h4>Others DNS Migration Script Execution Steps</h4><b>Step 1: Installing the DNS migration script</b><div lova></div>Open an elevated <b>PowerShell window</b> (Administrative mode) and run the following command: <b>install-script PrivateDnsMigrationScript</b><div lova></div><div lova></div><b>Step 2: Running the script</b><div lova></div>Execute the following command to run the script:<div lova></div><b>PrivateDnsMigrationScript.ps1</b><div lova></div></span></div></div></div>

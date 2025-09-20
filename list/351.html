@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 99 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription.<div lova></div><div lova></div>You plan to deploy the resources shown in the following table.<div lova></div><div lova></div><img src="img/351_0.png"><div lova></div><div lova></div>You need to create a single Azure Resource Manager (ARM) template that will be used to deploy the resources.<div lova></div><div lova></div>Which resource should be added to the dependsOn section for VM1?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>VNET1</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>NIC1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>IP1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>NSG1</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B..NIC1</b> (A <b>virtual machine</b> (VM1) in Azure must reference a <b>network interface</b> (NIC1) at deployment, so the VM must depend on the network interface being created first. Therefore, NIC1 should be added to the <b>dependsOn</b> section for VM1 in the ARM template.)<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..VNET1 (Although the network interface (NIC1) is associated with the virtual network (VNET1), VM1 does not directly depend on the virtual network; it depends on the network interface, which in turn depends on the VNET.)<div lova></div><div lova></div>C..IP1 (The public IP address, if needed, is associated with the network interface, not directly with the VM. Therefore, the VM does not need to directly depend on IP1.)<div lova></div><div lova></div>D..NSG1 (The network security group (NSG1) is also associated with the network interface or subnet, not directly with the VM. VM1 does not require a direct dependency on NSG1.)</span></div></div></div>

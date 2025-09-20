@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 5 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have Azure virtual machines that run Windows Server 2019 and are configured as shown in the following table.<div lova></div><img class="in-exam-image" src="img/378_0.png"><div lova></div>You create a private Azure DNS zone named adatum.com. You configure the adatum.com zone to allow auto registration from VNET1.<div lova></div>Which A records will be added to the adatum.com zone for each virtual machine? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/378_1.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/378_2.jpg"><div lova></div><div lova></div><b>For VM1: <b>Private IP address only</b></b> — VM1 is in VNET1, and its Windows Server DNS suffix is set to adatum.com. Since the private Azure DNS zone adatum.com is configured to allow auto registration from VNET1, VM1 will automatically register its private IP (10.1.0.4) as an A record in adatum.com. Public IP addresses are not registered in private DNS zones.<div lova></div><div lova></div><b>For VM2: <b>None</b></b> — Although VM2 is also in VNET1, its DNS suffix is set to contoso.com, not adatum.com. Only VMs with a DNS suffix that matches the DNS zone (adatum.com) will auto-register A records in that zone. Therefore, VM2 will not register any A record in adatum.com.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of other options:</b><div lova></div><div lova></div><b>Public IP address only</b> — Public IPs are never registered in a private DNS zone. Azure private DNS zones only register private IP addresses for auto-registration.<div lova></div><div lova></div><b>Private IP address and public IP address</b> — Only the private IP is registered in the private DNS zone, never both.<div lova></div><div lova></div><b>None</b> (for VM1) — Incorrect, because VM1 meets the criteria for auto-registration (VNET1, DNS suffix adatum.com).<div lova></div><div lova></div><b>Private IP address only/Public IP address only/Private IP address and public IP address</b> (for VM2) — Incorrect, because VM2's DNS suffix does not match adatum.com, so no record will be registered for VM2 in that zone.<div lova></div></span></div></div></div>

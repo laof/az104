@@ -1,0 +1,49 @@
+h1, h2, h3, h4, h5, h6 ,p{
+    padding: 0;
+    margin: 0;
+}
+
+.question-discussion-header{
+    display: none;
+}
+
+.multi-choice-letter{
+    position: relative;
+}
+
+.multi-choice-item.correct-hidden .multi-choice-letter::after {
+    content: "✓";
+    user-select: all;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    left: -16px;
+    top: 0px;
+}
+
+.lova-title{
+    font-size: 24px;
+}
+
+.discussion-header-container{
+    padding: 8px;
+}
+
+li{
+    list-style: none;
+}
+
+[lova]{
+    height: 4px;
+    width: 100%;
+}
+
+.correct-answer-box{
+    padding-bottom: 12px;
+    display: block;
+}
+
+.answer-description{
+    display: block;
+}

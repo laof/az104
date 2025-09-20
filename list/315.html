@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 63 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription.<div lova></div>You plan to use Azure Resource Manager templates to deploy 50 Azure virtual machines that will be part of the same availability set.<div lova></div>You need to ensure that as many virtual machines as possible are available if the fabric fails or during servicing.<div lova></div>How should you configure the template? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/315_0.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/315_1.png"><div lova></div><div lova></div>platformFaultDomainCount: <b>3</b><div lova></div>platformUpdateDomainCount: <b>20</b><div lova></div><div lova></div><b>platformFaultDomainCount: 3</b> - This is the maximum supported value in most Azure regions and ensures VMs are spread across three separate racks or physical hardware, maximizing protection against rack or hardware failures.<div lova></div><b>platformUpdateDomainCount: 20</b> - This is the maximum supported value, allowing your 50 VMs to be distributed across 20 update domains. This ensures that as many VMs as possible remain available during planned Azure maintenance or servicing, as only one update domain is maintained at a time.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>platformFaultDomainCount: 0, 1, 2, 4</b> - Lower numbers would concentrate VMs on fewer racks, increasing the risk of downtime if a fault domain fails. Value 4 is not supported in most regions.<div lova></div><b>platformUpdateDomainCount: 10, 25, 30, 40, 50</b> - Values below 20 would place more VMs within each update domain, increasing the impact of maintenance. Values above 20 are not supported for availability sets.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>These regions have <b>3 Fault Domains</b>:<div lova></div>* <b>East US</b><div lova></div>* <b>East US 2</b><div lova></div>* West US<div lova></div>* Central US<div lova></div>* North Central US<div lova></div>* South Central US<div lova></div>* Canada Central<div lova></div>* North Europe<div lova></div>* West Europe<div lova></div>The rest have <b>2 Fault Domains</b>.<div lova></div></span></div></div></div>

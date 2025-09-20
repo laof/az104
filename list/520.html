@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 147 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT<div lova></div> -<div lova></div><div lova></div>You have an Azure subscription that contains the virtual networks shown in the following table.<div lova></div><div lova></div><img src="img/520_0.png"><div lova></div><div lova></div>Each virtual network has 50 connected virtual machines.<div lova></div><div lova></div>You need to implement Azure Bastion. The solution must meet the fallowing requirements:<div lova></div><div lova></div>•	Support host scaling.<div lova></div>•	Support uploading and downloading files.<div lova></div>•	Support the virtual machines on both VNet1 and VNet2.<div lova></div>•	Minimize the number of addresses on the Azure Bastion subnet.<div lova></div><div lova></div>How should you configure Azure Bastion? To answer, select the options in the answer area.<div lova></div><div lova></div>NOTE: Each correct answer is worth one point.<div lova></div><div lova></div><img src="img/520_1.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/520_2.png"><div lova></div><div lova></div><b>Subnet size:</b> /26<div lova></div><div lova></div><b>Public IP:</b> Standard SKU with a static allocation<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><h4><div lova></div>Explanation of Right Options</h4><div lova></div><b>Subnet size: /26</b> — To support host scaling and minimize the number of addresses, a /26 subnet is the minimum required for Azure Bastion Standard SKU with host scaling enabled. This is recommended by Microsoft documentation for scenarios with many VMs and scaling.<div lova></div><b>Public IP: Standard SKU with a static allocation</b> — The Standard SKU is required for features like scaling and file transfer (upload and download support). Standard SKU requires a static public IP and enables all the required features.<div lova></div><div lova></div><h4><div lova></div>Explanation of Other Options</h4><div lova></div><b>/24, /28, /29</b> — /24 allocates more addresses than needed (not minimizing address usage); /28 and /29 are too small for scaling requirements. Only /26 meets all constraints.<div lova></div><b>Basic SKU with a dynamic allocation, Basic SKU with a static allocation</b> — The Basic SKU does not support scaling or file transfer features, and dynamic allocation is not supported for Bastion public IPs. Only "Standard SKU with a static allocation" meets all requirements.</span></div></div></div>

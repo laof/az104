@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 16 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains a storage account named account1.<div lova></div>You plan to upload the disk files of a virtual machine to account1 from your on-premises network. The on-premises network uses a public IP address space of<div lova></div>131.107.1.0/24.<div lova></div>You plan to use the disk files to provision an Azure virtual machine named VM1. VM1 will be attached to a virtual network named VNet1. VNet1 uses an IP address space of 192.168.0.0/24.<div lova></div>You need to configure account1 to meet the following requirements:<div lova></div>✑ Ensure that you can upload the disk files to account1.<div lova></div>✑ Ensure that you can attach the disks to VM1.<div lova></div>✑ Prevent all other access to account1.<div lova></div>Which two actions should you perform? Each correct answer presents part of the solution.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>From the Networking blade of account1, select Selected networks.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>From the Networking blade of account1, select Allow trusted Microsoft services to access this storage account.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>From the Networking blade of account1, add the 131.107.1.0/24 IP address range.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>From the Networking blade of account1, add VNet1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="E.">E..</span>From the Service endpoints blade of VNet1, add a service endpoint.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>Answer: A. From the Networking blade of account1, select Selected networks.</b><div lova></div><div lova></div><b>Answer: C. From your on-premises network, add the 131.107.0.0/24 IP address range.</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of correct options:</b><div lova></div><div lova></div><b>A. Selected networks</b> — This is the key setting that enforces network-level access control. It ensures that only explicitly allowed IP ranges and VNets can access the storage account, fulfilling the requirement to prevent all other access.<div lova></div><div lova></div><b>C. Add 131.107.0.0/24</b> — This allows the on-premises network to upload the disk files to the storage account, which is one of the core requirements.<div lova></div><div lova></div><b>Explanation of other options:</b><div lova></div><div lova></div><b>B. Allow trusted Microsoft services</b> — Incorrect because it allows broader access from Microsoft services, which violates the requirement to prevent all other access.<div lova></div><div lova></div><b>D. Add VNet1</b> — Not sufficient alone. While it defines the network scope, it does not enable routing to the storage account without a service endpoint.<div lova></div><div lova></div><b>E. Add a service endpoint</b> — Not required for attaching disks to VM1. Azure handles disk attachment internally, and VM1 does not need direct network access to the storage account for this operation.</span></div></div></div>

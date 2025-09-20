@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 72 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription.<div lova></div>You plan to use an Azure Resource Manager template to deploy a virtual network named VNET1 that will use Azure Bastion.<div lova></div>How should you complete the template? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/445_0.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/445_1.png"><div lova></div><div lova></div><b>Statement 1: "name"</b> AzureBastionSubnet<div lova></div><div lova></div><b>Statement 2: "addressPrefix"</b> 10.10.10.0/27<div lova></div><div lova></div><b>Explanation:</b> When deploying Azure Bastion in a virtual network, you must create a subnet named <b>AzureBastionSubnet</b> exactly (case-sensitive) and its subnet prefix must be at least /27 or larger (as per Azure Bastion requirements). "10.10.10.0/27" satisfies this, while /29 or /30 would be too small.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Option 1: "name": AzureBastionSubnet</b> — This is the required and reserved name for the subnet Azure Bastion uses. Any other name (such as AzureFirewallSubnet, LAN01, or RemoteAccessSubnet) would not work for Bastion deployment.<div lova></div><div lova></div><b>Option 2: "addressPrefix": 10.10.10.0/27</b> — This prefix is the smallest allowed for Azure Bastion. Prefixes /29 and /30 are too small to support Bastion and would not be accepted by Azure.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>Azure Bastion requires a dedicated subnet: <b>AzureBastionSubnet</b>. You must create this subnet in the <b>same virtual network</b> that you want to deploy Azure Bastion to.</span></div></div></div>

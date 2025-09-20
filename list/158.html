@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 4 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure Storage account named storage1.<div lova></div>You have an Azure App Service app named App1 and an app named App2 that runs in an Azure container instance. Each app uses a managed identity.<div lova></div>You need to ensure that App1 and App2 can read blobs from storage1. The solution must meet the following requirements:<div lova></div>✑ Minimize the number of secrets used.<div lova></div>✑ Ensure that App2 can only read from storage1 for the next 30 days.<div lova></div>What should you configure in storage1 for each app? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/158_0.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/158_1.png"><h4><div lova></div>What should you configure in storage1 for each app?</h4><b>App1: Access control (IAM)</b><div lova></div><div lova></div><b>App2: Shared access signatures (SAS)</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>App1: Access keys</b> – Incorrect because using <b>access keys</b> involves secrets, which violates the requirement to minimize the number of secrets.<div lova></div><div lova></div><b>App1: Advanced security</b> – Incorrect as it is not a method for granting access to blobs.<div lova></div><div lova></div><b>App1: Shared access signatures (SAS)</b> – Incorrect because SAS involves generating and managing secrets, which is not ideal for long-term access with managed identities.<div lova></div><div lova></div><b>App2: Access keys</b> – Incorrect because it uses secrets and does not allow time-limited access control.<div lova></div><div lova></div><b>App2: Advanced security</b> – Incorrect as it does not directly control access permissions.<div lova></div><div lova></div><b>App2: Access control (IAM)</b> – Incorrect because IAM does not support time-limited access like the 30-day requirement; SAS is more appropriate for temporary access.</span></div></div></div>

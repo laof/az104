@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 24 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription that contains an Azure Availability Set named WEBPROD-AS-USE2 as shown in the following exhibit.<div lova></div><img class="in-exam-image" src="img/276_0.png"><div lova></div>You add 14 virtual machines to WEBPROD-AS-USE2.<div lova></div>Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/276_1.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/276_2.png"><div lova></div><div lova></div>When Microsoft performs planned maintenance in East US 2, the maximum number of unavailable virtual machines will be <b>2</b>.<div lova></div>If the server rack in the Azure datacenter that hosts WEBPROD-AS-USE2 experiences a power failure, the maximum number of unavailable virtual machines will be <b>7</b>.<div lova></div><div lova></div><b>Explanation of right options:</b><div lova></div><div lova></div> For planned maintenance, only VMs in one update domain (out of <b>10</b>) are affected at a time, so with <b>14</b> VMs, the maximum per domain is <b>2</b> (ceiling(14/10)=2). <div lova></div>For a fault domain (rack) failure, VMs are split across <b>2</b> fault domains, so the maximum in one domain is <b>7</b> (ceiling(14/2)=7).<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>When Microsoft performs planned maintenance in East US 2, the maximum number of unavailable virtual machines will be <b>7</b>, <b>10</b>, or <b>14</b>: These are incorrect because update domains limit unavailability to those in a single domain, which is at most <b>2</b> for <b>14</b> VMs and <b>10</b> update domains.<div lova></div>If the server rack in the Azure datacenter that hosts WEBPROD-AS-USE2 experiences a power failure, the maximum number of unavailable virtual machines will be <b>2</b>, <b>10</b>, or <b>14</b>: These are incorrect because a single rack (fault domain) failure only affects VMs in that domain, which is at most <b>7</b> for <b>14</b> VMs and <b>2</b> fault domains.</span></div></div></div>

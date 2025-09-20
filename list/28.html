@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 28 Topic: 1</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements.<div lova></div>Your company has a Microsoft SQL Server Always On availability group configured on their Azure virtual machines (VMs).<div lova></div>You need to configure an Azure internal load balancer as a listener for the availability group.<div lova></div>Solution: You create an HTTP health probe on port 1433.<div lova></div>Does the solution meet the goal?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Yes</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>No</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B. No</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Correct Option:</b><div lova></div><div lova></div><b>B. No</b> — This is the correct answer. Port <b>1433</b> is used for SQL Server database connections, not for health probes. For an Azure internal load balancer to work with an <b>Always On availability group</b>, the health probe must use a <b>custom TCP probe</b> on a port that is configured in the availability group listener settings, not HTTP on port 1433. Using HTTP on 1433 is incorrect and will not properly detect the health of the SQL Server instances.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Option:</b><div lova></div><div lova></div><b>A. Yes</b> — Incorrect. An HTTP probe on port 1433 is not valid for SQL Server Always On availability groups. The probe must be <b>TCP-based</b> and configured on a port that the availability group listener is set to respond to, ensuring proper failover and routing.</span></div></div></div>

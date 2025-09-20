@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 44 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure virtual machine named VM1 that connects to a virtual network named VNet1. VM1 has the following configurations:<div lova></div>✑ Subnet: 10.0.0.0/24<div lova></div>✑ Availability set: AVSet<div lova></div>✑ Network security group (NSG): None<div lova></div>✑ Private IP address: 10.0.0.4 (dynamic)<div lova></div>✑ Public IP address: 40.90.219.6 (dynamic)<div lova></div>You deploy a standard, Internet-facing load balancer named slb1.<div lova></div>You need to configure slb1 to allow connectivity to VM1.<div lova></div>Which changes should you apply to VM1 as you configure slb1? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/417_0.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/417_1.jpg"><div lova></div><div lova></div><b>Change the private IP address of VM1 to static</b><div lova></div> — <b>Standard Load Balancer</b> requires backend VMs to have a <b>static private IP</b> to ensure consistent backend pool association; dynamic IPs are not supported for standard SKU backend pools because a dynamic IP can change and break the pool association.<div lova></div><div lova></div><b>Create and configure an NSG</b><div lova></div> — As shown in Image 2, if you do not have a <b>Network Security Group (NSG)</b> applied to the subnet or NIC of your VM, <b>no inbound traffic</b> is allowed by default with a <b>Standard Load Balancer</b>; you must create and configure an NSG to explicitly allow the required traffic (such as load balancer health probes and application ports) to reach VM1.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Before you create a backend pool on slb1, you must:</b> Create and assign an NSG to VM1 — This is not required for backend pool association; NSGs are for security and traffic filtering, not for pool membership.<div lova></div><div lova></div><b>Before you create a backend pool on slb1, you must:</b> Remove the public IP address from VM1 — While public IPs should not be on backend VMs for Standard Load Balancer, this is not required before creating the backend pool; it's a best practice but not a technical prerequisite for pool creation.<div lova></div><div lova></div><b>Before you can connect to VM1 from slb1, you must:</b> Remove the public IP address from VM1 — Although backend VMs for Standard SKU should not have public IPs, the critical requirement for connectivity is having an <b>NSG</b> with the appropriate allow rules; removing the public IP is a best practice but not the key step to enable connectivity.<div lova></div><div lova></div><b>Before you can connect to VM1 from slb1, you must:</b> Change the private IP address of VM1 to static — This is required before adding to the backend pool, but not specifically for connectivity from the load balancer.<div lova></div><div lova></div><b>Additional:</b><div lova></div>Standard vs Basic Load Balancer:<div lova></div><b>Standard Load Balancer</b> requires static private IPs, does not allow public IPs on backend VMs, and denies all inbound traffic by default unless explicitly permitted by an NSG; <b>Basic Load Balancer</b> allows dynamic IPs, public IPs on backend VMs, and permits inbound traffic unless explicitly denied by NSG.</span></div></div></div>

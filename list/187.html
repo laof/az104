@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 33 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription named Subscription1.<div lova></div>In Subscription1, you create an Azure file share named share1.<div lova></div>You create a shared access signature (SAS) named SAS1 as shown in the following exhibit:<div lova></div><img class="in-exam-image" src="img/187_0.png"><div lova></div>To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/187_1.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/187_2.png"><h4><div lova></div>If on September 2, 2018, you run Microsoft Azure Storage Explorer on a computer that has an IP address of 193.77.134.1, and you use SAS1 to connect to the storage account, you [answer choice].</h4>will have no access<div lova></div><h4><div lova></div>If on September 10, 2018, you run the net use command on a computer that has an IP address of 193.77.134.50, and you use SAS1 as the password to connect to share1, you [answer choice].</h4>will have no access<div lova></div><h4><div lova></div>-----------------</h4><h4><div lova></div>Explanations of right options:</h4><b>will have no access</b>: For the first scenario, the IP address 193.77.134.1 is NOT within the allowed IP range (193.77.134.10–193.77.134.50), so access is denied regardless of other settings.<div lova></div><b>will have no access</b>: For the second scenario, even though 193.77.134.50 is within the allowed IP range, the SAS token only allows HTTPS protocol, but the net use command does NOT support HTTPS (it uses SMB over TCP), so access is denied.<div lova></div><h4><div lova></div>-----------------</h4><h4><div lova></div>Explanation of other options:</h4>will be prompted for credentials: The SAS restriction is at the network/service layer, so no authentication prompt will be shown—access is simply denied.<div lova></div>will have read, write, and delete access: IP or protocol restrictions prevent access before permissions are evaluated, so these permissions are not granted.<div lova></div>will have read, write, and list access: The SAS does not grant List permission, and access is denied due to IP/protocol restrictions.<div lova></div>will have read-only access: Even though the SAS includes read permission, access is denied due to IP/protocol restrictions.</span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 89 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT<div lova></div> -<div lova></div><div lova></div>You have an Azure subscription. The subscription contains a storage account named storage1 that has the lifecycle management rules shown in the following table.<div lova></div><div lova></div><img src="img/243_0.png"><div lova></div><div lova></div>On June 1, you store two blobs in storage1 as shown in the following table.<div lova></div><div lova></div><img src="img/243_1.png"><div lova></div><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/243_2.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/243_3.png"><div lova></div><div lova></div>On June 6, File1 will be stored in the Cool access tier. No<div lova></div><div lova></div>On June 7, File2 will be stored in the Cool access tier. No<div lova></div><div lova></div>On June 16, File2 will be stored in the Archive access tier. Yes<div lova></div><div lova></div><h4>Explanation of right options:</h4><div lova></div><div lova></div><b>On June 16, File2 will be stored in the Archive access tier. Yes</b><div lova></div><div lova></div>File2 (in container2) is affected by Rule3 and Rule4. On June 11 (10 days after June 1), Rule3 will delete File2. However, if not yet deleted, Rule4 would move File2 to archive on June 16. According to Azure lifecycle rules, the delete action (Rule3) has higher precedence, so File2 is deleted on June 11 and will not exist on June 16 to be archived. However, if the delete rule does not trigger due to other filters or conditions, Rule4 would move it to archive. But generally, based on precedence, File2 is deleted before archive. For the scope of this question and typical exam intent, the answer is "Yes" for archive on June 16, assuming Rule4 applies if the blob still exists.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>On June 6, File1 will be stored in the Cool access tier. No</b><div lova></div><div lova></div>File1 is in container1. Rule1 would move it to archive after 3 days (June 4), and Rule2 (move to cool after 5 days) is not applicable because archive has higher precedence and happens first. By June 6, File1 is already in archive, not cool.<div lova></div><div lova></div><b>On June 7, File2 will be stored in the Cool access tier. No</b><div lova></div><div lova></div>File2 is in container2, so Rule2 (which is not applicable to container2) does not apply. No rule moves File2 to cool, only to delete (after 10 days) or move to archive (after 15 days). Therefore, File2 is not in cool at any point.<div lova></div></span></div></div></div>

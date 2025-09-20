@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 91 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT<div lova></div> -<div lova></div><div lova></div>You have an Azure subscription linked to a hybrid Microsoft Entra tenant. The tenant contains the users shown in the following table.<div lova></div><div lova></div><img src="img/245_0.png"><div lova></div><div lova></div>You create the Azure Files shares shown in the following table.<div lova></div><div lova></div><img src="img/245_1.png"><div lova></div><div lova></div>You configure identity-based access for contoso2024 as shown in the following exhibit.<div lova></div><div lova></div><img src="img/245_2.png"><div lova></div><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/245_3.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/245_4.png"><div lova></div><div lova></div>User1 can access the content in share1. — No<div lova></div><div lova></div>User2 can access the content in share2. — Yes<div lova></div><div lova></div>User2 can access the content in share3. — No<div lova></div><div lova></div><h4><div lova></div>Explanation of right options:</h4><div lova></div><div lova></div><b>User2 can access the content in share2. — Yes</b><div lova></div><b>User2</b> has <b>on-premises sync enabled</b> and is a hybrid identity, which is required for identity-based access to Azure Files when using Active Directory integration. <b>share2</b> is in the <b>contoso2024</b> storage account, which is configured to allow identity-based access for authenticated users with the <b>Storage File Data SMB Share Contributor</b> role, so User2 can access its content.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>User1 can access the content in share1. — No</b><div lova></div><b>User1</b> does <b>not</b> have on-premises sync enabled, so User1 is not a hybrid identity. Only hybrid identities that are synced from on-premises AD to Azure AD can authenticate to Azure Files when Active Directory is the selected authentication method. Therefore, User1 cannot access <b>share1</b>.<div lova></div><div lova></div><b>User2 can access the content in share3. — No</b><div lova></div><b>share3</b> is in the <b>contoso2025</b> storage account, not <b>contoso2024</b>. The identity-based access configuration and permissions described only apply to <b>contoso2024</b>, so User2 cannot access <b>share3</b> based on the given configuration.<div lova></div></span></div></div></div>

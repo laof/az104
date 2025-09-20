@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 88 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div><div lova></div>You have an Azure subscription that contains a storage account named storage1. The storage1 account contains blobs in a container named container1.<div lova></div><div lova></div>You plan to share access to storage1.<div lova></div><div lova></div>You need to generate a shared access signature (SAS). The solution must meet the following requirements:<div lova></div><div lova></div>•	Ensure that the SAS can only be used to enumerate and download blobs stored in container1.<div lova></div>•	Use the principle of least privilege.<div lova></div><div lova></div>Which three settings should you enable? To answer, select the appropriate settings in the answer area.<div lova></div><div lova></div><img src="img/242_0.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/242_1.png"><div lova></div><div lova></div><b>Allowed services:</b> Blob<div lova></div><div lova></div><b>Allowed resource types:</b> Object<div lova></div><div lova></div><b>Allowed permissions:</b> Read, List<div lova></div><div lova></div><h4>Explanation of right options:</h4><div lova></div><div lova></div><b>Blob</b> is the correct allowed service because you only need to share access to blobs, not files, queues, or tables.<div lova></div><div lova></div><b>Object</b> is the correct allowed resource type because to enumerate (list) and download blobs, access to blob objects is required. Container type could allow listing containers, which is more privilege than needed.<div lova></div><div lova></div><b>Read</b> and <b>List</b> are the correct permissions because <b>Read</b> allows downloading blobs and <b>List</b> allows enumerating blobs. No additional permissions are needed to meet the requirements and follow the principle of least privilege.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>File, Queue, Table</b> (Allowed services): Not needed because access is only required for blobs.<div lova></div><div lova></div><b>Service, Container</b> (Allowed resource types): Not required. The service type is for account-level operations, and container type is for managing containers, which is unnecessary for just enumerating and downloading blobs.<div lova></div><div lova></div><b>Write, Delete, Add, Create, Update, Process, Immutable storage, Permanent delete</b> (Allowed permissions): These provide more permissions than necessary, violating the principle of least privilege.<div lova></div><div lova></div>Blob versioning permissions and Allowed blob index permissions: Not required for the task of listing and downloading blobs.<div lova></div></span></div></div></div>

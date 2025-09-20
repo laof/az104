@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 15 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains a resource group named RG26.<div lova></div>RG26 is set to the West Europe location and is used to create temporary resources for a project. RG26 contains the resources shown in the following table.<div lova></div><img class="in-exam-image" src="img/55_0.jpg"><div lova></div>SQLDB01 is backed up to RGV1.<div lova></div>When the project is complete, you attempt to delete RG26 from the Azure portal. The deletion fails.<div lova></div>You need to delete RG26.<div lova></div>What should you do first?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Delete VM1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Stop VM1</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Stop the backup of SQLDB01</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Delete sa001</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Question 2-15 Answer:</h4> C. Stop the backup of SQLDB01 <div lova></div><div lova></div>-----------------<div lova></div><div lova></div> <h4>Explanation of Correct Option:</h4> C. Stop the backup of SQLDB01 — Azure does not allow deletion of a resource group that contains a Recovery Services vault with active backup items. Since SQLDB01 is backed up to RGV1, you must first stop the backup and delete the backup data before you can delete the vault and the resource group. <div lova></div><div lova></div>-----------------<div lova></div><div lova></div> <h4>Explanation of Other Options:</h4> A. Delete VM1 — Incorrect because the VM is not preventing the deletion; the backup configuration is. <div lova></div> B. Stop VM1 — Incorrect because stopping a VM does not affect the backup configuration or deletion process. <div lova></div> D. Delete sa001 — Incorrect because the storage account is not the cause of the deletion failure.<h4><div lova></div>Dependencies That Prevent Deletion of a Recovery Services Vault:</h4> You cannot delete an Azure Recovery Services vault if it has any of the following dependencies:<div lova></div> - Protected data sources (e.g., IaaS VMs, SQL databases, Azure file shares)<div lova></div> - Backup items that have not been deleted<div lova></div> - Backup items in the soft deleted state (retained for 14 days after deletion) - Registered storage accounts<div lova></div> - Active backup policies with associated items<div lova></div> - Multi-User Authorization (MUA) enabled without proper permissions <div lova></div><div lova></div>-----------------<div lova></div><div lova></div> <h4>Notes:</h4> To delete the vault, you must first stop all backups, delete backup items, wait for soft delete retention to expire (or disable soft delete if allowed), unregister storage accounts, and remove all associated policies [1](https://learn.microsoft.com/en-us/azure/backup/backup-azure-delete-vault).</span></div></div></div>

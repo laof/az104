@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 22 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription named Subscription1 that contains an Azure Log Analytics workspace named Workspace1.<div lova></div>You need to view the error events from a table named Event.<div lova></div>Which query should you run in Workspace1?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Get-Event Event | where {$_.EventType == "error"}</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>search in (Event) "error"</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>select * from Event where EventType == "error"</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>search in (Event) * | where EventType -eq "error"</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Question 2-22</h4><b>Correct Answer: B..search in (Event) "error"</b><div lova></div><div lova></div><b>Explanation:</b> This is a valid <b>Kusto Query Language (KQL)</b> query used in <b>Azure Log Analytics</b>. It performs a <b>full-text search</b> for the word <b>"error"</b> within the <b>Event</b> table. While it is not as precise as filtering by a specific field, it is syntactically correct and will return all records that contain the word "error" in any column.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>A..Get-Event Event | where {$_.EventType == "error"}</b>: Incorrect. This is a <b>PowerShell</b> command, not a KQL query, and cannot be used in Azure Log Analytics.<div lova></div><div lova></div><b>B..search in (Event) "error"</b>: Correct. This is a valid KQL query that searches for the term "error" across all fields in the Event table.<div lova></div><div lova></div><b>C..select * from Event where EventType == "error"</b>: Incorrect. This is <b>SQL syntax</b>, not KQL, and is not valid in Azure Log Analytics.<div lova></div><div lova></div><b>D..search in (Event) * | where EventType -eq "error"</b>: Incorrect. Although the structure resembles KQL, it uses the <b>-eq</b> operator, which is from PowerShell, not KQL. The correct KQL operator is <b>==</b>.</span></div></div></div>

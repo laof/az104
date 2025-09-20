@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 102 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains the resources shown in the following table.<div lova></div><div lova></div><img src="img/475_0.png"><div lova></div><div lova></div>You configure Azure Site Recovery to replicate VM1 between the US East and West US regions.<div lova></div><div lova></div>You perform a test failover of VM1 and specify VNET2 as the target virtual network.<div lova></div><div lova></div>When the test version of VM1 is created, to which subnet will the virtual machine be connected?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>TestSubnet1</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>DemoSubnet1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>RecoverySubnetA</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>RecoverySubnetB</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B..DemoSubnet1</b><div lova></div><div lova></div><b>Explanation:</b> During Azure Site Recovery failover, the target subnet is selected based on <b>the name of the source subnet</b>, not the address range. Since the source VM is connected to "Subnet2" and there is no subnet named "Subnet2" in VNET2, Azure will assign the VM to the first subnet in alphabetical order in VNET2, which is "DemoSubnet1".</span></div></div></div>

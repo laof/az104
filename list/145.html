@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 105 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains a storage account named storage1.<div lova></div><div lova></div>You need to ensure that the access keys for storage1 rotate automatically.<div lova></div><div lova></div>What should you configure?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>a backup vault</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>redundancy for storage1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>lifecycle management for storage1</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>an Azure key vault</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="E.">E..</span>a Recovery Services vault</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Correct Answer (with Extended Explanation):</h4><b>D. an Azure key vault</b><div lova></div><div lova></div>To ensure that <b>access keys</b> for <b>storage1</b> rotate automatically, you should configure <b>Azure Key Vault</b>. While Key Vault itself does not natively rotate <b>storage account access keys</b>, it plays a central role in a secure and automated key rotation solution.<div lova></div><div lova></div>To implement automatic rotation, you would typically:<div lova></div><div lova></div>• Store the access keys in <b>Azure Key Vault</b> as secrets.<div lova></div>• Use <b>Azure Automation</b>, <b>Logic Apps</b>, or <b>custom scripts</b> to:<div lova></div>&nbsp;&nbsp;&nbsp;&nbsp;- Regenerate the storage account access keys.<div lova></div>&nbsp;&nbsp;&nbsp;&nbsp;- Update the stored values in Key Vault.<div lova></div>&nbsp;&nbsp;&nbsp;&nbsp;- Automate the rotation process.<div lova></div><div lova></div>This approach minimizes manual effort and enhances security.<div lova></div><div lova></div>-----------------<h4><div lova></div>Explanation of Other Options:</h4><b>A. a backup vault</b> is used for managing backup data, not for key management or rotation.<div lova></div><div lova></div><b>B. redundancy for storage1</b> ensures data durability and availability but does not affect key rotation.<div lova></div><div lova></div><b>C. lifecycle management for storage1</b> is used to manage data retention and movement between tiers, not for key rotation.<div lova></div><div lova></div><b>E. a Recovery Services vault</b> is used for backup and disaster recovery, not for managing or rotating access keys.</span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 9 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You plan to automate the deployment of a virtual machine scale set that uses the Windows Server 2016 Datacenter image.<div lova></div>You need to ensure that when the scale set virtual machines are provisioned, they have web server components installed.<div lova></div>Which two actions should you perform? Each correct answer presents part of the solution.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Upload a configuration script</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Create an automation account</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Create an Azure policy</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Modify the extensionProfile section of the Azure Resource Manager template</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="E.">E..</span>Create a new virtual machine scale set in the Azure portal</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Question 4-9 Answers</h4><div lova></div><div lova></div>A.. <b>Upload a configuration script</b><div lova></div>D.. <b>Modify the extensionProfile section of the Azure Resource Manager template</b><div lova></div><div lova></div><b>Explanation of right options:</b><div lova></div><b>A.. Upload a configuration script:</b> You need a script (such as a PowerShell script) to install the web server components (e.g., IIS) on the VMs when they are provisioned.<div lova></div><b>D.. Modify the extensionProfile section of the Azure Resource Manager template:</b> You use the extensionProfile in the ARM template to specify and run the script automatically during VM provisioning, ensuring all VMs are configured with the required web server components.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>B.. Create an automation account: Incorrect because automation accounts are for runbooks and automation tasks, not for VMSS provisioning scripts.<div lova></div>C.. Create an Azure policy: Incorrect because Azure Policy is used for compliance and governance, not for installing software on VMs during provisioning.<div lova></div>E.. Create a new virtual machine scale set in the Azure portal: Incorrect because simply creating a VMSS does not ensure the web server components are installed; you must specify the installation process via script and extension.<h4><div lova></div>Additional:</h4>Virtual Machine Scale Sets can be used with the <b>Azure Desired State Configuration (DSC) extension handler</b>. Virtual machine scale sets provide a way to deploy and manage large numbers of virtual machines, and can elastically scale in and out in response to load. DSC is used to configure the VMs as they come online so they are running the production software.<div lova></div><div lova></div>The <b>Custom Script Extension downloads and executes scripts on Azure VMs</b>. This extension is useful for post deployment configuration, software installation, or any other configuration/management task. Scripts can be downloaded from <b>Azure storage or GitHub, or provided to the Azure portal at extension run-time</b>.<div lova></div><div lova></div>The Custom Script extension <b>integrates with Azure Resource Manager templates</b>, and can also be <b>used with the Azure CLI, Azure PowerShell, Azure portal, or the REST API</b>.<div lova></div></span></div></div></div>

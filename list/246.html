@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 92 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT<div lova></div> -<div lova></div><div lova></div>Your network contains an on-premises Active Directory Domain Services (AD DS) domain.<div lova></div><div lova></div>The domain contains the identities shown in the following table.<div lova></div><div lova></div><img src="img/246_0.png"><div lova></div><div lova></div>You have an Azure subscription that contains a storage account named storage1. The file shares in storage1 have an identity source of AD DS and Default share-level permissions set to Enable permissions for all authenticated users and groups.<div lova></div><div lova></div>You create an Azure Files share named share1 that has the roles shown in the following table.<div lova></div><div lova></div><img src="img/246_1.png"><div lova></div><div lova></div>You have a Microsoft Entra tenant that contains a cloud-only user named User3.<div lova></div><div lova></div>You use Microsoft Entra Connect to sync OU1 from the AD DS domain to the Microsoft Entra tenant.<div lova></div><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/246_2.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/246_3.png"><div lova></div><div lova></div>User1 can access content in share1. — Yes<div lova></div><div lova></div>User2 can access content in share1. — Yes<div lova></div><div lova></div>User3 can access content in share1. — No<div lova></div><div lova></div><h4><div lova></div>Explanation of right options:</h4><div lova></div><div lova></div><b>User1 can access content in share1. — Yes</b><div lova></div>User1 is a member of <b>Group1</b> (a global group in OU1), and Group1 is assigned the <b>Storage File Data SMB Share Contributor</b> role on share1. Because OU1 is synced to Microsoft Entra and storage1 uses AD DS as the identity source, User1 can authenticate and access share1 through group membership.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>User2 can access content in share1. — Yes</b><div lova></div>User2 is directly assigned the <b>Storage File Data SMB Share Reader</b> role on share1 and is in OU1, which is synced to Microsoft Entra. User2 can authenticate and access share1 as a reader.<div lova></div><div lova></div><b>User3 can access content in share1. — No</b><div lova></div>User3 is a <b>cloud-only user</b> in Microsoft Entra and is not present in AD DS or its synced OU1. Since the identity source for storage1 is AD DS, User3 cannot authenticate to access share1.<div lova></div></span></div></div></div>

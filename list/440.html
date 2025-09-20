@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 67 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains two virtual machines as shown in the following table.<div lova></div><img class="in-exam-image" src="img/440_0.png"><div lova></div>You perform a reverse DNS lookup for 10.0.0.4 from VM2.<div lova></div>Which FQDN will be returned?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>vm1.core.windows.net</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>vm1.azure.com</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>vm1.westeurope.cloudapp.azure.com</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>vm1.internal.cloudapp.net</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>D.. <b>vm1.internal.cloudapp.net</b><div lova></div><div lova></div><b>Explanation of right option:</b><div lova></div><div lova></div>With only private IPs and default Azure DNS, a reverse DNS lookup for 10.0.0.4 from VM2 will return <b>vm1.internal.cloudapp.net</b>.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of the other options:</b><div lova></div><div lova></div><b>A.. vm1.core.windows.net</b> — Not used for Azure VM DNS.<div lova></div><div lova></div><b>B.. vm1.azure.com</b> — Not a valid Azure VM FQDN.<div lova></div><div lova></div><b>C.. vm1.westeurope.cloudapp.azure.com</b> — Only valid for VMs with a public IP, which is not shown in this scenario.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>According to Azure DNS behavior:<div lova></div><div lova></div>- For VMs with only private IPs and using default (Azure-provided) DNS, the reverse DNS FQDN returned is <b>[vmname].internal.cloudapp.net</b>.<div lova></div><div lova></div>- The FQDN <b>[vmname].[location].cloudapp.azure.com</b> is only registered if the VM has a public IP, which is not indicated in your scenario.<div lova></div><div lova></div>- If the VNet is linked to a private DNS zone as a registration network, both <b>[vmname].[privatednszonename]</b> and <b>[vmname].internal.cloudapp.net</b> can be returned.</span></div></div></div>

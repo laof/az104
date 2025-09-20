@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 22 Topic: 6</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription that has diagnostic logging enabled and is configured to send logs to a Log Analytics workspace.<div lova></div>You are investigating a service outage.<div lova></div>You need to view the event time, the event name, and the affected resources.<div lova></div>How should you complete the query? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/545_0.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/545_1.jpg"><div lova></div><div lova></div><b>1. AzureActivity<div lova></div><div lova></div>2. project</b><div lova></div><div lova></div><h4><div lova></div>Explanation of Right Option</h4><b>AzureActivity</b> is the correct table because it contains records of management events in your Azure subscription, including service health events, outages, and operational actions. Filtering with <b>Where Level == 'Critical'</b> selects only critical events. <div lova></div><div lova></div>Using <b>project</b> lets you select and display only the required columns: <b>TimeGenerated</b> (event time), <b>OperationNameValue</b> (event name), and <b>_ResourceId</b> (affected resources).<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>Heartbeat<div lova></div><b>Heartbeat</b> tracks VM health/availability but does not log management or outage events.<div lova></div><div lova></div>NetworkMonitoring<div lova></div><b>NetworkMonitoring</b> contains network-related monitoring data, not general Azure activity or outage logs.<div lova></div><div lova></div>Perf<div lova></div><b>Perf</b> reports performance metrics (CPU, memory, etc.), not service outage or event details.<div lova></div><div lova></div>extend, join, print<div lova></div><b>extend</b> adds calculated columns, not used here. <b>join</b> combines tables, which is not required. <b>print</b> outputs static values, not used for selecting columns.</span></div></div></div>

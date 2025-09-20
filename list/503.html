@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 130 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have two Azure subscriptions named Sub1 and Sub2 that are linked to separate Microsoft Entra tenants.<div lova></div><div lova></div><img src="img/503_0.png"><div lova></div><div lova></div>You have the virtual networks shown in the following table.<div lova></div><div lova></div>Which virtual networks can you peer with VNet1?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>VNet2 only</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>VNet2 and VNet3 only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>VNet2 and VNet4 only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>VNet2, VNet3, and VNet4 only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="E.">E..</span>VNet2, VNet3, VNet4, and VNet5</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B..VNet2 and VNet3 only</b> — You can only peer VNets within the same Microsoft Entra tenant. VNet1 (in Sub1) can peer with VNet2 and VNet3 (also in Sub1), but not with VNet4 or VNet5 (both in Sub2, a <b>different tenant</b>).<div lova></div>-----------------<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div><b>Same Subscription</b>: Yes, VNets in the same subscription can be peered directly.<div lova></div><b>Different Subscriptions</b>: Yes, VNets in different subscriptions can also be peered as long as they are in the same Azure Active Directory (AAD) tenant (Microsoft Entra tenant). This is known as cross-subscription peering.<div lova></div><div lova></div>Key Point: If VNets are in different subscriptions but in <b>the same Entra tenant</b>, peering is allowed. If the subscriptions are linked to different Entra tenants, peering is not allowed.<div lova></div></span></div></div></div>

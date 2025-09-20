@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 63 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription named Subscription1 that contains an Azure Log Analytics workspace named Workspace1.<div lova></div><div lova></div>You need to view the error events from a table named Event.<div lova></div><div lova></div>Which query should you run in Workspace1?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>select * from Event where EventType == "error"</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Event | search "error"</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Event | where EventType is "error"</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Get-Event Event | where {$_.EventType == "error"}</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Correct Answer:</h4>B.. <b>Event | search "error"</b><div lova></div><div lova></div><b>Explanation:</b> In Azure Log Analytics, the correct query language is <b>Kusto Query Language (KQL)</b>. The query <b>Event | search "error"</b> is valid KQL syntax and searches for the term "error" across all columns in the <b>Event</b> table. This is the most straightforward way to find error-related events.<div lova></div><div lova></div>-----------------<h4><div lova></div>Other Options:</h4>A.. select * from Event where EventType == "error"<div lova></div><div lova></div>This is SQL syntax, not KQL, and is not valid in Log Analytics.<div lova></div><div lova></div>C.. Event | where EventType is "error"<div lova></div><div lova></div>This is close, but the correct KQL syntax uses <b>==</b> for equality, not <b>is</b>.<div lova></div><div lova></div>D.. Get-Event Event | where {$_.EventType == "error"}<div lova></div><div lova></div>This is PowerShell syntax, not KQL, and cannot be used in Log Analytics queries.</span></div></div></div>

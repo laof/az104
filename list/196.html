@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 42 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure Storage account named storage1 that contains a blob container. The blob container has a default access tier of Hot. Storage1 contains a container named conainer1.<div lova></div>You create lifecycle management rules in storage1 as shown in the following table.<div lova></div><img class="in-exam-image" src="img/196_0.png"><div lova></div>You perform the actions shown in the following table.<div lova></div><img class="in-exam-image" src="img/196_1.png"><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/196_2.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/196_3.png"><h4><div lova></div>Explanations of right options:</h4><b>No</b><div lova></div>for Dep1File1.docx: <b>Rule1</b> applies to blobs with prefix container1/Dep1. Dep1File1.docx was last modified on October 2. By October 10, it has not been modified for 8 days; Rule1 says if not modified for 2 days, move to archive, and if not modified for 9 days, delete. On October 10, it's not deleted yet, but it is in the <b>archive tier</b>, which means it cannot be read unless rehydrated.<div lova></div><div lova></div><b>Yes</b><div lova></div>for File2.docx: <b>Rule2</b> applies to all blobs. File2.docx was last modified on October 5, so by October 10, it's only 5 days old. Rule2 moves blobs to cool storage after 3 days and archive after 9 days, so File2.docx is in <b>cool storage</b> and can still be read.<div lova></div><div lova></div><b>Yes</b><div lova></div>for File3.docx: <b>Rule2</b> applies. File3.docx was last modified on October 2, so by October 10, it's 8 days old. It would have been moved to cool storage after 3 days, but not yet to archive (that happens at 9 days). It can still be read.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of other options:</b><div lova></div>Yes for Dep1File1.docx – Incorrect, because it is in archive tier and can't be read directly.<div lova></div>No for File2.docx – Incorrect, because File2.docx is only in cool storage and can be read.<div lova></div>No for File3.docx – Incorrect, because File3.docx is also only in cool storage and can be read.<div lova></div></span></div></div></div>

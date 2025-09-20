@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 144 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains the virtual networks shown in the following table.<div lova></div><div lova></div><img src="img/517_0.png"><div lova></div><div lova></div>The subscription contains the virtual machines shown in the following table.<div lova></div><div lova></div><img src="img/517_1.png"><div lova></div><div lova></div>All the virtual machines have only private IP addresses.<div lova></div><div lova></div>You deploy an Azure Bastion host named Bastion1 to VNet1.<div lova></div><div lova></div>To which virtual machines can you connect through Bastion1?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>VM1 only</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>VM1 and VM2 only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>VM1 and VM3 only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>VM1, VM2, and VM3</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B..VM1 and VM2 only</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><h4><div lova></div>Explanation of Right Options</h4><div lova></div><b>B..VM1 and VM2 only</b> Bastion1 is deployed in VNet1. You can connect to VMs in peered VNets as long as peering allows traffic. VNet1 is peered with VNet2 (and VNet2 with VNet3), so you can connect to <b>VM1</b> (in VNet1) and <b>VM2</b> (in VNet2) through Bastion1.<div lova></div><div lova></div><h4><div lova></div>Explanation of Other Options</h4><div lova></div><b>A..VM1 only</b> is incorrect because you can also reach VM2 in the directly peered VNet2.<div lova></div><b>C..VM1 and VM3 only</b> is incorrect because there is no direct peering between VNet1 and VNet3; VNet3 is only peered with VNet2, so Bastion1 in VNet1 cannot reach VM3.<div lova></div><b>D..VM1, VM2, and VM3</b> is incorrect because, due to peering configuration, Bastion1 cannot connect to VM3 in VNet3.</span></div></div></div>

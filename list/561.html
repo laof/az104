@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 38 Topic: 6</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains eight virtual machines and the resources shown in the following table.<div lova></div><div lova></div><img src="img/561_0.png"><div lova></div><div lova></div>You need to configure access for VNET1. The solution must meet the following requirements:<div lova></div><div lova></div>• The virtual machines connected to VNET1 must be able to communicate with the virtual machines connected to VNET2 by using the Microsoft backbone.<div lova></div>• The virtual machines connected to VNET1 must be able to access storage1, storage2, and Azure AD by using the Microsoft backbone.<div lova></div><div lova></div>What is the minimum number of service endpoints you should add to VNET1?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>1</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>2</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>3</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>5</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B. 2</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Right Options:</b><div lova></div><div lova></div>To allow VNET1 VMs to access <b>storage1</b> and <b>storage2</b> using the Microsoft backbone, you need a <b>Microsoft.Storage</b> service endpoint. To access <b>Azure AD</b>, you need a <b>Microsoft.AzureActiveDirectory</b> service endpoint. Communication between VNET1 and VNET2 can be achieved with VNet peering and does not require a service endpoint. Therefore, the minimum number of service endpoints required is <b>2</b>: one for <b>Storage</b> and one for <b>Azure AD</b>.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Options:</b><div lova></div><div lova></div><b>1</b>: Incorrect, because you need to enable both <b>Storage</b> and <b>Azure AD</b> endpoints for the listed requirements.<div lova></div><div lova></div><b>3</b>: Incorrect, because only two service endpoints are needed (not for Key Vault or other services mentioned).<div lova></div><div lova></div><b>5</b>: Incorrect, as there is no requirement for five different endpoint types in this scenario.<div lova></div></span></div></div></div>

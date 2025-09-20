@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 25 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription named Subscription1 that has a subscription ID of c276fc76-9cd4-44c9-99a7-4fd71546436e.<div lova></div>You need to create a custom RBAC role named CR1 that meets the following requirements:<div lova></div>✑ Can be assigned only to the resource groups in Subscription1<div lova></div>✑ Prevents the management of the access permissions for the resource groups<div lova></div>✑ Allows the viewing, creating, modifying, and deleting of resources within the resource groups<div lova></div>What should you specify in the assignable scopes and the permission elements of the definition of CR1? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/65_0.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/65_1.png"><h4><div lova></div>Question 2-25</h4><b>Correct Answer:</b><div lova></div><div lova></div><b>"assignableScopes": ["/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e/resourceGroups"]</b><div lova></div><div lova></div><b>"notActions": ["Microsoft.Authorization/*"]</b><div lova></div><div lova></div><b>Explanation:</b><div lova></div><div lova></div><b>Assignable Scopes:</b> To ensure the custom role <b>CR1</b> can only be assigned to <b>resource groups</b> within the subscription, the assignable scope must be set to the <b>resourceGroups</b> path of the subscription. This restricts the role from being assigned at the subscription or management group level.<div lova></div><div lova></div><b>Permissions:</b> The role should allow full management of resources (via <b>"actions": ["*"]</b>) but must <b>prevent access management</b>. To do this, <b>"Microsoft.Authorization/*"</b> must be included in <b>"notActions"</b>. This blocks permission-related operations while still allowing resource CRUD operations.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>"/"</b>: Incorrect. This would allow assignment at the root level, which is broader than required.<div lova></div><div lova></div><b>"/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e"</b>: Incorrect. This allows assignment at the subscription level, not limited to resource groups.<div lova></div><div lova></div><b>"/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e/resourceGroups"</b>: Correct. This scope restricts assignment to resource groups only.<div lova></div><div lova></div><b>"Microsoft.Authorization/*"</b>: Correct. This prevents the role from managing access permissions.<div lova></div><div lova></div><b>"Microsoft.Resources/*"</b> and <b>"Microsoft.Security/*"</b>: Incorrect. These would block general resource and security operations, which contradicts the requirement to allow full resource management.</span></div></div></div>

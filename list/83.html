@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 43 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have a registered DNS domain named contoso.com.<div lova></div>You create a public Azure DNS zone named contoso.com.<div lova></div>You need to ensure that records created in the contoso.com zone are resolvable from the internet.<div lova></div>What should you do?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Create NS records in contoso.com.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Modify the SOA record in the DNS domain registrar.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Create the SOA record in contoso.com.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Modify the NS records in the DNS domain registrar.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Question 2-43</h4><b>Correct Answer:</b> D. Modify the NS records in the DNS domain registrar – To make the <b>Azure DNS zone</b> authoritative for <b>contoso.com</b>, you must <b>update the NS records</b> at your domain registrar to point to the Azure DNS name servers. This ensures that DNS queries from the internet are directed to Azure DNS.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Options:</b><div lova></div><div lova></div><b>A. Create NS records in contoso.com</b> – Incorrect. Azure automatically creates NS records in the zone. These are used for delegating subdomains, not for making the zone resolvable from the internet.<div lova></div><div lova></div><b>B. Modify the SOA record in the DNS domain registrar</b> – Incorrect. The SOA record is managed by Azure DNS and does not need to be modified at the registrar.<div lova></div><div lova></div><b>C. Create the SOA record in contoso.com</b> – Incorrect. Azure DNS automatically creates the SOA record when the zone is created; no manual creation is needed.</span></div></div></div>

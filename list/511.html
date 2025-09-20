@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 138 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div><div lova></div>You have an Azure subscription that contains the virtual networks shown in the following table.<div lova></div><div lova></div><img src="img/511_0.png"><div lova></div><div lova></div>The subscription contains the subnets shown in the following table.<div lova></div><div lova></div><img src="img/511_1.png"><div lova></div><div lova></div>The subscription contains the storage accounts shown in the following table.<div lova></div><div lova></div><img src="img/511_2.png"><div lova></div><div lova></div>You create a service endpoint policy named Policy1 in the South Central US Azure region to allow connectivity to all the storage accounts in the subscription.<div lova></div><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/511_3.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/511_4.png"><h4><div lova></div>Correct Options</h4><div lova></div><b>Policy1 can be applied to Subnet3.</b> No<div lova></div><div lova></div><b>Only storage1 and storage2 can be accessed from VNet2.</b> No<div lova></div><div lova></div><b>Only storage2 can be accessed from VNet3.</b> No<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><h4><div lova></div>Explanation of Right Options</h4><div lova></div><b>Policy1 can be applied to Subnet3.</b> No<div lova></div>Service endpoint policies can only be applied to subnets in the same region where the policy is created and for supported storage account kinds (StorageV2). Policy1 is in South Central US and Subnet3 is in South Central US, but storage2 is BlobStorage (not supported by endpoint policy), and the policy is to allow connectivity to all storage accounts, so applying to Subnet3 would not restrict access to only StorageV2. The correct answer is No.<div lova></div><div lova></div><b>Only storage1 and storage2 can be accessed from VNet2.</b> No<div lova></div>Subnet2 in VNet2 has a Microsoft.Storage service endpoint, which allows access to any storage account with Microsoft.Storage endpoint, including storage3. There is no restriction that only storage1 and storage2 can be accessed; all storage accounts in the subscription can be accessed unless restricted by policies, which is not the case here.<div lova></div><div lova></div><b>Only storage2 can be accessed from VNet3.</b> No<div lova></div>Subnet3 in VNet3 has a Microsoft.Storage service endpoint. It can access all storage accounts with a Microsoft.Storage endpoint, including storage1 and storage3 (both StorageV2), as well as storage2 (BlobStorage). There is no such restriction that only storage2 can be accessed from VNet3.<div lova></div><h4><div lova></div>Explanation of Other Options</h4><div lova></div>All statements are <b>No</b> because the region, storage account kind, and service endpoint configurations do not restrict access in the way the statements describe. Service endpoint policies require both the subnet and the policy to be in the same region and only support StorageV2, and service endpoint configuration allows access to all storage accounts with Microsoft.Storage endpoints unless explicitly limited by policy.</span></div></div></div>

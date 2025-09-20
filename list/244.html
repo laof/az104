@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 90 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div><div lova></div>You have an Azure Storage account named contoso2024 that contains the resources shown in the following table.<div lova></div><div lova></div><img src="img/244_0.png"><div lova></div><div lova></div>You have users that have permissions for contoso2024 as shown in the following table.<div lova></div><div lova></div><img src="img/244_1.png"><div lova></div><div lova></div>The contoso2024 account is configured as shown in the following exhibit.<div lova></div><div lova></div><img src="img/244_2.png"><div lova></div><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/244_3.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/244_4.png"><div lova></div><div lova></div>User1 can read File1. — No<div lova></div><div lova></div>User2 can read File2. — No<div lova></div><div lova></div>User3 can read File1 and File2. — No<div lova></div><div lova></div><h4><div lova></div>Explanation of right options:</h4><b>User1 can read File1. — No</b><div lova></div>User1 has the <b>Reader role</b> on the storage account, which allows viewing account configuration and metadata but does <b>not</b> grant permission to read actual data inside blobs or file shares. Even if <b>Allow Blob public access</b> is <b>Enabled</b> at the storage account level, the <b>blob container</b> itself (container1) must also have its <b>public access level</b> set to allow anonymous read access. By default, blob containers are private. There is no evidence that <b>container1</b> is set to public access, so <b>User1</b> still cannot read files by public (anonymous) access.<div lova></div><div lova></div><b>User2 can read File2. — No</b><div lova></div>User2 has the <b>Storage Account Contributor role</b>, which allows managing the storage account's settings and resources but <b>does not</b> allow reading data within blobs or file shares. Data access requires <b>Storage Blob Data Reader</b> or having the access key.<div lova></div><div lova></div><b>User3 can read File1 and File2. — No</b><div lova></div>Although User3 has an <b>access key</b> for the storage account, the setting <b>Allow storage account key access</b> is <b>Disabled</b>. This means that even with the key, User3 cannot use it to access any blob or file data in the account.</span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 46 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have Azure virtual machines that run Windows Server 2019 and are configured as shown in the following table.<div lova></div><img class="in-exam-image" src="img/419_0.png"><div lova></div>You create a public Azure DNS zone named adatum.com and a private Azure DNS zone named contoso.com.<div lova></div>For controso.com, you create a virtual network link named link1 as shown in the exhibit. (Click the Exhibit tab.)<div lova></div><img class="in-exam-image" src="img/419_1.jpg"><div lova></div>You discover that VM1 can resolve names in contoso.com but cannot resolve names in adatum.com. VM1 can resolve other hosts on the Internet.<div lova></div>You need to ensure that VM1 can resolve host names in adatum.com.<div lova></div>What should you do?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Update the DNS suffix on VM1 to be adatum.com</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Configure the name servers for adatum.com at the domain registrar</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Create an SRV record in the contoso.com zone</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Modify the Access control (IAM) settings for link1</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B..Configure the name servers for adatum.com at the domain registrar</b><div lova></div> — VM1 can resolve names in <b>contoso.com</b> (private Azure DNS zone) because VNET1 is linked to that private zone. However, for <b>adatum.com</b>, which is a public Azure DNS zone, VM1 uses standard Internet DNS resolution. If names in adatum.com cannot be resolved, it's likely because the public DNS zone is not properly delegated at the domain registrar. To ensure global DNS resolution, you must configure the <b>name servers for adatum.com at the domain registrar</b> to point to the Azure DNS-provided name servers.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..Update the DNS suffix on VM1 to be adatum.com<div lova></div> — <b>Incorrect:</b> The DNS suffix only affects the default domain for unqualified name resolution; it does not configure DNS servers or delegation, so it won't help VM1 resolve adatum.com if DNS is not delegated.<div lova></div><div lova></div>C..Create an SRV record in the contoso.com zone<div lova></div> — <b>Incorrect:</b> SRV records are for service location, not for cross-zone name resolution. This would not allow VM1 to resolve adatum.com.<div lova></div><div lova></div>D..Modify the Access control (IAM) settings for link1<div lova></div> — <b>Incorrect:</b> IAM settings control who can manage the link resource, not DNS resolution behavior. This does not address the DNS delegation required for adatum.com.<div lova></div></span></div></div></div>

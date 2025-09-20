@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 109 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div><div lova></div>You have an Azure subscription that contains the resources shown in the following table.<div lova></div><div lova></div><img src="img/149_0.png"><div lova></div><div lova></div>You plan to use an Azure key vault to provide a secret to app1.<div lova></div><div lova></div>What should you create for app1 to access the key vault, and from which key vault can the secret be used? To answer, select the appropriate options in the answer area.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/149_1.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/149_2.png"><h4><div lova></div>Correct Answer:</h4><b>Create a:</b> <b>Managed identity</b> <div lova></div><div lova></div><b>Use the secret from:</b> <b>Vault1, Vault2, or Vault3</b> <div lova></div><div lova></div>-----------------<h4><div lova></div>Explanation of Correct Options:</h4><b>Managed identity</b>: <div lova></div><div lova></div>Managed identities are the recommended way for Azure resources like container apps to securely access other Azure services, including Key Vault, without managing credentials. <div lova></div><div lova></div><b>Vault1, Vault2, or Vault3</b>: <div lova></div><div lova></div>App1 can access any Key Vault in the same region (East US) as long as it has the correct permissions. The resource group does not restrict access; what matters is the region and access policy or role assignment. <div lova></div><div lova></div>-----------------<h4><div lova></div>Explanation of Other Options:</h4><b>Private endpoint</b>: <div lova></div><div lova></div>This is used to access Key Vault over a private IP within a virtual network, but it does not grant identity or access permissions. <div lova></div><div lova></div><b>Service principal</b>: <div lova></div><div lova></div>Service principals are used for app registrations and are more complex to manage than managed identities for Azure resources. <div lova></div><div lova></div><b>User account</b>: <div lova></div><div lova></div>User accounts are not used for app-to-service authentication in production scenarios. <div lova></div><div lova></div><b>Vault1 only</b>: <div lova></div><div lova></div>This unnecessarily limits the app to a single vault, even though others are accessible. <div lova></div><div lova></div><b>Vault1 and Vault3 only</b>: <div lova></div><div lova></div>There is no reason to exclude Vault2 if all are in the same region and accessible. <div lova></div><div lova></div><b>Only vaults in RG2</b>: <div lova></div><div lova></div>Resource group does not limit access; permissions and region do.</span></div></div></div>

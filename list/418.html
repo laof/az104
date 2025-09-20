@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 45 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains the resources shown in the following table.<div lova></div><img class="in-exam-image" src="img/418_0.png"><div lova></div>You need to create a network interface named NIC1.<div lova></div>In which location can you create NIC1?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>East US and North Europe only</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>East US only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>East US, West Europe, and North Europe</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>East US and West Europe only</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B..East US only</b><div lova></div> — A network interface (<b>NIC1</b>) must be created in the same <b>region</b> as the associated <b>virtual network (VNet)</b>. In this scenario, <b>VNET1</b> is in <b>East US</b>, so <b>NIC1</b> must also be created in <b>East US</b> to be able to connect to VNET1. Azure requires that the NIC and the VNet are in the same region for association.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..East US and North Europe only<div lova></div> — <b>Incorrect</b>: The NIC must be in the same location as the VNet (East US); North Europe is not valid because there is no VNet in North Europe.<div lova></div><div lova></div>C..East US, West Europe, and North Europe<div lova></div> — <b>Incorrect</b>: NIC1 cannot be created in West Europe or North Europe since the only VNet is in East US; NIC must be in the VNet's region.<div lova></div><div lova></div>D..East US and West Europe only<div lova></div> — <b>Incorrect</b>: Only East US is valid because the NIC must match the VNet's region; West Europe is not an option unless there is a VNet there.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>Before creating a network interface, you <b>must have an existing virtual network in the same location and subscription</b> you create a network interface in. If you try to create a NIC on a location that does not have any VNets you will get the following error: "The currently selected subscription and location lack any existing virtual networks. Create a virtual network first."</span></div></div></div>

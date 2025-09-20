@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 12 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure File sync group that has the endpoints shown in the following table.<div lova></div><img class="in-exam-image" src="img/166_0.png"><div lova></div>Cloud tiering is enabled for Endpoint3.<div lova></div>You add a file named File1 to Endpoint1 and a file named File2 to Endpoint2.<div lova></div>On which endpoints will File1 and File2 be available within 24 hours of adding the files? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/166_1.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/166_2.png"><h4><div lova></div>Correct Answers:</h4><b>File1: Endpoint1 only</b><div lova></div><div lova></div><b>File2: Endpoints1, Endpoints2, and Endpoints3</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation:</b><div lova></div><div lova></div>When <b>File1</b> is added to the <b>cloud endpoint</b> (Endpoint1), it will not immediately appear on the server endpoints. Azure File Sync relies on a <b>detection job</b> to scan the cloud endpoint, and this job runs every <b>24 hours</b>.<div lova></div><div lova></div>Therefore, within 24 hours of adding File1, it is guaranteed to be available only on <b>Endpoint1</b>. It may appear on Endpoint2 and Endpoint3 after the next scheduled scan, but not necessarily within the 24-hour window.<div lova></div><div lova></div><b>File2: Endpoints1, Endpoints2, and Endpoints3</b> – When a file is added to a <b>server endpoint</b> (Endpoint2), it is synced to the <b>cloud endpoint</b> (Endpoint1) and then to other <b>server endpoints</b> (Endpoint3) via the cloud. Again, Endpoint3 may tier the file, but it will still be visible and accessible.</span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 43 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription that contains the resources in the following table.<div lova></div><img class="in-exam-image" src="img/416_0.png"><div lova></div>You install the Web Server server role (IIS) on VM1 and VM2, and then add VM1 and VM2 to LB1.<div lova></div>LB1 is configured as shown in the LB1 exhibit. (Click the LB1 tab.)<div lova></div><img class="in-exam-image" src="img/416_1.png"><div lova></div>Rule1 is configured as shown in the Rule1 exhibit. (Click the Rule1 tab.)<div lova></div><img class="in-exam-image" src="img/416_2.jpg"><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/416_3.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/416_4.jpg"><div lova></div><div lova></div>1. VM1 is in the same availability set as VM2: <b>No</b><div lova></div> — The phrase "in the same availability set as VM2" confirms <b>VM2</b> is in an <b>availability set</b>, but there is no information about <b>VM1</b>'s availability set status, so you cannot assume they share the same one. <div lova></div><div lova></div>2. If Probe1.htm is present on VM1 and VM2, LB1 will balance TCP port 80 between VM1 and VM2: <b>Yes</b><div lova></div> — The health probe and load balancing rule for TCP/80 are configured; if Probe1.htm is available on both VMs, <b>LB1</b> will balance HTTP traffic between them. <div lova></div><div lova></div>3. If you delete Rule1, LB1 will balance all the requests between VM1 and VM2 for all the ports: <b>No</b><div lova></div> — Without any rule, <b>LB1</b> will not balance requests for any port; rules are required to direct traffic. <div lova></div><div lova></div>-----------------<div lova></div><div lova></div>1. <b>VM1 is in the same availability set as VM2</b>: The statement only confirms <b>VM2</b> is in an availability set, not <b>VM1</b>. The configuration and images do not mention <b>VM1</b>'s availability set status. Even if LB1 uses VM2 as a backend, it does not mean the backend pool is defined by an availability set; Azure Load Balancer backend pools can contain individual VMs, those in availability sets, or scale sets. <div lova></div>2. <b>If Probe1.htm is present on VM1 and VM2, LB1 will balance TCP port 80 between VM1 and VM2</b>: With a functional health probe (Probe1.htm) and a rule for TCP/80, LB1 will balance HTTP traffic between the VMs. If a VM fails the probe, it will not receive traffic. The backend pool does not have to be an availability set; it can be individual VMs. <div lova></div>3. <b>If you delete Rule1, LB1 will balance all the requests between VM1 and VM2 for all the ports</b>: Azure Load Balancer requires at least one rule to map frontend IP/port/protocol to the backend pool. Deleting Rule1 means no load balancing for any port; LB1 does not balance all ports by default. <div lova></div><div lova></div><b>Additional Points:</b> <div lova></div>The phrase "in the same availability set as VM2" confirms only <b>VM2</b> is in an availability set, not <b>VM1</b>. Using a VM in an availability set as a backend does not mean the backend pool is defined by an availability set. Backend pools can include standalone VMs or VMs in sets or scale sets. <div lova></div>Without rules, no requests are distributed, regardless of backend pool configuration.</span></div></div></div>

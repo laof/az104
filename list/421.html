@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 48 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription that contains the Azure virtual machines shown in the following table.<div lova></div><img class="in-exam-image" src="img/421_0.png"><div lova></div>You configure the network interfaces of the virtual machines to use the settings shown in the following table.<div lova></div><img class="in-exam-image" src="img/421_1.png"><div lova></div>From the settings of VNET1 you configure the DNS servers shown in the following exhibit.<div lova></div><img class="in-exam-image" src="img/421_2.png"><div lova></div>The virtual machines can successfully connect to the DNS server that has an IP address of 192.168.10.15 and the DNS server that has an IP address of<div lova></div>193.77.134.10.<div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/421_3.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/421_4.jpg"><div lova></div><div lova></div><b>VM1 connects to 193.77.134.10 for DNS queries: Yes</b><div lova></div><b>VM2 connects to 193.77.134.10 for DNS queries: No</b><div lova></div><b>VM3 connects to 192.168.10.15 for DNS queries: Yes</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..VM1 connects to 193.77.134.10 for DNS queries: <b>Yes</b> — <b>VM1</b> has its NIC DNS set to <b>None</b>, so it uses the custom DNS server configured on the VNET1 level, which is <b>193.77.134.10</b>.<div lova></div><div lova></div>B..VM2 connects to 193.77.134.10 for DNS queries: <b>No</b> — <b>VM2</b> has its NIC DNS server set to <b>192.168.10.15</b>, which overrides the VNET DNS server. Therefore, VM2 does not use 193.77.134.10 for DNS queries.<div lova></div><div lova></div>C..VM3 connects to 192.168.10.15 for DNS queries: <b>Yes</b> — <b>VM3</b> has its NIC DNS server set to <b>192.168.10.15</b>, so it uses this DNS server for all queries instead of the VNET DNS.<div lova></div><div lova></div>NIC-level DNS settings always <b>override</b> VNET-level settings. Only VMs without a custom DNS on their NIC (like VM1) will default to the VNET's DNS configuration.<div lova></div></span></div></div></div>

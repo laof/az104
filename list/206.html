@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 52 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT<div lova></div> -<div lova></div><div lova></div>You have an Azure subscription that contains a storage account named storage1. The storage1 account contains a container named container1.<div lova></div><div lova></div>You need to create a lifecycle management rule for storage1 that will automatically move the blobs in container1 to the lowest-cost tier after 90 days.<div lova></div><div lova></div>How should you complete the rule? To answer, select the appropriate options in the answer area.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/206_0.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/206_1.png"><div lova></div><div lova></div><b>tierToArchive</b><div lova></div><div lova></div><b>prefixMatch</b><div lova></div><div lova></div><b>Explanations of right options:</b><div lova></div><div lova></div><b>tierToArchive</b>: To move blobs to the lowest-cost tier (Archive) after 90 days, you must use <b>tierToArchive</b> in the <b>actions</b> section. This action ensures that after 90 days, the blobs are moved to the Archive tier, which is the lowest-cost storage tier in Azure.<div lova></div><div lova></div><b>prefixMatch</b>: To target blobs specifically in <b>container1</b>, use <b>prefixMatch</b> in the <b>filters</b> section and set its value to <b>container1/</b>. This way, the rule applies only to blobs in that container.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>enableAutoTierToHotFromCool</b>: <b>Incorrect</b>. This setting enables automatic tiering from Cool to Hot, not to the lowest-cost tier.<div lova></div><div lova></div><b>tierToCool</b>: <b>Incorrect</b>. While Cool is a lower-cost tier than Hot, Archive is the lowest-cost tier, so <b>tierToArchive</b> is the correct action.<div lova></div><div lova></div><b>blobIndexMatch</b>: <b>Incorrect</b>. This filter matches blobs by index tags, not by container or path.<div lova></div><div lova></div><b>blobTypes</b>: <b>Incorrect</b>. This filter matches by blob type (block, append, page), not by container.<div lova></div></span></div></div></div>

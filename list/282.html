@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 30 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription named Subscription1 that has the following providers registered:<div lova></div>✑ Authorization<div lova></div>✑ Automation<div lova></div>✑ Resources<div lova></div>✑ Compute<div lova></div>✑ KeyVault<div lova></div>✑ Network<div lova></div>✑ Storage<div lova></div>✑ Billing<div lova></div>✑ Web<div lova></div>Subscription1 contains an Azure virtual machine named VM1 that has the following configurations:<div lova></div>✑ Private IP address: 10.0.0.4 (dynamic)<div lova></div>✑ Network security group (NSG): NSG1<div lova></div>✑ Public IP address: None<div lova></div>✑ Availability set: AVSet<div lova></div>✑ Subnet: 10.0.0.0/24<div lova></div>✑ Managed disks: No<div lova></div>✑ Location: East US<div lova></div>You need to record all the successful and failed connection attempts to VM1.<div lova></div>Which three actions should you perform? Each correct answer presents part of the solution.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Enable Azure Network Watcher in the East US Azure region.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Add an Azure Network Watcher connection monitor.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Register the MicrosoftLogAnalytics provider.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Create an Azure Storage account.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="E.">E..</span>Register the Microsoft.Insights resource provider.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="F.">F..</span>Enable Azure Network Watcher flow logs.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>A..Enable Azure Network Watcher in the East US Azure region.<div lova></div>D..Create an Azure Storage account.<div lova></div>F..Enable Azure Network Watcher flow logs.<div lova></div><div lova></div><b>Explanation of right options:</b> <div lova></div><div lova></div><b>Azure Network Watcher</b> must be enabled in the relevant region to monitor network resources. <div lova></div><b>Enabling flow logs</b> on the NSG records connection attempts to VM1. <div lova></div>Flow logs must be stored, so you need an <b>Azure Storage account</b> to collect and analyze the log data.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>B..Add an Azure Network Watcher connection monitor: Connection monitor is used for tracking connectivity between resources, not for logging all connection attempts.<div lova></div>C..Register the MicrosoftLogAnalytics provider: Log Analytics is not required for enabling or storing NSG flow logs, although it can be useful for advanced analytics.<div lova></div>E..Register the Microsoft.Insights resource provider: This provider is related to Azure Monitor and metrics, not required for NSG flow logs or basic connection logging.</span></div></div></div>

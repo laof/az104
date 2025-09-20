@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 37 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have the Azure virtual machines shown in the following table.<div lova></div><img class="in-exam-image" src="img/410_0.png"><div lova></div>A DNS service is installed on VM1.<div lova></div>You configure the DNS servers settings for each virtual network as shown in the following exhibit.<div lova></div><img class="in-exam-image" src="img/410_1.png"><div lova></div>You need to ensure that all the virtual machines can resolve DNS names by using the DNS service on VM1.<div lova></div>What should you do?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Configure a conditional forwarder on VM1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Add service endpoints on VNET1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Add service endpoints on VNET2 and VNET3</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Configure peering between VNET1, VNET2, and VNET3</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>D</b>..Configure peering between VNET1, VNET2, and VNET3<div lova></div><div lova></div><b>Explanation:</b> To allow all virtual machines in different virtual networks to resolve DNS names using the DNS service installed on <b>VM1</b> (in VNET1), network connectivity is required between all VNETs. Configuring <b>peering between VNET1, VNET2, and VNET3</b> enables cross-VNET communication so that DNS requests from VMs in VNET2 and VNET3 can reach VM1.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..Configure a conditional forwarder on VM1<div lova></div><b>Explanation:</b> A conditional forwarder directs DNS queries for specific domains to another DNS server but does not provide the required network connectivity across VNETs for all VMs to reach VM1.<div lova></div>B..Add service endpoints on VNET1<div lova></div><b>Explanation:</b> Service endpoints provide secure, direct connectivity to Azure services, not to a custom DNS server running on a VM. This does not help VMs in other VNETs reach VM1 for DNS.<div lova></div>C..Add service endpoints on VNET2 and VNET3<div lova></div><b>Explanation:</b> Service endpoints do not enable connectivity to custom VMs in other VNETs. They are designed for Azure PaaS services, so this does not solve the DNS resolution requirement.<div lova></div></span></div></div></div>

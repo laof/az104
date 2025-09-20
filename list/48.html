@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 8 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription named AZPT1 that contains the resources shown in the following table:<div lova></div><img class="in-exam-image" src="img/48_0.png"><div lova></div>You create a new Azure subscription named AZPT2.<div lova></div>You need to identify which resources can be moved to AZPT2.<div lova></div>Which resources should you identify?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>VM1, storage1, VNET1, and VM1Managed only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>VM1 and VM1Managed only</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>VM1, storage1, VNET1, VM1Managed, and RVAULT1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>RVAULT1 only</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Question 2-8 Answer:</h4> A. VM1, storage1, VNET1, and VM1Managed only <div lova></div><div lova></div>-----------------<div lova></div><div lova></div> <h4>Explanation of Correct Option:</h4> A. VM1, storage1, VNET1, and VM1Managed only — These resources are eligible to be moved between subscriptions within the same tenant. Azure supports moving virtual machines, their managed disks, virtual networks, and storage accounts across subscriptions as long as both subscriptions are in the same Azure Active Directory tenant. <div lova></div><div lova></div>-----------------<h4><div lova></div>Explanation of Other Options:</h4> B. VM1 and VM1Managed only — Incorrect because storage1 and VNET1 can also be moved. <div lova></div> C. VM1, storage1, VNET1, VM1Managed, and RVAULT1 — Incorrect because Recovery Services vaults (RVAULT1) cannot be moved across subscriptions. <div lova></div> D. RVAULT only — Incorrect because Recovery Services vaults are not supported for subscription moves.<h4><div lova></div>Azure Services That Can't Be Moved Across Subscriptions:</h4> Recovery Services vaults, Azure AD Domain Services, diagnostic settings, support providers, AD Hybrid Health Service components, Azure Advisor configurations, certain alert types, API Management in Consumption SKU, App Service components like apiapps and gateways, HDInsight cluster networking resources, and any child resources whose parent cannot be moved [1](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources).</span></div></div></div>

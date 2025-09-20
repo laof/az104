@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 34 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have two Azure virtual machines named VM1 and VM2. You have two Recovery Services vaults named RSV1 and RSV2.<div lova></div>VM2 is backed up to RSV1.<div lova></div>You need to back up VM2 to RSV2.<div lova></div>What should you do first?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>From the RSV1 blade, click Backup items and stop the VM2 backup</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>From the RSV2 blade, click Backup. From the Backup blade, select the backup for the virtual machine, and then click Backup</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>From the VM2 blade, click Disaster recovery, click Replication settings, and then select RSV2 as the Recovery Services vault</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>From the RSV1 blade, click Backup Jobs and export the VM2 job</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>The first thing you should do is:</h4>A..From the RSV1 blade, click Backup items and stop the VM2 backup<div lova></div><h4><div lova></div>-----------------</h4><h4><div lova></div>Explanations of right option:</h4><b>A..From the RSV1 blade, click Backup items and stop the VM2 backup</b>: An Azure VM can only be backed up to one Recovery Services vault at a time. Before you can back up VM2 to RSV2, you must first stop (remove) the backup of VM2 from RSV1.<div lova></div><h4><div lova></div>-----------------</h4><h4><div lova></div>Explanation of other options:</h4>B..From the RSV2 blade, click Backup. From the Backup blade, select the backup for the virtual machine, and then click Backup: You cannot configure a new backup for a VM in a new vault (RSV2) while it is still being backed up in another vault (RSV1).<div lova></div>C..From the VM2 blade, click Disaster recovery, click Replication settings, and then select RSV2 as the Recovery Services vault: This option is for disaster recovery (replication), not backup.<div lova></div>D..From the RSV1 blade, click Backup Jobs and export the VM2 job: Exporting backup jobs does not move or stop the backup for VM2; you must stop the backup before configuring a new one in RSV2.<h4><div lova></div>If you want to change the recovery service vault you need to dissociate the previous RSV and delete the backup data. To delete backup data, you need to <b>stop the backup first</b>.<div lova></div>So:</h4>1. Stop the backup in RSV1 (D)<div lova></div>2. Remove the backup data.<div lova></div>3. Disassociate the VM in RSV1.<div lova></div>4. Associate the VM in RSV2.</span></div></div></div>

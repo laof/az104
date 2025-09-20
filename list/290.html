@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 38 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription named Subscription1 that contains the following resource group:<div lova></div>✑ Name: RG1<div lova></div>✑ Region: West US<div lova></div>✑ Tag: `tag1`: `value1`<div lova></div>You assign an Azure policy named Policy1 to Subscription1 by using the following configurations:<div lova></div>✑ Exclusions: None<div lova></div>✑ Policy definition: Append a tag and its value to resources<div lova></div>✑ Assignment name: Policy1<div lova></div>✑ Parameters:<div lova></div>✑ Tag name: tag2<div lova></div><div lova></div>Tag value: value2 -<div lova></div><img class="in-exam-image" src="img/290_0.png"><div lova></div>After Policy1 is assigned, you create a storage account that has the following configuration:<div lova></div>✑ Name: storage1<div lova></div>✑ Location: West US<div lova></div>✑ Resource group: RG1<div lova></div>✑ Tags: `tag3`: `value3`<div lova></div>You need to identify which tags are assigned to each resource.<div lova></div>What should you identify? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/290_1.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/290_2.jpg"><h4><div lova></div>Question 4-38 Part 2 Answer</h4><div lova></div><div lova></div><b>Tags assigned to RG1: "tag1": "value1" only</b><div lova></div><div lova></div><b>Tags assigned to storage1: "tag2": "value2" and "tag3": "value3" only</b><div lova></div><div lova></div><b>Explanation:</b><div lova></div><div lova></div>Tags assigned to RG1: "tag1": "value1" only — The policy only appends tags to new resources after its assignment, not to existing resources like RG1, so only the tag is present.<div lova></div>Tags assigned to storage1: "tag2": "value2" and "tag3": "value3" only — When storage1 is created, it gets the specified tag "tag3": "value3" and the policy appends "tag2": "value2".<div lova></div>Tags assigned to RG1: "tag2": "value2" only, "tag1": "value1" and "tag2": "value2" — These are incorrect because the policy does not retroactively add tags to existing resources at the time of assignment.<div lova></div>Tags assigned to storage1: "tag3": "value3" only, "tag1": "value1" and "tag3": "value3" only, "tag1": "value1", "tag2": "value2" and "tag3": "value3" — These are incorrect because only "tag2": "value2" is appended by policy and "tag1": "value1" is not assigned to storage1.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div><b>Tags applied to the resource group are not inherited by the resources in that resource group.</b> This means if you assign a tag to a resource group, its resources (such as VMs, storage accounts, etc.) do not automatically receive that tag. Each resource must be tagged individually if you want them to have the same tags as the resource group.</span></div></div></div>

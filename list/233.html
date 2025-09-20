@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 79 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains a virtual machine named VM1 and an Azure key vault named KV1.<div lova></div><div lova></div>You need to configure encryption for VM1. The solution must meet the following requirements:<div lova></div><div lova></div>•	Store and use the encryption key in KV1.<div lova></div>•	Maintain encryption if VM1 is downloaded from Azure.<div lova></div>•	Encrypt both the operating system disk and the data disks.<div lova></div><div lova></div>Which encryption method should you use?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>customer-managed keys</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Confidential disk encryption</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Azure Disk Encryption</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>encryption at host</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>C.. <b>Azure Disk Encryption</b><h4><div lova></div>Explanation of right options:</h4> <b>Azure Disk Encryption</b> meets all requirements: it uses keys stored in Key Vault (<b>KV1</b>), encrypts both OS and data disks, and maintains encryption if the VM is downloaded from Azure because the encryption is applied at the disk level, not just at the host.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A.. <b>customer-managed keys</b>: This is a key management option, not a full encryption method. It is often paired with other features but does not itself guarantee OS/data disk encryption or persistence after VM download.<div lova></div>B.. <b>Confidential disk encryption</b>: This is a new feature for confidential VMs, but does not guarantee disk encryption persists if VM is downloaded or for all VM types.<div lova></div>D.. <b>encryption at host</b>: This encrypts data only while it is processed by the Azure host and does not persist if the VM is downloaded. It also does not use Key Vault for key management.<h4><div lova></div>Additional:</h4><b>Azure Disk Encryption (ADE)</b> encrypts the <b>OS and data disks</b> of Azure virtual machines (VMs) inside your VMs by using the <b>DM-Crypt feature of Linux</b> or the <b>BitLocker feature of Windows</b>. ADE is integrated with <b>Azure Key Vault</b> to help you control and manage the disk encryption keys and secrets, with the option to encrypt with a key encryption key (KEK). This means it can <b>store and use the encryption key in KV1</b>, as per your requirement.<div lova></div></span></div></div></div>

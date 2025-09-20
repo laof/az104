@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 51 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an on-premises server that contains a folder named D:\Folder1.<div lova></div><div lova></div>You need to copy the contents of D:\Folder1 to the public container in an Azure Storage account named contosodata.<div lova></div><div lova></div>Which command should you run?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>az storage blob copy start D:\Folder1 https://contosodata.blob.core.windows.net/public</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>azcopy sync D:\folder1 https://contosodata.blob.core.windows.net/public --snapshot</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>azcopy copy D:\folder1 https://contosodata.blob.core.windows.net/public --recursive</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>az storage blob copy start-batch D:\Folder1 https://contosodata.blob.core.windows.net/public</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>C. azcopy copy D:\folder1 https://contosodata.blob.core.windows.net/public --recursive</b><div lova></div><div lova></div><b>Explanations of right options:</b><div lova></div><div lova></div><b>C. azcopy copy D:\folder1 https://contosodata.blob.core.windows.net/public --recursive</b>: <b>azcopy copy</b> is the correct command for copying files from a local folder to an Azure Blob container. The <b>--recursive</b> flag ensures that all files and subfolders within <b>D:\folder1</b> are copied to the blob container. This is the standard and recommended method for bulk uploads to Azure Blob Storage.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>A. az storage blob copy start D:\Folder1 https://contosodata.blob.core.windows.net/public</b>: <b>Incorrect</b>. The <b>az storage blob copy start</b> command is intended for copying blobs between storage accounts, not for uploading local files to Azure Blob Storage.<div lova></div><div lova></div><b>B. azcopy sync D:\folder1 https://contosodata.blob.core.windows.net/public --snapshot</b>: <b>Incorrect</b>. While <b>azcopy sync</b> is used for synchronizing the source and destination, the <b>--snapshot</b> parameter is not needed here, and <b>azcopy copy</b> is more appropriate for a straightforward copy operation.<div lova></div><div lova></div><b>D. az storage blob copy start-batch D:\Folder1 https://contosodata.blob.core.windows.net/public</b>: <b>Incorrect</b>. There is no <b>start-batch</b> command in <b>az storage blob copy</b>; this is not a valid Azure CLI command.<div lova></div></span></div></div></div>

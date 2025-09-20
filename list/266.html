@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 14 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You plan to move a distributed on-premises app named App1 to an Azure subscription.<div lova></div>After the planned move, App1 will be hosted on several Azure virtual machines.<div lova></div>You need to ensure that App1 always runs on at least eight virtual machines during planned Azure maintenance.<div lova></div>What should you create?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>one virtual machine scale set that has 10 virtual machines instances</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>one Availability Set that has three fault domains and one update domain</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>one Availability Set that has 10 update domains and one fault domain</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>one virtual machine scale set that has 12 virtual machines instances</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>A..one <b>virtual machine scale set</b> that has <b>10 virtual machines instances</b><div lova></div><div lova></div><b>Explanation of right option:</b> By default, 10 VMs in a scale set with 5 fault domains will be distributed as 2 VMs per fault domain. If one fault domain becomes unavailable, at least 8 VMs remain available. This configuration meets the requirement to ensure App1 always runs on at least eight virtual machines during planned Azure maintenance.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>B..one Availability Set that has three fault domains and one update domain<div lova></div><b>Explanation:</b> Only one update domain means all VMs could be updated at once, which does not guarantee any VMs remain available during maintenance.<div lova></div><div lova></div>C..one Availability Set that has 10 update domains and one fault domain<div lova></div><b>Explanation:</b> While 10 update domains help distribute updates, a single fault domain limits resilience against hardware failures and cannot guarantee eight VMs stay available.<div lova></div><div lova></div>D..one virtual machine scale set that has 12 virtual machines instances<div lova></div><b>Explanation:</b> This option also meets the requirement and provides a larger buffer, but it is not strictly necessary if 10 instances and fault domains already ensure at least 8 VMs are available.<div lova></div></span></div></div></div>

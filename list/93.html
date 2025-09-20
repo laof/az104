@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 53 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription named Subscription1 that contains a virtual network named VNet1. VNet1 is in a resource group named RG1.<div lova></div>Subscription1 has a user named User1. User1 has the following roles:<div lova></div>✑ Reader<div lova></div>✑ Security Admin<div lova></div>✑ Security Reader<div lova></div>You need to ensure that User1 can assign the Reader role for VNet1 to other users.<div lova></div>What should you do?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Remove User1 from the Security Reader role for Subscription1. Assign User1 the Contributor role for RG1.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Assign User1 the Owner role for VNet1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Assign User1 the Contributor role for VNet1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Assign User1 the Network Contributor role for VNet1.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Correct Answer:</h4>B.. <b>Assign User1 the Owner role for VNet1</b><div lova></div><div lova></div>-----------------<h4><div lova></div>Explanation of Correct Option:</h4>The <b>Owner</b> role includes all permissions of the <b>Contributor</b> role plus the ability to <b>manage role assignments</b> (i.e., assign roles to other users). To allow User1 to assign the <b>Reader</b> role for VNet1 to others, they must have <b>Microsoft.Authorization/roleAssignments/write</b> permission, which is included in the <b>Owner</b> role.<div lova></div><div lova></div>-----------------<h4><div lova></div>Explanation of Incorrect Options:</h4>A.. <b>Remove User1 from the Security Reader role for Subscription1. Assign User1 the Contributor role for RG1</b> — <b>Incorrect</b> because the Contributor role does not allow managing role assignments.<div lova></div><div lova></div>C.. <b>Assign User1 the Contributor role for VNet1</b> — <b>Incorrect</b> because Contributor can manage resources but cannot assign roles.<div lova></div><div lova></div>D.. <b>Assign User1 the Network Contributor role for VNet1</b> — <b>Incorrect</b> because this role allows managing network resources but not role assignments.<h4><div lova></div>Additional:</h4>Owner = Grants <b>full access to manage all resources</b>, including the ability to <b>assign roles in Azure RBAC</b>.<div lova></div><div lova></div>Contributor = Grants <b>full access to manage all resources</b>, but does <b>NOT</b> allow you to <b>assign roles in Azure RBAC</b>. (you cannot add users or change their rights)<div lova></div><div lova></div>User Access Administrator = Lets you <b>manage user access to Azure resources</b>.<div lova></div><div lova></div>Reader = <b>View all resources</b>, but does not allow you to make any changes.<div lova></div><div lova></div>Security Admin = <b>View and update permissions for Security Center</b>. Same permissions as the Security Reader role and can also update the security policy and dismiss alerts and recommendations.<div lova></div><div lova></div>Network Contributor = Lets you <b>manage networks</b>, but not access to them. (so you can add VNET, subnet, etc)</span></div></div></div>

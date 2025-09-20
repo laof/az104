@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 14 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure web app named webapp1.<div lova></div>You have a virtual network named VNET1 and an Azure virtual machine named VM1 that hosts a MySQL database. VM1 connects to VNET1.<div lova></div>You need to ensure that webapp1 can access the data hosted on VM1.<div lova></div>What should you do?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Deploy an internal load balancer</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Peer VNET1 to another virtual network</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Connect webapp1 to VNET1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Deploy an Azure Application Gateway</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>C. Connect webapp1 to VNET1</b> <div lova></div><div lova></div>This is the correct option. To allow an Azure web app (<b>webapp1</b>) to access resources (such as a MySQL database) hosted on a VM (<b>VM1</b>) within a virtual network (<b>VNET1</b>), you must use Azure's <b>Virtual Network Integration</b> feature for App Service. This enables private communication between the web app and the VM, so the web app can securely access the MySQL database without exposing it to the public internet.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>A. Deploy an internal load balancer</b> <div lova></div><div lova></div>This is not required for this scenario. An internal load balancer is used to distribute traffic among multiple VMs within a virtual network, but it does not connect a web app to a VNet.<div lova></div><div lova></div><b>B. Peer VNET1 to another virtual network</b> <div lova></div><div lova></div>Peering VNET1 with another VNet is not necessary. The requirement is for the web app to access VM1 in VNET1, not to establish connectivity between VNets.<div lova></div><div lova></div><b>D. Deploy an Azure Application Gateway</b> <div lova></div><div lova></div>Application Gateway is used for HTTP/HTTPS load balancing and web traffic management. It does not provide the required network-level integration to allow the web app to access the VM directly within the VNet.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>The VNet Integration feature has two variations:<div lova></div><div lova></div> - <b>Regional VNet Integration:</b> When you connect to Azure Resource Manager virtual networks in the <b>same region</b>, you must have a dedicated subnet in the VNet you’re integrating with.<div lova></div><div lova></div> - <b>Gateway-required VNet Integration:</b> When you connect to VNet in <b>other regions</b> or to a classic virtual network in the same region, you need an Azure Virtual Network gateway provisioned in the target VNet.<div lova></div><div lova></div> - If the VNet is in the same region, <b>either create a new subnet or select an empty preexisting subnet</b>.<b>The resources inside a VNet can communicate.</b></span></div></div></div>

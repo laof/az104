@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 25 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription named Subscription1 that contains the virtual networks in the following table.<div lova></div><img class="in-exam-image" src="img/398_0.png"><div lova></div>Subscription1 contains the virtual machines in the following table.<div lova></div><img class="in-exam-image" src="img/398_1.png"><div lova></div>In Subscription1, you create a load balancer that has the following configurations:<div lova></div>✑ Name: LB1<div lova></div>✑ SKU: Basic<div lova></div>✑ Type: Internal<div lova></div>✑ Subnet: Subnet12<div lova></div>✑ Virtual network: VNET1<div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/398_2.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/398_3.jpg"><div lova></div><div lova></div>LB1 can balance the traffic between VM1 and VM2. <b>Yes</b><div lova></div><div lova></div><b>Explanation of right options:</b> <b>LB1</b> can balance the traffic between <b>VM1</b> and <b>VM2</b> if both are in the same <b>VNet</b> as <b>LB1</b> and either both are in the same availability set or both are standalone VMs, according to <b>Basic Load Balancer</b> backend pool rules. Subnet does not restrict backend pool membership as long as all VMs are in the same VNet.<div lova></div><div lova></div><b>Other options:</b> If <b>VM1</b> and <b>VM2</b> are in different VNets, different availability sets (for Basic SKU), or mixed (one in availability set, one standalone), then <b>LB1</b> cannot balance traffic between them.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>LB1 can balance the traffic between VM3 and VM4. <b>Yes</b><div lova></div><div lova></div><b>Explanation of right options:</b> <b>LB1</b> can balance the traffic between <b>VM3</b> and <b>VM4</b> if both are in the same <b>VNet</b> as <b>LB1</b> and both satisfy the backend pool membership requirements (same availability set or both standalone). Subnet is not a restriction as long as they are in the same VNet.<div lova></div><div lova></div><b>Other options:</b> If <b>VM3</b> and <b>VM4</b> are not in the same <b>VNet</b> as <b>LB1</b>, or do not meet Basic Load Balancer backend pool requirements, <b>LB1</b> cannot balance their traffic.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>LB1 can balance the traffic between VM5 and VM6. <b>Yes</b><div lova></div><div lova></div><b>Explanation of right options:</b> <b>LB1</b> can balance the traffic between <b>VM5</b> and <b>VM6</b> if both are in the same <b>VNet</b> as <b>LB1</b> and both are standalone VMs (i.e., not in any availability set or scale set), since Basic Load Balancer backend pool can contain only standalone VMs if not using availability sets or scale sets.<div lova></div><div lova></div><b>Other options:</b> If <b>VM5</b> and <b>VM6</b> are not both standalone, or not in the same <b>VNet</b> as <b>LB1</b>, or mixed (one standalone, one in an availability set), <b>LB1</b> cannot balance their traffic.</span></div></div></div>

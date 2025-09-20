@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 33 Topic: 1</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Your company has an Azure Active Directory (Azure AD) subscription.<div lova></div>You need to deploy five virtual machines (VMs) to your company's virtual network subnet.<div lova></div>The VMs will each have both a public and private IP address. Inbound and outbound security rules for all of these virtual machines must be identical.<div lova></div>Which of the following is the least amount of security groups needed for this configuration?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>4</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>3</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>2</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>1</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>D. 1</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Correct Option:</b><div lova></div><div lova></div><b>D. 1</b> — This is the correct answer. Since all five virtual machines require <b>identical inbound and outbound security rules</b>, you can associate a single <b>Network Security Group (NSG)</b> with either the subnet or each VM’s network interface. Using one NSG simplifies management and ensures consistent security policies across all VMs.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Options:</b><div lova></div><div lova></div><b>A. 4</b> — Incorrect. This would mean using multiple NSGs unnecessarily, increasing complexity without any added benefit.<div lova></div><div lova></div><b>B. 3</b> — Incorrect. Still more than needed. One NSG is sufficient for identical rules.<div lova></div><div lova></div><b>C. 2</b> — Incorrect. Two NSGs might be used if there were different rule sets, but in this case, all VMs share the same rules, so only one is needed.</span></div></div></div>

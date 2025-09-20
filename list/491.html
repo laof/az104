@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 118 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains 10 virtual machines and the resources shown in the following table.<div lova></div><div lova></div><img src="img/491_0.png"><div lova></div><div lova></div>You need to ensure that Bastion1 can support 100 concurrent SSH users. The solution must minimize administrative effort.<div lova></div><div lova></div>What should you do first?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Resize the subnet of Bastion1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Configure host scaling.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Create a network security group (NSG)</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Upgrade Bastion1 to the Standard SKU</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>D..Upgrade Bastion1 to the Standard SKU<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..Resize the subnet of Bastion1: <b>Incorrect</b> — While subnet size can limit the number of possible sessions, the Basic SKU itself is the primary restriction for concurrent sessions. Resizing alone does not enable support for 100 SSH sessions on Basic SKU.<div lova></div><div lova></div>B..Configure host scaling: <b>Incorrect</b> — Host scaling is a feature available in the <b>Standard SKU</b> of Azure Bastion, not the Basic SKU. You must first upgrade to Standard before host scaling can be configured.<div lova></div><div lova></div>C..Create a network security group (NSG): <b>Incorrect</b> — NSGs control network traffic, but do not affect the maximum number of concurrent SSH users that Bastion1 can support.<div lova></div><div lova></div>D..Upgrade Bastion1 to the Standard SKU: <b>Correct</b> — <b>Upgrading to the Standard SKU</b> is required to support 100 concurrent SSH users, as the Basic SKU does not provide this capability. This also minimizes administrative effort since Standard SKU enables additional scaling and session features.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>When you configure Azure Bastion using the Basic SKU, two instances are created. If you use the <b>Standard SKU</b>, you can specify the number of instances. This is called <b>host scaling</b>.<div lova></div><div lova></div>Each instance can support <b>20 concurrent RDP connections and 40 concurrent SSH connections</b> for medium workloads. Once the concurrent sessions are exceeded, an additional scale unit (instance) is required.<div lova></div></span></div></div></div>

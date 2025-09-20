@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 7 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription that contains the resources shown in the following table:<div lova></div><img class="in-exam-image" src="img/47_0.png"><div lova></div>You assign a policy to RG6 as shown in the following table:<div lova></div><img class="in-exam-image" src="img/47_1.png"><div lova></div>To RG6, you apply the tag: RGroup: RG6.<div lova></div>You deploy a virtual network named VNET2 to RG6.<div lova></div>Which tags apply to VNET1 and VNET2? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/47_2.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/47_3.png"><div lova></div><div lova></div><b>Question 2-7 Answer:</b> <div lova></div><div lova></div>VNET1: <b>Department: D1 only</b> <div lova></div>VNET2: <b>Label: Value1 only</b> <div lova></div><div lova></div>-----------------<div lova></div><div lova></div> <b>Explanation of Correct Options:</b> <div lova></div><div lova></div><b>VNET1:</b> — This resource was created before the policy was assigned. It already has the tag <b>Department: D1</b>, and since Azure policies do not retroactively apply to existing resources unless a remediation task is run, it retains only this tag. <div lova></div><b>VNET2:</b> — This resource was created after the policy was assigned. The policy enforces the tag <b>Label: Value1</b> on all new resources in <b>RG6</b>. The tag <b>RGroup: RG6</b> applied to the resource group is not inherited by default, and the policy does not specify inheritance from the resource group, so VNET2 only gets <b>Label: Value1</b>. <div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>The policy assigned to <b>RG6</b> is of type <b>"Apply tag and its default value"</b>, which means it enforces the presence of a specific tag (<b>Label</b>) with a default value (<b>Value1</b>) on newly created resources. This policy does not copy or inherit tags like <b>RGroup: RG6</b> from the resource group. If <b>VNET2</b> ends up with <b>RGroup: RG6</b>, it must have been applied manually or through another mechanism, not by the policy shown.<div lova></div><div lova></div>To configure Azure Policy to <b>inherit tags from a parent resource group</b>, use the built-in policy definition called <b>"Inherit a tag from the resource group if missing"</b>. This policy uses the <b>modify</b> effect to apply a tag from the resource group to any new or updated resource that does not already have that tag.<div lova></div><div lova></div><b>Steps to Configure:</b> <div lova></div>1. In the Azure portal, go to <b>Policy</b> and select <b>Definitions</b>. <div lova></div>2. Search for and select the built-in policy named <b>"Inherit a tag from the resource group if missing"</b>. <div lova></div>3. Click <b>Assign</b> and set the <b>Scope</b> to the subscription or resource group where you want the policy to apply. <div lova></div>4. In <b>Parameters</b>, specify the <b>tag name</b> you want to inherit. <div lova></div>5. Complete the assignment and optionally create a <b>remediation task</b> to apply the tag to existing resources. <div lova></div><div lova></div>-----------------<div lova></div><div lova></div> <b>Notes:</b> - This policy only applies the tag if the resource does not already have it. <div lova></div> - It does not overwrite existing tag values. <div lova></div> - To apply the tag to existing resources, you must run a <b>remediation task</b>. <div lova></div> - This policy does not inherit all tags—only the one specified in the parameters.</span></div></div></div>

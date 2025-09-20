@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 68 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains 10 virtual machines, a key vault named Vault1, and a network security group (NSG) named NSG1. All the resources are deployed to the East US Azure region.<div lova></div><div lova></div>The virtual machines are protected by using NSG1. NSG1 is configured to block all outbound traffic to the internet.<div lova></div><div lova></div>You need to ensure that the virtual machines can access Vault1. The solution must use the principle of least privilege and minimize administrative effort<div lova></div><div lova></div>What should you configure as the destination of the outbound security rule for NSG1?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>an application security group</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>a service tag</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>an IP address range</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Correct Answer:</h4>B.. <b>a service tag</b><div lova></div><div lova></div><b>Explanation:</b> To allow virtual machines to access <b>Azure Key Vault</b> while minimizing administrative effort and following the <b>principle of least privilege</b>, you should use a <b>service tag</b> in the NSG outbound rule. The service tag <b>AzureKeyVault</b> represents the IP ranges used by the Key Vault service, and using it ensures that only traffic to Key Vault is allowed without needing to manage IP addresses manually.<div lova></div><div lova></div>-----------------<h4><div lova></div>Other Options:</h4>A.. an application security group<div lova></div><div lova></div>This is used to group VMs for NSG rules, not for targeting Azure services like Key Vault.<div lova></div><div lova></div>C.. an IP address range<div lova></div><div lova></div>This would require manually managing IPs for the Key Vault service, which is error-prone and not scalable. It also violates the goal of minimizing administrative effort.</span></div></div></div>

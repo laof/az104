@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 40 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure DNS zone named adatum.com.<div lova></div>You need to delegate a subdomain named research.adatum.com to a different DNS server in Azure.<div lova></div>What should you do?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Create an NS record named research in the adatum.com zone.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Create a PTR record named research in the adatum.com zone.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Modify the SOA record of adatum.com.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Create an A record named *.research in the adatum.com zone.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Question 2-40</h4><b>Correct Answer:</b> A. Create an NS record named research in the adatum.com zone – To <b>delegate a subdomain</b> like research.adatum.com to another DNS server, you must create a <b>name server (NS) record</b> in the parent zone (adatum.com) that points to the DNS servers responsible for the subdomain.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Options:</b><div lova></div><div lova></div><b>B. Create a PTR record named research in the adatum.com zone</b> – Incorrect. <b>PTR records</b> are used for reverse DNS lookups, not for delegating subdomains.<div lova></div><div lova></div><b>C. Modify the SOA record of adatum.com</b> – Incorrect. The <b>SOA (Start of Authority) record</b> defines authoritative information about the zone itself, not for delegating subdomains.<div lova></div><div lova></div><b>D. Create an A record named *.research in the adatum.com zone</b> – Incorrect. An <b>A record</b> maps a domain to an IP address and a wildcard A record does not delegate authority to another DNS server.<h4><div lova></div>Additional:</h4><b>An NS (Name Server) record</b> specifies which <b>authoritative name servers</b> are responsible for a DNS zone. You can include <b>multiple NS records</b> in your zone file to provide <b>redundancy</b> and improve the <b>reliability</b> of your DNS service.</span></div></div></div>

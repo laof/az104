@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 66 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an on-premises data center and an Azure subscription. The data center contains two VPN devices. The subscription contains an Azure virtual network named VNet1. VNet1 contains a gateway subnet.<div lova></div>You need to create a site-to-site VPN. The solution must ensure that if a single instance of an Azure VPN gateway fails, or a single on-premises VPN device fails, the failure will not cause an interruption that is longer than two minutes.<div lova></div>What is the minimum number of public IP addresses, virtual network gateways, and local network gateways required in Azure? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/439_0.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/439_1.png"><div lova></div><div lova></div><b>Public IP addresses:</b> 2<div lova></div><div lova></div><b>Virtual network gateways:</b> 1<div lova></div><div lova></div><b>Local network gateways:</b> 1<div lova></div><div lova></div><b>Explanation of right options:</b><div lova></div><div lova></div><b>Public IP addresses: 2</b> — For high availability and to avoid an outage longer than two minutes if an Azure VPN gateway instance fails, you must use an active-active VPN gateway configuration, which requires two public IP addresses.<div lova></div><div lova></div><b>Virtual network gateways: 1</b> — Only a single virtual network gateway (in active-active mode) is needed on the Azure side for redundancy.<div lova></div><div lova></div><b>Local network gateways: 1</b> — On the Azure side, you only need one local network gateway to represent the on-premises VPN endpoint(s), even if there are two VPN devices, as both can be defined under the same local network gateway resource.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of the other options:</b><div lova></div><div lova></div>Using only 1 public IP address does not provide redundancy. More than 2 public IPs are unnecessary for a single active-active Azure gateway.<div lova></div><div lova></div>More than 1 virtual network gateway is not needed because a single gateway can be configured for high availability.<div lova></div><div lova></div>More than 1 local network gateway is only required if you have multiple on-premises address spaces or endpoints to represent separately, but for a standard setup with two on-premises devices, a single local network gateway can suffice on the Azure side.</span></div></div></div>

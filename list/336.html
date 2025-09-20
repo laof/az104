@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 84 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT<div lova></div> -<div lova></div><div lova></div>You have an Azure subscription.<div lova></div><div lova></div>You create the following file named Deploy.json.<div lova></div><div lova></div><img src="img/336_0.png"><div lova></div><div lova></div>You connect to the subscription and run the following commands.<div lova></div><div lova></div><img src="img/336_1.png"><div lova></div><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/336_2.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/336_3.png"><div lova></div><div lova></div>The commands will create four new resources. <b>Yes</b><div lova></div><div lova></div>The commands will create storage accounts in the West US Azure region. <b>No</b><div lova></div><div lova></div>The first storage account that is created will have a prefix of 0. <b>Yes</b><div lova></div><div lova></div><b>Explanation of right options:</b><div lova></div><div lova></div><b>Yes (The commands will create four new resources.)</b>: The term "commands" includes both New-AzResourceGroup (which creates the resource group) and New-AzResourceGroupDeployment (which creates three storage accounts as defined in the ARM template). In total, four resources are created: one resource group and three storage accounts.<div lova></div><div lova></div><b>No (The commands will create storage accounts in the West US Azure region.)</b>: The resource group is created in "centralus" and the template uses [resourceGroup().location], so the storage accounts are created in Central US, not West US.<div lova></div><div lova></div><b>Yes (The first storage account that is created will have a prefix of 0.)</b>: The storage account name uses concat(copyIndex(),'storage',...), so the first resource will have a prefix of 0 (e.g., "0storage...").<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>No (The commands will create four new resources.)</b>: Incorrect because the commands do create four resources in total, as explained.<div lova></div><div lova></div><b>Yes (The commands will create storage accounts in the West US Azure region.)</b>: Incorrect because the region is actually Central US, inherited from the resource group location.<div lova></div><div lova></div><b>No (The first storage account that is created will have a prefix of 0.)</b>: Incorrect because copyIndex() starts from 0, so the prefix for the first account will be 0.<div lova></div></span></div></div></div>

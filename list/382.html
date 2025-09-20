@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 9 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription named Subscription1 that contains two Azure virtual networks named VNet1 and VNet2. VNet1 contains a VPN gateway named<div lova></div>VPNGW1 that uses static routing. There is a site-to-site VPN connection between your on-premises network and VNet1.<div lova></div>On a computer named Client1 that runs Windows 10, you configure a point-to-site VPN connection to VNet1.<div lova></div>You configure virtual network peering between VNet1 and VNet2. You verify that you can connect to VNet2 from the on-premises network. Client1 is unable to connect to VNet2.<div lova></div>You need to ensure that you can connect Client1 to VNet2.<div lova></div>What should you do?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Download and re-install the VPN client configuration package on Client1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Select Allow gateway transit on VNet1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Select Allow gateway transit on VNet2.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Enable BGP on VPNGW1</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>A. <b>Download and re-install the VPN client configuration package on Client1.</b><div lova></div> — This option is appropriate if the network topology has changed (such as adding new peering or address spaces). Re-downloading and installing the VPN client package on Client1 ensures that it receives the updated routes needed to access VNet2. Without the updated VPN client package, Client1 may not have the necessary configuration to connect to resources in VNet2.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>B. <b>Select Allow gateway transit on VNet1.</b><div lova></div> — This is the Azure-side configuration that enables the VPN gateway in VNet1 to provide transit connectivity to peered VNets like VNet2. Without this setting, point-to-site VPN clients may not be able to route traffic to VNet2, even with the correct client configuration.<div lova></div><div lova></div>C. <b>Select Allow gateway transit on VNet2.</b><div lova></div> — This setting is for allowing VNet2 to use a remote gateway and does not provide the required gateway transit for point-to-site clients connected to VNet1. It does not resolve the connectivity issue for Client1.<div lova></div><div lova></div>D. <b>Enable BGP on VPNGW1.</b><div lova></div> — BGP is used for dynamic routing, but the scenario specifies static routing is used. Enabling BGP will not address the connectivity requirement in this scenario.</span></div></div></div>

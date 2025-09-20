@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 61 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have two Azure subscriptions named Sub1 and Sub2.<div lova></div>An administrator creates a custom role that has an assignable scope to a resource group named RG1 in Sub1.<div lova></div>You need to ensure that you can apply the custom role to any resource group in Sub1 and Sub2. The solution must minimize administrative effort.<div lova></div>What should you do?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Select the custom role and add Sub1 and Sub2 to the assignable scopes. Remove RG1 from the assignable scopes.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Create a new custom role for Sub1. Create a new custom role for Sub2. Remove the role from RG1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Create a new custom role for Sub1 and add Sub2 to the assignable scopes. Remove the role from RG1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Select the custom role and add Sub1 to the assignable scopes. Remove RG1 from the assignable scopes. Create a new custom role for Sub2.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Correct Answer:</h4>A.. <b>Select the custom role and add Sub1 and Sub2 to the assignable scopes. Remove RG1 from the assignable scopes.</b><div lova></div><div lova></div><b>Explanation:</b> To apply a custom role across all resource groups in both <b>Sub1</b> and <b>Sub2</b>, you must set the <b>assignable scopes</b> of the role to the subscription level for both subscriptions. This allows the role to be assigned to any resource group within those subscriptions. Removing <b>RG1</b> from the assignable scopes ensures the role is not limited to just that resource group. This approach also <b>minimizes administrative effort</b> by using a single role definition.<div lova></div><div lova></div>-----------------<h4><div lova></div>Other Options:</h4>B.. Create a new custom role for Sub1. Create a new custom role for Sub2. Remove the role from RG1.<div lova></div><div lova></div>This works but increases administrative overhead by maintaining two separate roles instead of one.<div lova></div><div lova></div>C.. Create a new custom role for Sub1 and add Sub2 to the assignable scopes. Remove the role from RG1.<div lova></div><div lova></div>This is contradictory—creating a new role for Sub1 and adding Sub2 to its scope is not logically consistent. Also, it implies creating a new role unnecessarily.<div lova></div><div lova></div>D.. Select the custom role and add Sub1 to the assignable scopes. Remove RG1 from the assignable scopes. Create a new custom role for Sub2.<div lova></div><div lova></div>This again results in two roles, increasing administrative effort, which goes against the requirement to minimize it.</span></div></div></div>

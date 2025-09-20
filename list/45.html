@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 5 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have the Azure management groups shown in the following table:<div lova></div><img class="in-exam-image" src="img/45_0.png"><div lova></div>You add Azure subscriptions to the management groups as shown in the following table:<div lova></div><img class="in-exam-image" src="img/45_1.png"><div lova></div>You create the Azure policies shown in the following table:<div lova></div><img class="in-exam-image" src="img/45_2.png"><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/45_3.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/45_4.png"><div lova></div><div lova></div><b>Question 2-5 Answer:</b> <div lova></div>1. You can create a virtual network in Subscription1.<b> No</b> <div lova></div>2. You can create a virtual machine in Subscription2. <b>Yes</b><div lova></div>3. You can add Subscription1 to ManagementGroup11. <b>No </b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div> <b>Explanation:</b><div lova></div><div lova></div><b>1. You can create a virtual network in Subscription1.</b> — No, because the <b>Not allowed resource types</b> policy at the <b>Tenant Root Group</b> blocks <b>virtualNetworks</b>, and this applies to all child groups including <b>Subscription1</b>.<div lova></div> <b>2. You can create a virtual machine in Subscription2.</b> — The policy at the <b>Tenant Root Group</b> blocks only <b>virtualNetworks</b>, not virtual machines. The policy at <b>ManagementGroup12</b> allows <b>virtualNetworks</b> but does not restrict other types, so virtual machines are allowed. <div lova></div><b>3. You can add Subscription1 to ManagementGroup11.</b> — No, because <b>Subscription1</b> is already under <b>ManagementGroup21</b>, which is a child of <b>ManagementGroup11</b>. You cannot directly add it to <b>ManagementGroup11</b> without first removing it from its current group.<div lova></div><div lova></div><b>Additional:</b><div lova></div>The <b>most restrictive policy</b> always applies when there is a conflict between Azure policy rules at different scopes, such as between a <b>subscription</b> and the <b>tenant root group</b>. If the tenant-level policy denies a resource type and the subscription-level policy allows it, the <b>deny at the tenant level takes precedence</b> and the resource will be blocked.</span></div></div></div>

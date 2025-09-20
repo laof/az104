@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 44 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription that contains a storage account named storage1. The subscription is linked to an Azure Active Directory (Azure AD) tenant named contoso.com that syncs to an on-premises Active Directory domain.<div lova></div>The domain contains the security principals shown in the following table.<div lova></div><img class="in-exam-image" src="img/84_0.png"><div lova></div>In Azure AD, you create a user named User2.<div lova></div>The storage1 account contains a file share named share1 and has the following configurations.<div lova></div><img class="in-exam-image" src="img/84_1.png"><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/84_2.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/84_3.png"><h4><div lova></div>Question 2-44</h4><b>Correct Answers:</b><div lova></div><div lova></div><b>You can assign the Storage File Data SMB Share Contributor role to User1 for share1:</b> Yes – <b>User1</b> is a synced on-premises AD user, and since the storage account uses <b>AD DS authentication</b>, User1 can be assigned roles for accessing Azure Files via SMB.<div lova></div><div lova></div><b>You can assign the Storage File Data SMB Share Reader role to Computer1 for share1:</b> No – <b>Computer accounts</b> cannot be assigned Azure RBAC roles for accessing Azure Files. Only users, groups, and service principals are supported.<div lova></div><div lova></div><b>You can assign the Storage File Data SMB Share Elevated Contributor role to User2 for share1:</b> No – <b>User2</b> is a cloud-only Azure AD user and not part of the on-premises AD domain. Since the storage account is configured for <b>AD DS authentication</b>, only domain-joined users can access the file share.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Options:</b><div lova></div><div lova></div><b>User1</b> is valid because they are synced from on-prem AD and can authenticate via AD DS.<div lova></div><div lova></div><b>Computer1</b> is not valid because Azure RBAC does not support assigning roles to computer accounts.<div lova></div><div lova></div><b>User2</b> is not valid because they are not part of the on-prem AD domain required for AD DS authentication.</span></div></div></div>

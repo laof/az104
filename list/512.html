@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 139 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure virtual network named VNet1 that contains the following settings:<div lova></div><div lova></div>•	IPv4 address space: 172.16.10.0/24<div lova></div>•	Subnet name: Subnet1<div lova></div>•	Subnet address range: 172.16.10.0/25<div lova></div><div lova></div>What is the maximum number of virtual machines that can connect to Subnet1?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>24</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>25</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>123</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>128</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="E.">E..</span>251</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Correct Option</h4><div lova></div><b>C..123</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><h4><div lova></div>Explanation of Right Option</h4><div lova></div><b>C..123</b><div lova></div>Subnet1 uses the address range 172.16.10.0/25, which provides 128 IP addresses (2^(32-25) = 128). Azure reserves 5 IP addresses in each subnet (the first four and the last one), leaving 128 - 5 = <b>123</b> usable IP addresses for VMs.<div lova></div><h4><div lova></div>Explanation of Other Options</h4><div lova></div><b>A..24</b> and <b>B..25</b>: These are much lower than the available usable IPs for a /25 subnet.<div lova></div><b>D..128</b>: This is the total number of addresses before Azure reserves 5 for internal use.<div lova></div><b>E..251</b>: This would require a much larger subnet; /25 only provides 128 total addresses.<div lova></div></span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 21 Topic: 1</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Your company has an Azure Active Directory (Azure AD) tenant that is configured for hybrid coexistence with the on-premises Active Directory domain.<div lova></div>The on-premise virtual environment consists of virtual machines (VMs) running on Windows Server 2012 R2 Hyper-V host servers.<div lova></div>You have created some PowerShell scripts to automate the configuration of newly created VMs. You plan to create several new VMs.<div lova></div>You need a solution that ensures the scripts are run on the new VMs.<div lova></div>Which of the following is the best solution?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Configure a SetupComplete.cmd batch file in the %windir%\setup\scripts directory.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Configure a Group Policy Object (GPO) to run the scripts as logon scripts.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Configure a Group Policy Object (GPO) to run the scripts as startup scripts.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Place the scripts in a new virtual hard disk (VHD).</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>A. Configure a SetupComplete.cmd batch file in the %windir%\setup\scripts directory.</b><div lova></div><div lova></div><b>Explanation:</b> <b>SetupComplete.cmd</b> runs automatically after <b>Windows Setup completes</b> and before the user logs in, making it ideal for <b>automating VM configuration</b> immediately after deployment.This batch file <b>runs only once</b>.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Option B. Configure a GPO to run the scripts as logon scripts:</b> Only runs when a user logs in, which may not be suitable for initial VM setup.<div lova></div><div lova></div><b>Option C. Configure a GPO to run the scripts as startup scripts:</b> Requires domain join and GPO application, which may not be immediate or guaranteed.<div lova></div><div lova></div><b>Option D. Place the scripts in a new virtual hard disk (VHD):</b> Does not ensure execution; only stores the scripts.</span></div></div></div>

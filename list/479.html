@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 106 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains 20 virtual machines, a network security group (NSG) named NSG1, and two virtual networks named VNET1 and VNET2 that are peered.<div lova></div><div lova></div>You plan to deploy an Azure Bastion Basic SKU host named Bastion1 to VNET1.<div lova></div><div lova></div>You need to configure NSG1 to allow inbound access to the virtual machines via Bastion1.<div lova></div><div lova></div>Which port should you configure for the inbound security rule?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>22</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>443</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>389</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>8080</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B..443</b><div lova></div><div lova></div><b>Explanation:</b> <b>Azure Bastion</b> uses port <b>443</b> (HTTPS) for inbound connections from the Azure portal to the Bastion host. This allows secure browser-based RDP/SSH access to VMs without exposing ports like 3389 or 22 directly.<div lova></div><div lova></div>-----------------<div lova></div>A..22<div lova></div><b>Explanation:</b> Port 22 is used for SSH, but with Bastion, direct access on port 22 is not needed or recommended from external sources.<div lova></div><div lova></div>C..389<div lova></div><b>Explanation:</b> Port 389 is used for LDAP, which is unrelated to Azure Bastion connectivity.<div lova></div><div lova></div>D..8080<div lova></div><b>Explanation:</b> Port 8080 is a common alternative for HTTP but is not used by Azure Bastion.<div lova></div><div lova></div><b>Additional:</b><div lova></div>Subnet name must be <b>AzureBastionSubnet</b>.<div lova></div>Subnet size must be <b>/26 or larger</b> (/25, /24 etc).<div lova></div>For host scaling, a <b>/26 or larger subnet</b> is recommended. Using a smaller subnet space limits the number of scale units.<div lova></div>The subnet must be in the <b>same virtual network and resource group</b> as the bastion host.<div lova></div>The subnet <b>can't contain other resources</b>.<div lova></div></span></div></div></div>

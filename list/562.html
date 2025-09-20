@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 39 Topic: 6</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You need to configure an Azure web app named contoso.azurewebsites.net to host www.contoso.com.<div lova></div><div lova></div>What should you do first?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Create A records named www.contoso.com and asuid.contoso.com.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Create a TXT record named asuid that contains the domain verification ID.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Create a CNAME record named asuid that contains the domain verification ID.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Create a TXT record named www.contoso.com that has a value of contoso.azurewebsites.net.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B. Create a TXT record named asuid that contains the domain verification ID.</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Right Options:</b><div lova></div><div lova></div>The first step to configure a custom domain for an Azure web app is to <b>create a TXT record named asuid</b> with the domain verification ID provided by Azure. This TXT record is used by Azure to verify domain ownership before you can map the domain to your web app, as shown in the provided documentation.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Options:</b><div lova></div><div lova></div><b>A</b>: Creating A records named www.contoso.com and asuid.contoso.com is not the required first step for domain verification in Azure Web Apps.<div lova></div><div lova></div><b>C</b>: Creating a CNAME record named asuid with the domain verification ID is not the correct method for verification.<div lova></div><div lova></div><b>D</b>: Creating a TXT record named www.contoso.com with a value of contoso.azurewebsites.net is not used for domain ownership verification.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>Before you can point your domain to an Azure Web App, you need to verify that you actually own the domain.<div lova></div><b>1. Obtain Domain Verification ID</b><div lova></div><div lova></div>In the Azure portal, navigate to your Azure Web App.<div lova></div>Go to the "<b>Custom domains</b>" section.<div lova></div>Azure provides a unique domain verification ID.<div lova></div><div lova></div><b>2. Create the TXT Record</b><div lova></div><div lova></div>Log in to your domain registrar's (e.g., GoDaddy, Namecheap) DNS management area.<div lova></div>Add a new <b>TXT record</b>.<div lova></div>The name of this record will be "<b>asuid</b>".<div lova></div>The value of the record should be the domain verification ID you got from Azure.<div lova></div><div lova></div><b>3. Add CNAME Record (Later)</b><div lova></div><div lova></div>Once Azure has verified that you own the domain, you'll then need to create a <b>CNAME record</b> named "<b>www</b>" that points to "<b>contoso.azurewebsites.net</b>". This tells the DNS system where to direct web traffic for www.contoso.com.<div lova></div></span></div></div></div>

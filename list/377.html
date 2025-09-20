@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 4 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains the resources shown in the following table.<div lova></div><img class="in-exam-image" src="img/377_0.png"><div lova></div>LB1 is configured as shown in the following table.<div lova></div><img class="in-exam-image" src="img/377_1.png"><div lova></div>You plan to create new inbound NAT rules that meet the following requirements:<div lova></div>✑ Provide Remote Desktop access to VM1 from the internet by using port 3389.<div lova></div>✑ Provide Remote Desktop access to VM2 from the internet by using port 3389.<div lova></div>What should you create on LB1 before you can create the new inbound NAT rules?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>a frontend IP address</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>a load balancing rule</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>a health probe</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>a backend pool</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B.</b> a load balancing rule<div lova></div><div lova></div><b>Explanation of right option:</b><div lova></div><div lova></div><b>Option B (<b>a load balancing rule</b>) is selected because, among the available options, it is the closest to a selectable answer, even though what you actually need to add are inbound NAT rules.</b> The correct configuration for providing RDP access to VM1 and VM2 involves adding NAT rules, but since "NAT rule" is not a listed option, option B is chosen by process of elimination. Note that load balancing rules and NAT rules are different features. Inbound NAT rules can coexist with load balancing rules on the same frontend IP of the load balancer, but you do not need to add a new load balancing rule to use NAT rules. The actual action should be adding new NAT rules, but the options do not provide this choice.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of other options:</b><div lova></div><div lova></div>A. <b>a frontend IP address</b> — Not needed because the frontend IP address already exists, as confirmed by the prior discussion and the presence of a load balancing rule.<div lova></div><div lova></div>B. <b>a load balancing rule</b> — Selected only because NAT rules are not an option. In reality, you do NOT need to add or modify a load balancing rule to create NAT rules.<div lova></div><div lova></div>C. <b>a health probe</b> — Not required for NAT rules. Health probes monitor VM health for load balancing, not for NAT rules.<div lova></div><div lova></div>D. <b>a backend pool</b> — Not required for NAT rules. Backend pools are used for load balancing rules, but NAT rules map frontend ports to individual VM NICs and do not require a backend pool.<div lova></div></span></div></div></div>

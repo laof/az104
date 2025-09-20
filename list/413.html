@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 40 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains the resources in the following table.<div lova></div><img class="in-exam-image" src="img/413_0.png"><div lova></div>Subnet1 is associated to VNet1. NIC1 attaches VM1 to Subnet1.<div lova></div>You need to apply ASG1 to VM1.<div lova></div>What should you do?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Associate NIC1 to ASG1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Modify the properties of ASG1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Modify the properties of NSG1</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>A..Associate NIC1 to ASG1</b> (Correct)<div lova></div><div lova></div><b>Explanation:</b> To apply <b>ASG1</b> to <b>VM1</b>, you must associate <b>NIC1</b> (the network interface attached to VM1) with <b>ASG1</b>. This joins VM1 to the application security group, allowing NSG rules to reference ASG1 as a source or destination. This action is performed from the VM's Networking blade or the NIC's properties in the Azure portal.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>B..Modify the properties of ASG1</b><div lova></div><div lova></div><b>Explanation:</b> You do not directly modify ASG1 to add VMs; instead, you assign NICs to ASGs. The ASG itself is just a container for grouping NICs.<div lova></div><div lova></div><b>C..Modify the properties of NSG1</b><div lova></div><div lova></div><b>Explanation:</b> While you reference ASGs in NSG rules to control traffic, this does not "apply" an ASG to a VM. The association step is done by joining the NIC to the ASG first, then using ASG in NSG rules as needed.<div lova></div></span></div></div></div>

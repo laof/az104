@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 58 Topic: 6</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription. The subscription contains 10 virtual machines that run Windows Server. Each virtual machine hosts a website in IIS and has the Azure Monitor Agent installed.<div lova></div><div lova></div>You need to collect the IIS logs from each virtual machine and store them in a Log Analytics workspace.<div lova></div><div lova></div>What should you configure first?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>a data collection endpoint</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>an Azure Monitor Private Link Scope (AMPLS)</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Diagnostic settings</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>VM insights</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="E.">E..</span>a private endpoint</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>A. a data collection endpoint</b><div lova></div><div lova></div>To collect custom logs such as <b>IIS logs</b> from Azure virtual machines using the <b>Azure Monitor Agent</b>, you must first configure a <b>data collection endpoint</b> (DCE). The DCE acts as a routing point for data collected by the Azure Monitor Agent and is required before you can create data collection rules that specify the sources (like IIS logs) and the destination (Log Analytics workspace).<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><h4>Explanation of Other Options</h4><div lova></div><b>B. an Azure Monitor Private Link Scope (AMPLS)</b><div lova></div>This is used to securely connect monitoring data sources to Azure Monitor over a private link, but it is not required for collecting IIS logs and is not the first step.<div lova></div><div lova></div><b>C. Diagnostic settings</b><div lova></div>Diagnostic settings are used to configure platform logs and metrics for Azure resources, but collecting custom logs from VMs with Azure Monitor Agent requires a data collection endpoint first.<div lova></div><div lova></div><b>D. VM insights</b><div lova></div>VM insights provides monitoring for VM performance and dependencies but does not configure the collection of custom log files like IIS logs.<div lova></div><div lova></div><b>E. a private endpoint</b><div lova></div>A private endpoint is used for private connectivity to Azure services, but it is not needed to start collecting IIS logs from VMs.</span></div></div></div>

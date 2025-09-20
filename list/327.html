@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 75 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<div lova></div>After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<div lova></div>You have an Azure subscription named Subscription1 that contains the resources shown in the following table.<div lova></div><img class="in-exam-image" src="img/327_0.png"><div lova></div>Subscription1 also includes a virtual network named VNET2. VM1 connects to a virtual network named VNET2 by using a network interface named NIC1.<div lova></div>You need to create a new network interface named NIC2 for VM1.<div lova></div>Solution: You create NIC2 in RG2 and Central US.<div lova></div>Does this meet the goal?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Yes</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>No</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>B..No<div lova></div><div lova></div><b>B..No</b> – The solution does not meet the goal because a network interface (NIC) must be created in the same region as the virtual machine (VM1) to which it will be attached. VM1 is located in West US, but the solution attempts to create NIC2 in Central US. This is not allowed, as NIC2 must be in West US to attach to VM1. The resource group (RG2) location does not restrict the NIC's region, but the NIC's region must match the VM.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..Yes<div lova></div><div lova></div><b>A..Yes</b> – Incorrect because creating NIC2 in Central US does not satisfy the requirement for attaching it to a VM located in West US. The correct approach would be to create NIC2 in West US, regardless of which resource group is chosen.</span></div></div></div>

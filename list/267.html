@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 15 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<div lova></div>After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<div lova></div>You have an Azure virtual machine named VM1 that runs Windows Server 2016.<div lova></div>You need to create an alert in Azure when more than two error events are logged to the System event log on VM1 within an hour.<div lova></div>Solution: You create an event subscription on VM1. You create an alert in Azure Monitor and specify VM1 as the source<div lova></div>Does this meet the goal?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Yes</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>No</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>B..No<div lova></div><div lova></div><b>Explanation of right option:</b> Creating an <b>event subscription</b> on VM1 and a generic Azure Monitor alert with VM1 as the source does <b>not</b> meet the goal. To trigger an alert when more than two error events are logged to the System event log within an hour, you must configure <b>Azure Monitor with Log Analytics</b> and set up a <b>Log Analytics workspace</b>, connect VM1, and then create a <b>custom log query alert</b> based on event counts.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..Yes<div lova></div><b>Explanation:</b> Simply creating an event subscription and an Azure Monitor alert on the VM does not provide the logic to track the number of error events within a specific time window. You need Log Analytics and a custom query for this scenario.<div lova></div></span></div></div></div>

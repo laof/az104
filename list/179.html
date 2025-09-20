@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 25 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure Storage account named storage1 that uses Azure Blob storage and Azure File storage.<div lova></div>You need to use AzCopy to copy data to the blob storage and file storage in storage1.<div lova></div>Which authentication method should you use for each type of storage? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/179_0.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/179_1.png"><h4><div lova></div>Question 3-25 Answer:</h4><b>Blob storage:</b> 5. Azure Active Directory (Azure AD), access keys, and shared access signatures (SAS) <div lova></div><div lova></div><b>File storage:</b> 3. Access keys and shared access signatures (SAS) <div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of correct options:</b> <div lova></div><div lova></div><b>Blob storage - D:</b> Blob storage supports all three authentication methods: <b>Azure AD</b> for role-based access control, <b>access keys</b> for full access, and <b>SAS</b> for delegated access. This makes option D the most comprehensive and correct. <div lova></div><div lova></div><b>File storage - C:</b> Azure Files supports authentication using <b>access keys</b> and <b>SAS</b>. <b>Azure AD</b> is only supported in specific configurations, so C is the most generally correct. <div lova></div><div lova></div><b>Explanation of other options:</b> <div lova></div><div lova></div><b>Blob storage - A:</b> Azure AD only is incorrect because while supported, it is not the only method. <div lova></div><div lova></div><b>Blob storage - B:</b> SAS only is too limited; access keys and Azure AD are also valid. <div lova></div><div lova></div><b>Blob storage - C:</b> Access keys and SAS are valid, but omits Azure AD, which is also supported. <div lova></div><div lova></div><b>File storage - A:</b> Azure AD only is incorrect because it’s not always supported or configured. <div lova></div><div lova></div><b>File storage - B:</b> SAS only is too limited; access keys are also valid. <div lova></div><div lova></div><b>File storage - D:</b> Including Azure AD makes it too broad unless domain services are configured, which isn’t always the case.<h4><div lova></div>Azure AD is only supported in specific configurations - Explanation</h4><b>Azure Files</b> supports <b>Azure AD-based authentication</b> only when integrated with specific identity services like <b>Active Directory Domain Services (AD DS)</b>, <b>Microsoft Entra Domain Services</b>, or <b>Microsoft Entra Kerberos</b> for hybrid identities [1](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview).<div lova></div><div lova></div>This means that to use Azure AD for authentication with Azure Files, your environment must be configured to support <b>Kerberos-based authentication</b> over SMB, and your users or applications must be domain-joined or hybrid-joined.<div lova></div><div lova></div>Without these configurations, Azure Files will not accept Azure AD credentials directly, and you must rely on <b>access keys</b> or <b>shared access signatures (SAS)</b> instead.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Why this matters:</b> Many organizations do not have Azure AD DS or hybrid identity set up, so <b>Azure AD authentication is not universally available</b> for Azure Files. This is why the more broadly applicable answer is to use <b>access keys and SAS</b> unless the specific identity infrastructure is in place.</span></div></div></div>

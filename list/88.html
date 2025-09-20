@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 48 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription named Sub1 that contains the Azure resources shown in the following table.<div lova></div><img class="in-exam-image" src="img/88_0.png"><div lova></div>You assign an Azure policy that has the following settings:<div lova></div>✑ Scope: Sub1<div lova></div>✑ Exclusions: Sub1/RG1/VNET1<div lova></div>✑ Policy definition: Append a tag and its value to resources<div lova></div>✑ Policy enforcement: Enabled<div lova></div>✑ Tag name: Tag4<div lova></div>✑ Tag value: value4<div lova></div>You assign tags to the resources as shown in the following table.<div lova></div><img class="in-exam-image" src="img/88_1.png"><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/88_2.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/88_3.jpg"><h4><div lova></div>Correct Answers:</h4>RG1 has the Tag2:IT tag assigned only. — <b>Yes</b><div lova></div><div lova></div>storage1 has the Tag1:subscription, Tag2:IT, Tag3:value1, and Tag4:value4 tags assigned. — <b>No</b><div lova></div><div lova></div>VNET1 has the Tag2:IT and Tag3:value2 tags assigned only. — <b>No</b><div lova></div><div lova></div>-----------------<h4><div lova></div>Explanation of Correct Option:</h4><b>RG1</b> has only <b>Tag2:IT</b> directly assigned. No policy applies additional tags to RG1, and Azure does not inherit tags from parent resources by default.<div lova></div><div lova></div>-----------------<h4><div lova></div>Explanation of Incorrect Options:</h4><b>storage1</b> has <b>Tag3:value1</b> directly assigned. Although it is within the scope of the policy that appends <b>Tag4:value4</b>, the policy only affects new or modified resources. Since there's no indication that storage1 was created or modified after the policy was applied or that remediation was run, it would not have <b>Tag4:value4</b>. Also, Azure does not automatically inherit <b>Tag1:subscription</b> or <b>Tag2:IT</b> from parent resources.<div lova></div><div lova></div><b>VNET1</b> has <b>Tag3:value2</b> directly assigned. It is explicitly excluded from the policy, so it does not receive <b>Tag4:value4</b>. Like storage1, it does not inherit <b>Tag2:IT</b> from RG1 unless a separate inheritance policy is in place, which is not mentioned.</span></div></div></div>

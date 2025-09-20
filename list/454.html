@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 81 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have a virtual network named VNet1 as shown in the exhibit. (Click the Exhibit tab.)<div lova></div><img class="in-exam-image" src="img/454_0.png"><div lova></div>No devices are connected to VNet1.<div lova></div>You plan to peer VNet1 to another virtual network named VNet2. VNet2 has an address space of 10.2.0.0/16.<div lova></div>You need to create the peering.<div lova></div>What should you do first?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Modify the address space of VNet1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Add a gateway subnet to VNet1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Create a subnet on VNet1 and VNet2.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Configure a service endpoint on VNet2.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><b>A. Modify the address space of VNet1. Yes</b> — Both <b>VNet1</b> and <b>VNet2</b> have the same address space (<b>10.2.0.0/16</b>). Azure virtual network peering requires that the address spaces of the peered VNets do not overlap. Therefore, you must first modify the address space of <b>VNet1</b> so that it does not overlap with <b>VNet2</b> before you can successfully create the peering.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of other options:</b><div lova></div><b>B. Add a gateway subnet to VNet1. No</b> — Adding a gateway subnet is only necessary for VPN gateway connections, not for basic VNet peering.<div lova></div><b>C. Create a subnet on VNet1 and VNet2. No</b> — Creating subnets is not required to establish VNet peering; the issue is the overlapping address space.<div lova></div><b>D. Configure a service endpoint on VNet2. No</b> — Service endpoints are unrelated to VNet peering and do not resolve address space overlap.</span></div></div></div>

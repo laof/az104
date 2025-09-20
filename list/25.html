@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 25 Topic: 1</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Note: The question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the solution satisfies the requirements.<div lova></div>Your company's Azure subscription includes two Azure networks named VirtualNetworkA and VirtualNetworkB.<div lova></div>VirtualNetworkA includes a VPN gateway that is configured to make use of static routing. Also, a site-to-site VPN connection exists between your company's on- premises network and VirtualNetworkA.<div lova></div>You have configured a point-to-site VPN connection to VirtualNetworkA from a workstation running Windows 10. After configuring virtual network peering between<div lova></div>VirtualNetworkA and VirtualNetworkB, you confirm that you are able to access VirtualNetworkB from the company's on-premises network. However, you find that you cannot establish a connection to VirtualNetworkB from the Windows 10 workstation.<div lova></div>You have to make sure that a connection to VirtualNetworkB can be established from the Windows 10 workstation.<div lova></div>Solution: You choose the Allow gateway transit setting on VirtualNetworkB.<div lova></div>Does the solution meet the goal?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Yes</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>No</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B..No</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Correct Option:</b><div lova></div><div lova></div><b>B..No</b> — This is the correct answer. Setting <b>Allow gateway transit</b> on <b>VirtualNetworkB</b> alone does not enable it to use the VPN gateway in <b>VirtualNetworkA</b>. For gateway transit to work, <b>VirtualNetworkA</b> must have <b>Allow gateway transit</b> enabled, and <b>VirtualNetworkB</b> must have <b>Use remote gateway</b> enabled. The <b>Allow gateway transit</b> setting on <b>VirtualNetworkB</b> is not valid and has no effect.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Option:</b><div lova></div><div lova></div><b>A..Yes</b> — Incorrect. This option misunderstands the configuration. <b>Allow gateway transit</b> is a setting that must be enabled on the network that owns the gateway (<b>VirtualNetworkA</b>), not on the network that wants to use it. To allow <b>VirtualNetworkB</b> to use the gateway in <b>VirtualNetworkA</b>, <b>VirtualNetworkA</b> must allow gateway transit, and <b>VirtualNetworkB</b> must use the remote gateway.</span></div></div></div>

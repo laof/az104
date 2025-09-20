@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 81 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains three virtual machines named VM1, VM2, and VM3. All the virtual machines are in an availability set named AVSet1.<div lova></div><div lova></div>You need to scale up VM1 to a new virtual machine size, but the intended size is unavailable.<div lova></div><div lova></div>What should you do first?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Create a proximity placement group.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Deallocate VM1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Convert AvSet1 into a managed availability set.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Shut down VM3 and VM3.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B..Deallocate VM1</b><div lova></div><div lova></div><b>Explanation of right option:</b><div lova></div><div lova></div><b>Deallocate VM1</b> – Before resizing a virtual machine in an availability set, you must deallocate (stop) the VM. This releases the compute resources and allows you to resize the VM to a different size, including those sizes that may not currently be available due to capacity constraints. Resizing cannot be performed while the VM is running.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>A..Create a proximity placement group</b> – Proximity placement groups are used to ensure that resources are physically close for low latency, but they do not affect resizing or VM size availability.<div lova></div><div lova></div><b>C..Convert AvSet1 into a managed availability set</b> – Converting to a managed availability set does not address the issue of resizing or resource availability for a specific size.<div lova></div><div lova></div><b>D..Shut down VM3 and VM3</b> – Shutting down other VMs in the set does not help with resizing VM1; you must deallocate the specific VM you intend to resize.<div lova></div></span></div></div></div>

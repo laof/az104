@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 31 Topic: 1</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Your company has two on-premises servers named SRV01 and SRV02. Developers have created an application that runs on SRV01. The application calls a service on SRV02 by IP address.<div lova></div>You plan to migrate the application on Azure virtual machines (VMs). You have configured two VMs on a single subnet in an Azure virtual network.<div lova></div>You need to configure the two VMs with static internal IP addresses.<div lova></div>What should you do?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Run the New-AzureRMVMConfig PowerShell cmdlet.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Run the Set-AzureSubnet PowerShell cmdlet.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Modify the VM properties in the Azure Management Portal.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Modify the IP properties in Windows Network and Sharing Center.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="E.">E..</span>Run the Set-AzureStaticVNetIP PowerShell cmdlet.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>E.. Run the Set-AzureStaticVNetIP PowerShell cmdlet.</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Correct Option:</b><div lova></div><div lova></div><b>E.. Run the Set-AzureStaticVNetIP PowerShell cmdlet.</b> — This is the correct answer. To assign a <b>static internal IP address</b> to an Azure VM, you use the <b>Set-AzureStaticVNetIP</b> cmdlet. This ensures the VM retains the same private IP address across reboots and deallocations, which is essential for applications that rely on fixed IPs.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Options:</b><div lova></div><div lova></div><b>A.. Run the New-AzureRMVMConfig PowerShell cmdlet.</b> — Incorrect. This cmdlet is used to create a new VM configuration object, not to assign static IP addresses.<div lova></div><div lova></div><b>B.. Run the Set-AzureSubnet PowerShell cmdlet.</b> — Incorrect. This cmdlet is used to configure subnet settings, not individual VM IP addresses.<div lova></div><div lova></div><b>C.. Modify the VM properties in the Azure Management Portal.</b> — Incorrect. While you can view IP settings in the portal, assigning a static private IP is typically done through PowerShell or the Azure CLI. Another select <b>Networking</b> instead of VM property in portal to setup the static ip address of a VM <div lova></div><div lova></div><b>D.. Modify the IP properties in Windows Network and Sharing Center.</b> — Incorrect. Manually setting the IP inside the VM OS can cause conflicts with Azure's network management and is not supported for static IP assignment in Azure.</span></div></div></div>

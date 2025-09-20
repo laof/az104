@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 69 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains a policy-based virtual network gateway named GW1 and a virtual network named VNet1.<div lova></div>You need to ensure that you can configure a point-to-site connection from an on-premises computer to VNet1.<div lova></div>Which two actions should you perform? Each correct answer presents part of the solution.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Add a service endpoint to VNet1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Reset GW1</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Create a route-based virtual network gateway</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Add a connection to GW1</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="E.">E..</span>Delete GW1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="F.">F..</span>Add a public IP address space to VNet1</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>C.. Create a route-based virtual network gateway</b> — Point-to-site (P2S) VPN connections in Azure require a <b>route-based virtual network gateway</b>. Policy-based gateways do not support point-to-site connections. Therefore, you must create a new route-based gateway.<div lova></div><div lova></div><b>E.. Delete GW1</b> — Since each virtual network can only have one virtual network gateway, and P2S requires a route-based gateway, you must <b>delete the existing policy-based gateway (GW1)</b> before creating the required route-based gateway.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of the other options:</b><div lova></div><div lova></div>A.. Add a service endpoint to VNet1 — Service endpoints are used to secure Azure service resources to a virtual network, not for configuring VPN gateways or point-to-site connectivity.<div lova></div><div lova></div>B.. Reset GW1 — Resetting the gateway does not change its type and does not enable point-to-site connections.<div lova></div><div lova></div>D.. Add a connection to GW1 — You cannot add a point-to-site connection to a policy-based gateway. This option is not possible until you have a route-based gateway.<div lova></div><div lova></div>F.. Add a public IP address space to VNet1 — Public IP address spaces are not required or recommended for VPN connections; Azure VNets typically use private address spaces for secure communication.</span></div></div></div>

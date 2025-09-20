@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 149 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains two peered virtual networks named VNet1 and VNet2. VNet1 has a VPN gateway that uses static routing,<div lova></div><div lova></div>The on-premises network has a VPN connection that uses the VPN gateway of VNet1.<div lova></div><div lova></div>You need to configure access for users on the on-premises network to connect to a virtual machine on VNet2. The solution must minimize costs.<div lova></div><div lova></div>Which type of connectivity should you use?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Azure Firewall with a private IP address</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>service chaining and user-defined routes (UDRs)</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Azure Application Gateway</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>ExpressRoute circuits to VNet2</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B..service chaining and user-defined routes (UDRs)</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><h4><div lova></div>Explanation of Right Options</h4><div lova></div><b>B..service chaining and user-defined routes (UDRs)</b> — Since VNet1 and VNet2 are peered and VNet1 already has a VPN gateway, you can use UDRs (User-Defined Routes) to configure traffic from the on-premises network to VNet2 via the peered connection. This approach allows on-premises users to access VMs in VNet2 without deploying additional costly resources, thus minimizing costs.<div lova></div><div lova></div><h4><div lova></div>Explanation of Other Options</h4><div lova></div><b>A..Azure Firewall with a private IP address</b> — Deploying Azure Firewall adds extra cost and is unnecessary for simple routing between peered VNets.<div lova></div><b>C..Azure Application Gateway</b> — Application Gateway is used for web traffic load balancing, not for routing VPN or VM connectivity.<div lova></div><b>D..ExpressRoute circuits to VNet2</b> — Deploying ExpressRoute is expensive and not required since VPN connectivity is already established with VNet1 and peering connects VNet2.</span></div></div></div>

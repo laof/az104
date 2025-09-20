@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 5 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription named Subscription1. Subscription1 contains the resources in the following table.<div lova></div><img class="in-exam-image" src="img/257_0.png"><div lova></div>VNet1 is in RG1. VNet2 is in RG2. There is no connectivity between VNet1 and VNet2.<div lova></div>An administrator named Admin1 creates an Azure virtual machine named VM1 in RG1. VM1 uses a disk named Disk1 and connects to VNet1. Admin1 then installs a custom application in VM1.<div lova></div>You need to move the custom application to VNet2. The solution must minimize administrative effort.<div lova></div>Which two actions should you perform? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/257_1.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/257_2.png"><h4><div lova></div>Correct Actions for Moving a VM to Another VNet</h4><div lova></div><div lova></div>First action: <b>Delete VM1.</b><div lova></div>Second action: <b>Create a new virtual machine.</b><div lova></div><div lova></div><b>Explanation of right options:</b> <b>In Azure, you cannot move a VM or its network interface directly to a different VNet. The supported way is to delete the VM while retaining its disk, then create a new VM in the target VNet (VNet2) and attach the original disk. This minimizes administrative effort and ensures the application is preserved, as discussed earlier.</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div>First action: Create a network interface in RG2.<div lova></div><b>Incorrect because a network interface is permanently associated with its VNet at creation; you cannot attach a NIC from another VNet to an existing VM.</b><div lova></div>First action: Detach a network interface.<div lova></div><b>Incorrect because detaching the NIC does not allow you to connect the VM to a different VNet; changing the VNet is not supported after VM creation.</b><div lova></div>First action: Move a network interface to RG2.<div lova></div><b>Incorrect because moving a NIC to another resource group does not move it to another VNet; the VNet cannot be changed.</b><div lova></div>Second action: Attach a network interface.<div lova></div><b>Incorrect because you cannot attach a NIC from a different VNet to an existing VM; VNets are immutable for NICs and VMs.</b><div lova></div>Second action: Create a network interface in RG2.<div lova></div><b>Incorrect because even if you create a new NIC in RG2 (and VNet2), you cannot attach it to the existing VM1 which is bound to VNet1.</b><div lova></div>Second action: Move VM1 to RG2.<div lova></div><b>Incorrect because moving a VM between resource groups does not change its VNet; the VM will still be in the original VNet1.</b></span></div></div></div>

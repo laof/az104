@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 43 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains the resources shown in the following table.<div lova></div><img class="in-exam-image" src="img/295_0.png"><div lova></div>You need to configure a proximity placement group for VMSS1.<div lova></div>Which proximity placement groups should you use?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Proximity2 only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Proximity1, Proximity2, and Proximity3</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Proximity1 only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Proximity1 and Proximity3 only</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>A. Proximity2 only</b><div lova></div><div lova></div><b>Explanation:</b><div lova></div><div lova></div>A. <b>Proximity2 only:</b> Proximity2 is in the same resource group (RG2) and location (West US) as VMSS1. Both conditions must be met for a proximity placement group to be used.<div lova></div>B. <b>Proximity1, Proximity2, and Proximity3:</b> Proximity1 and Proximity3 are not in the same resource group or the same location as VMSS1, so they cannot be used.<div lova></div>C. <b>Proximity1 only:</b> Proximity1 is in a different resource group (RG1) and a different location (Central US) than VMSS1.<div lova></div>D. <b>Proximity1 and Proximity3 only:</b> Both Proximity1 and Proximity3 are in RG1 and Central US, which do not match VMSS1's resource group (RG2) and location (West US).<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div><b>Placement Groups</b> is a capability to achieve co-location of your Azure Infrastructure as a Service (IaaS) resources and low network latency among them, for improved <b>application performance</b>.<div lova></div><div lova></div>Azure proximity placement groups represent a new <b>logical grouping capability for your Azure Virtual Machines</b>, which in turn is used as a deployment constraint when selecting where <b>to place your virtual machines</b>. In fact, when you assign your virtual machines to a proximity placement group, the virtual machines are placed in <b>the same data center</b>, resulting in lower and deterministic latency for your applications.<div lova></div><div lova></div>The VMSS should share <b>the same region</b>, even it should be the <b>same zone</b> as proximity groups are located in the <b>same data center</b>. Accordingly, it should be proximity 2 only.<div lova></div></span></div></div></div>

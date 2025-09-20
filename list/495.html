@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 122 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that has the public IP addresses shown in the following table.<div lova></div><div lova></div><img src="img/495_0.png"><div lova></div><div lova></div>You plan to deploy an Azure Bastion Basic SKU host named Bastion1.<div lova></div><div lova></div>Which IP addresses can you use?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>IP1 only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>IP1 and IP2 only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>IP3, IP4, and IP5 only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>IP1, IP2, IP4, and IP5 only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="E.">E..</span>IP1, IP2, IP3, IP4, and IP5</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>A..IP1 only</b> — According to the requirement for Azure Bastion (as shown in https://learn.microsoft.com/en-us/azure/bastion/configuration-settings), the public IP address must be <b>Standard</b> SKU and <b>Static</b> assignment. In the table, only IP1 is <b>Standard</b> SKU, <b>Regional</b> tier, <b>IPv4</b>, and <b>Static</b>.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>B..IP1 and IP2 only — IP2 is <b>Standard</b> SKU and <b>Static</b>, but its tier is <b>Global</b>. Bastion requires a <b>Regional</b> tier, so IP2 is not valid.<div lova></div>C..IP3, IP4, and IP5 only — These are all <b>Basic</b> SKU, but Bastion requires <b>Standard</b> SKU for public IP, so these are not valid.<div lova></div>D..IP1, IP2, IP4, and IP5 only — Only IP1 meets all requirements; the others fail on tier or SKU.<div lova></div>E..IP1, IP2, IP3, IP4, and IP5 — Only IP1 meets all requirements; the others fail on tier or SKU.</span></div></div></div>

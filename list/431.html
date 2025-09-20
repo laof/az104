@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 58 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<div lova></div>After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<div lova></div>You have an app named App1 that is installed on two Azure virtual machines named VM1 and VM2. Connections to App1 are managed by using an Azure Load<div lova></div>Balancer.<div lova></div>The effective network security configurations for VM2 are shown in the following exhibit.<div lova></div><img class="in-exam-image" src="img/431_0.jpg"><div lova></div>You discover that connections to App1 from 131.107.100.50 over TCP port 443 fail.<div lova></div>You verify that the Load Balancer rules are configured correctly.<div lova></div>You need to ensure that connections to App1 can be established successfully from 131.107.100.50 over TCP port 443.<div lova></div>Solution: You delete the BlockAllOther443 inbound security rule.<div lova></div>Does this meet the goal?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Yes</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>No</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>A..Yes:</b> Deleting the <b>BlockAllOther443</b> inbound security rule will allow the <b>Allow_131.107.100.50</b> rule (which allows TCP port 443 from 131.107.100.50) to be effective. Since the deny rule with a higher priority was causing the block, removing it allows the allow rule to take effect and resolves the connection failure.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of the other option:</b><div lova></div><div lova></div><b>B..No:</b> This is incorrect because deleting the <b>BlockAllOther443</b> rule will indeed remove the block, and the allow rule for 131.107.100.50 on port 443 will permit the necessary connection.<div lova></div></span></div></div></div>

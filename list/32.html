@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 32 Topic: 1</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Your company has an Azure Active Directory (Azure AD) subscription.<div lova></div>You need to deploy five virtual machines (VMs) to your company's virtual network subnet.<div lova></div>The VMs will each have both a public and private IP address. Inbound and outbound security rules for all of these virtual machines must be identical.<div lova></div>Which of the following is the least amount of network interfaces needed for this configuration?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>5</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>10</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>20</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>40</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>A. 5</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Correct Option:</b><div lova></div><div lova></div><b>A. 5</b> — This is the correct answer. Each Azure virtual machine (VM) only requires one <b>network interface (NIC)</b> to support both a <b>private IP</b> and a <b>public IP</b>. Azure allows assigning both types of IP addresses to a single NIC. Since there are five VMs, the least number of NICs required is <b>5</b> — one per VM.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Options:</b><div lova></div><div lova></div><b>B. 10</b> — Incorrect. This would imply two NICs per VM, which is unnecessary because a single NIC can handle both public and private IPs.<div lova></div><div lova></div><b>C. 20</b> — Incorrect. This would mean four NICs per VM, which is excessive and not required for this configuration.<div lova></div><div lova></div><b>D. 40</b> — Incorrect. This would mean eight NICs per VM, which is far beyond what is needed and not justified by the scenario.</span></div></div></div>

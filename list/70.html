@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 30 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription linked to an Azure Active Directory tenant. The tenant includes a user account named User1.<div lova></div>You need to ensure that User1 can assign a policy to the tenant root management group.<div lova></div>What should you do?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Assign the Owner role for the Azure Subscription to User1, and then modify the default conditional access policies.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Assign the Owner role for the Azure subscription to User1, and then instruct User1 to configure access management for Azure resources.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Assign the Global administrator role to User1, and then instruct User1 to configure access management for Azure resources.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Create a new management group and delegate User1 as the owner of the new management group.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Question 2-30</h4><b>Correct Answer: C..Assign the Global administrator role to User1, and then instruct User1 to configure access management for Azure resources.</b><div lova></div><div lova></div><b>Explanation:</b> To assign a policy at the <b>tenant root management group</b> level, the user must have access to manage that scope. By default, only users with the <b>Global administrator</b> role in Azure AD can elevate their access to manage all Azure resources, including the tenant root group. Once User1 is a Global admin, they can enable <b>Access management for Azure resources</b> in Azure AD, which allows them to assign policies at the root level.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>A..Assign the Owner role for the Azure Subscription to User1, and then modify the default conditional access policies.</b>: Incorrect. The Owner role at the subscription level does not grant permissions at the tenant root management group level.<div lova></div><div lova></div><b>B..Assign the Owner role for the Azure subscription to User1, and then instruct User1 to configure access management for Azure resources.</b>: Incorrect. This still limits User1 to the subscription scope, not the tenant root.<div lova></div><div lova></div><b>C..Assign the Global administrator role to User1, and then instruct User1 to configure access management for Azure resources.</b>: Correct. This allows User1 to elevate their access and manage policies at the tenant root level.<div lova></div><div lova></div><b>D..Create a new management group and delegate User1 as the owner of the new management group.</b>: Incorrect. This only gives User1 access to the new group, not the tenant root management group.</span></div></div></div>

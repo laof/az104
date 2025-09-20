@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 110 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains a container group named Group1. Group1 contains two Azure container instances as shown in the following table.<div lova></div><div lova></div><img src="img/362_0.png"><div lova></div><div lova></div>You need to ensure that container2 can use CPU resources without negatively affecting container1.<div lova></div><div lova></div>What should you do?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Increase the resource limit of container1 to three CPUs.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Increase the resource limit of container2 to six CPUs.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Remove the resource limit for both containers.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Decrease the resource limit of container2 to two CPUs.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>D..Decrease the resource limit of container2 to two CPUs.</b> <div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of right option:</b> <div lova></div><b>D..Decrease the resource limit of container2 to two CPUs</b> — By setting the resource limit of container2 to two CPUs (equal to or less than its resource request), you ensure container2 does not exceed its fair share, preventing it from consuming resources that could impact container1. This way, both containers will have their CPU usage capped and will not affect each other.<div lova></div><div lova></div><b>Other options explained:</b> <div lova></div><b>A..Increase the resource limit of container1 to three CPUs</b> — This allows container1 to use more CPU, but does not prevent container2 from potentially using more than container1, which could still cause contention. <div lova></div><b>B..Increase the resource limit of container2 to six CPUs</b> — This could allow container2 to consume even more CPU and negatively impact container1. <div lova></div><b>C..Remove the resource limit for both containers</b> — Without resource limits, either container could use all available CPU, leading to resource contention and possible negative impact on container1.<div lova></div></span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 24 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription named Subscription1. Subscription1 contains the resource groups in the following table.<div lova></div><img class="in-exam-image" src="img/64_0.png"><div lova></div>RG1 has a web app named WebApp1. WebApp1 is located in West Europe.<div lova></div>You move WebApp1 to RG2.<div lova></div>What is the effect of the move?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>The App Service plan for WebApp1 remains in West Europe. Policy2 applies to WebApp1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>The App Service plan for WebApp1 moves to North Europe. Policy2 applies to WebApp1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>The App Service plan for WebApp1 remains in West Europe. Policy1 applies to WebApp1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>The App Service plan for WebApp1 moves to North Europe. Policy1 applies to WebApp1.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Question 2-24</h4><b>Correct Answer: A..The App Service plan for WebApp1 remains in West Europe. Policy2 applies to WebApp1.</b><div lova></div><div lova></div><b>Explanation:</b> When you move a <b>Web App</b> to a different <b>resource group</b> within the same subscription, the <b>App Service plan</b> and its <b>region</b> remain unchanged. However, the <b>policy</b> applied to the new resource group (in this case, <b>Policy2</b> from RG2) will now apply to the Web App.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>A..The App Service plan for WebApp1 remains in West Europe. Policy2 applies to WebApp1.</b>: Correct. The region stays the same, but the policy changes to that of the new resource group.<div lova></div><div lova></div><b>B..The App Service plan for WebApp1 moves to North Europe. Policy2 applies to WebApp1.</b>: Incorrect. The App Service plan does not move regions when the app is moved between resource groups.<div lova></div><div lova></div><b>C..The App Service plan for WebApp1 remains in West Europe. Policy1 applies to WebApp1.</b>: Incorrect. Policy1 is associated with RG1. After the move to RG2, Policy2 applies.<div lova></div><div lova></div><b>D..The App Service plan for WebApp1 moves to North Europe. Policy1 applies to WebApp1.</b>: Incorrect. Neither the region changes nor does the original policy remain after the move.<h4><div lova></div>Process for Moving a Web App Between Resource Groups in Azure</h4><b>1. Go to Azure Portal</b>: Navigate to <b>https://portal.azure.com</b> and sign in.<div lova></div><b>2. Locate the Web App</b>: In the left-hand menu, select <b>App Services</b>, then click on the web app you want to move (e.g., WebApp1).<div lova></div><b>3. Click on "Move"</b>: In the web app's menu, select <b>Move &gt; Move to another resource group</b>.<div lova></div><b>4. Select Target Resource Group</b>: Choose the destination resource group (e.g., RG2) from the dropdown list.<div lova></div><b>5. Review Dependencies</b>: Azure will validate whether the move is supported. Ensure all dependent resources (like the App Service plan) are also eligible for the move.<div lova></div><b>6. Confirm and Execute</b>: Click <b>OK</b> to confirm and start the move operation.<div lova></div><b>7. Wait for Completion</b>: The move process may take a few minutes. Once complete, the web app will appear under the new resource group.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Important Notes:</b><div lova></div><div lova></div>- The <b>App Service plan</b> and <b>region</b> do not change during the move.<div lova></div><div lova></div>- The <b>policy</b> of the new resource group (e.g., Policy2 in RG2) will apply to the web app after the move.<div lova></div><div lova></div>- Some resources cannot be moved if they are linked to services that do not support resource group moves.</span></div></div></div>

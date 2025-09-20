@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 1 Topic: 8</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription"><img src="img/587_0.png"><div lova></div>HOTSPOT -<div lova></div>You need to configure Azure Backup to back up the file shares and virtual machines.<div lova></div>What is the minimum number of Recovery Services vaults and backup policies you should create? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/587_1.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/587_2.png"><div lova></div><div lova></div>Recovery Services vaults: <b>3</b><div lova></div>Backup policies: <b>2</b><div lova></div><br<b>Explanations of Right Options<div lova></div><div lova></div><b>Recovery Services vaults: 3</b> – Azure Backup requires that Recovery Services vaults be in the same region as the resources they protect. In this scenario, resources needing backup are in West US, East US, and Central US. Therefore, you need a minimum of one vault per region, totaling three vaults.<div lova></div><div lova></div><b>Backup policies: 2</b> – You need at least two backup policies: one for VMs and one for file shares. You can apply the same policy to all VMs and a different policy to all file shares, provided the backup schedule/retention requirements are the same.<div lova></div><div lova></div><b>Explanation of Other Options</b><div lova></div><div lova></div><b>Recovery Services vaults: 1, 2, 4, 7</b> – One or two vaults are insufficient because Azure Backup does not allow cross-region backups; each region (West US, East US, Central US) requires its own vault. More than three vaults is unnecessary unless you have additional requirements like separation by workload or department.<div lova></div><div lova></div><b>Backup policies: 1</b> – You cannot use a single policy for both VMs and file shares, as they require different backup policy types. More than two policies would only be needed if you had different schedules or retention for different resources or groups.</br<b></span></div></div></div>

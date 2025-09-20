@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 98 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure AD tenant named contoso.com.<div lova></div><div lova></div>You have an Azure subscription that contains an Azure App Service web app named App1 and an Azure key vault named KV1. KV1 contains a wildcard certificate for contoso.com.<div lova></div><div lova></div>You have a user named <a class="__cf_email__" data-cfemail="e491978196d5a4878b8a908b978bca878b89" href="/cdn-cgi/l/email-protection">[email&nbsp;protected]</a> that is assigned the Owner role for App1 and KV1.<div lova></div><div lova></div>You need to configure App1 to use the wildcard certificate of KV1.<div lova></div><div lova></div>What should you do first?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Create an access policy for KV1 and assign the Microsoft Azure App Service principal to the policy.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Assign a managed user identity to App1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Configure KV1 to use the role-based access control (RBAC) authorization system.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Create an access policy for KV1 and assign the policy to User1.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B..Assign a managed user identity to App1.</b> (Assigning a <b>managed identity</b> to App1 is the first step so the app can securely access Azure Key Vault resources such as certificates. The managed identity will later be granted permission to retrieve the certificate from KV1.)<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..Create an access policy for KV1 and assign the Microsoft Azure App Service principal to the policy. (You must assign a managed identity to App1 first; only then can you assign the identity to an access policy. The "Microsoft Azure App Service principal" is not directly used—App1's managed identity is.)<div lova></div><div lova></div>C..Configure KV1 to use the role-based access control (RBAC) authorization system. (Configuring RBAC is not the first step. Before you can grant permissions using RBAC or access policies, App1 needs a managed identity.)<div lova></div><div lova></div>D..Create an access policy for KV1 and assign the policy to User1. (Assigning the policy to User1 only allows the user to access the Key Vault, not App1. The requirement is for App1—an application—not a user—to access the certificate, so this does not meet the scenario.)</span></div></div></div>

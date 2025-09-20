@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 6 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure virtual network named VNet1 that connects to your on-premises network by using a site-to-site VPN. VNet1 contains one subnet named<div lova></div>Sunet1.<div lova></div>Subnet1 is associated to a network security group (NSG) named NSG1. Subnet1 contains a basic internal load balancer named ILB1. ILB1 has three Azure virtual machines in the backend pool.<div lova></div>You need to collect data about the IP addresses that connects to ILB1. You must be able to run interactive queries from the Azure portal against the collected data.<div lova></div>What should you do? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/379_0.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/379_1.png"><div lova></div><div lova></div><b>1. An Azure Log Analytics workspace</b><div lova></div> — This is required because it allows you to store diagnostic logs and run interactive queries using Azure Monitor Logs (Log Analytics) directly from the Azure portal.<div lova></div><div lova></div><b>2. NSG1</b><div lova></div> — You need to enable diagnostics (NSG flow logs) on the network security group (NSG1) to capture data about the IP addresses that connect to resources behind ILB1. NSG flow logs record information about IP traffic flowing through the NSG, including source/destination IPs.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of other options:</b><div lova></div><div lova></div><b>An Azure Event Grid</b> — Used for event-based automation, not for interactive queries or log storage.<div lova></div><div lova></div><b>An Azure Storage account</b> — Can store logs but does not support interactive queries in the Azure portal.<div lova></div><div lova></div><b>ILB1</b> — Enabling diagnostics here does not capture detailed IP connection/flow information needed for NSG flow logs.<div lova></div><div lova></div><b>The Azure virtual machines</b> — Enabling diagnostics here collects VM-level metrics, not network flow data about IP connections to ILB1.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div> - NSG flow logs allow viewing information about ingress and egress IP traffic through a Network security group. Through this, the IP addresses that connect to the ILB can be monitored when the diagnostics are enabled on a Network Security Group.<div lova></div><div lova></div> - We cannot enable diagnostics on an internal load balancer to check for the IP addresses. As for Internal LB, it is a basic one. Basic can only connect to storage account. Also, Basic LB has only activity logs, which doesn't include the connectivity workflow. So, we need to use NSG to meet the mentioned requirements.</span></div></div></div>

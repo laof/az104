@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 74 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<div lova></div>After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<div lova></div>You have an Azure subscription named Subscription1 that contains the resources shown in the following table.<div lova></div><img class="in-exam-image" src="img/326_0.png"><div lova></div>Subscription1 also includes a virtual network named VNET2. VM1 connects to a virtual network named VNET2 by using a network interface named NIC1.<div lova></div>You need to create a new network interface named NIC2 for VM1.<div lova></div>Solution: You create NIC2 in RG1 and West US.<div lova></div>Does this meet the goal?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Yes</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>No</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Question 4-74 Final Answer</h4><div lova></div><div lova></div>A..Yes<div lova></div><div lova></div><b>A..Yes</b> – The solution meets the goal. In Azure, a resource group is a logical container and can hold resources from any region. The key requirement is that the network interface (NIC2) must be created in the same region as the virtual machine (VM1), which is West US. The resource group (RG1) being in East US does not restrict you from creating resources in West US within it. Therefore, creating NIC2 in RG1 and specifying West US as the region is technically correct and allowed by Azure, and VM1 will be able to use the NIC.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>B..No<div lova></div><div lova></div><b>B..No</b> – Incorrect because the location of the resource group does not limit the regions of resources you deploy within it. As long as NIC2 is created in the West US region, it can be associated with VM1 in West US, regardless of the resource group’s original region.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>Multiple NICs allow a VM to connect to different subnets.<div lova></div>VM must have at least one NIC. A virtual machine can have more than one NIC, depending on the size of the VM you create.<div lova></div>Each NIC attached to a VM must <b>exist in the same location and subscription</b> as the VM.<div lova></div>Each NIC must be connected to a VNet that <b>exists in the same Azure location and subscription</b> as the NIC.<div lova></div></span></div></div></div>

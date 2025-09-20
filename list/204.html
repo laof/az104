@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 50 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT<div lova></div> -<div lova></div><div lova></div>You have an Azure subscription.<div lova></div><div lova></div>You plan to deploy a storage account named storage1 by using the following Azure Resource Manager (ARM) template.<div lova></div><div lova></div><img src="img/204_0.png"><div lova></div><div lova></div>For each of the following statements, select Yes if the statement is hue. Otherwise, select No.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/204_1.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/204_2.png"><h4><div lova></div>Question 3-50: ARM Template for Azure Storage Account - Statements Analysis</h4><div lova></div><div lova></div><b>Statement 1: Changes made to the data in storage1 can be rolled back after seven days.</b> No<div lova></div><div lova></div><b>Statement 2: Only users located in the East US Azure region can connect to storage1.</b> No<div lova></div><div lova></div><b>Statement 3: Three copies of storage1 will be maintained in the East US Azure region.</b> Yes<div lova></div><div lova></div><b>Explanations of right options:</b><div lova></div><div lova></div><b>Statement 1: No</b>: The <b>restorePolicy</b> is set to 6 days, not seven. This means point-in-time restore can only be performed within 6 days, not 7.<div lova></div><div lova></div><b>Statement 2: No</b>: The network rules allow public access (allowPublicAccess: true and networkAcls.bypass: "AzureServices", defaultAction: "Allow"), so users from any region can connect, not just East US.<div lova></div><div lova></div><b>Statement 3: Yes</b>: The storage account uses <b>Standard_LRS</b> (Locally Redundant Storage), which maintains three copies of the data within a single region (East US).<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Statement 1: Yes</b>: <b>Incorrect</b>. The retention for point-in-time restore is only 6 days according to the ARM template.<div lova></div><div lova></div><b>Statement 2: Yes</b>: <b>Incorrect</b>. There are no restrictions preventing users from outside the East US region from connecting.<div lova></div><div lova></div><b>Statement 3: No</b>: <b>Incorrect</b>. LRS maintains three copies within the region, so this statement is true, not false.<h4><div lova></div><div lova></div>Additional:</h4>The retention period for point-in-time restore must be at least one day less than the retention period specified for soft delete. For example, if the soft delete retention period is set to seven days, then the point-in-time restore retention period may be between 1 and 6 days.<div lova></div></span></div></div></div>

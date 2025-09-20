@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 39 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains a resource group named TestRG.<div lova></div>You use TestRG to validate an Azure deployment.<div lova></div>TestRG contains the following resources:<div lova></div><img class="in-exam-image" src="img/79_0.png"><div lova></div>You need to delete TestRG.<div lova></div>What should you do first?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Modify the backup configurations of VM1 and modify the resource lock type of VNET1</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Remove the resource lock from VNET1 and delete all data in Vault1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Turn off VM1 and remove the resource lock from VNET1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Turn off VM1 and delete all data in Vault1</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Question 2-39</h4><b>Correct Answer:</b> B. Remove the resource lock from VNET1 and delete all data in Vault1 – <b>Resource locks</b> prevent deletion, so the <b>Delete lock on VNET1</b> must be removed first. Additionally, <b>Recovery Services Vaults</b> like Vault1 must be emptied (i.e., all backup items deleted) before the vault and the resource group can be deleted.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Options:</b><div lova></div><div lova></div><b>A. Modify the backup configurations of VM1 and modify the resource lock type of VNET1</b> – Incorrect. Modifying backup settings does not remove existing backup data, and changing the lock type still prevents deletion unless it's removed.<div lova></div><div lova></div><b>C. Turn off VM1 and remove the resource lock from VNET1</b> – Incorrect. Turning off VM1 is unnecessary for deletion, and this option does not address the need to delete backup data in Vault1.<div lova></div><div lova></div><b>D. Turn off VM1 and delete all data in Vault1</b> – Incorrect. This does not address the <b>Delete lock on VNET1</b>, which will still prevent the deletion of the resource group.</span></div></div></div>

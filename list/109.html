@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 69 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure AD tenant named adatum.com that contains the groups shown in the following table.<div lova></div><div lova></div><img src="img/109_0.png"><div lova></div><div lova></div>Adatum.com contains the users shown in the following table.<div lova></div><div lova></div><img src="img/109_1.png"><div lova></div><div lova></div>You assign the Azure Active Directory Premium Plan 2 license to Group1 and User4.<div lova></div><div lova></div>Which users are assigned the Azure Active Directory Premium Plan 2 license?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>User4 only</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>User1 and User4 only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>User1, User2, and User4 only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>User1, User2, User3, and User4</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Correct Answer:</h4>B.. <b>User1 and User4 only</b><div lova></div><div lova></div><b>Explanation:</b> Azure AD license assignments via groups are <b>not transitive</b>. This means that if a license is assigned to <b>Group1</b>, only the <b>direct members</b> of Group1 receive the license. In this case:<div lova></div><div lova></div>- <b>User1</b> is a direct member of Group1 → receives the license<div lova></div>- <b>User2</b> is a member of Group2, which is a member of Group1 → does NOT receive the license<div lova></div>- <b>User3</b> is a member of Group3 → does NOT receive the license<div lova></div>- <b>User4</b> is directly assigned the license → receives the license<div lova></div><div lova></div>-----------------<h4><div lova></div>Other Options:</h4>A.. User4 only<div lova></div><div lova></div>Incorrect because User1 also receives the license via direct group membership.<div lova></div><div lova></div>C.. User1, User2, and User4 only<div lova></div><div lova></div>Incorrect because User2 is not a direct member of Group1.<div lova></div><div lova></div>D.. User1, User2, User3, and User4<div lova></div><div lova></div>Incorrect because only User1 and User4 meet the criteria for license assignment.<div lova></div><div lova></div>-----------------<h4><div lova></div>Additional Information:</h4>According to Microsoft documentation: <b>"Group-based licensing currently does not support groups that contain other groups (nested groups). If you apply a license to a nested group, only the immediate first-level user members of the group have the licenses applied."</b> This confirms that nested group members like User2 and User3 will not receive the license from Group1.</span></div></div></div>

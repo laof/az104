@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 83 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div><div lova></div>You have an Azure subscription that contains an Azure Kubernetes Service (AKS) cluster named Cluster1. Cluster1 hosts a node pool named Pool1 that has four nodes.<div lova></div><div lova></div>You need to perform a coordinated upgrade of Cluster1. The solution must meet the following requirements:<div lova></div><div lova></div>•	Deploy two new nodes to perform the upgrade.<div lova></div>•	Minimize costs.<div lova></div><div lova></div>How should you complete the command? To answer, select the appropriate options in the answer area.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/335_0.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/335_1.png"><div lova></div><div lova></div><b>update</b> -n pool1 -g RG1 --cluster-name cluster1 <b>--max-surge 2</b><div lova></div><div lova></div><b>Explanation of right options:</b><div lova></div><div lova></div><b>update</b>: This command is used to change the configuration of an existing node pool, which is required for performing a coordinated upgrade.<div lova></div><div lova></div><b>--max-surge 2</b>: This parameter specifies that during the upgrade, up to two additional nodes can be temporarily added. This meets the requirement to "deploy two new nodes to perform the upgrade" while minimizing costs by limiting the number of surge nodes.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>add</b>: This is used to create a new node pool, not to change or upgrade an existing one.<div lova></div><div lova></div><b>get-updates</b>: This is not a valid az aks nodepool command; it is not used for upgrades or scaling.<div lova></div><div lova></div><b>scale</b>: This command changes the number of nodes in the pool, not the rolling upgrade behavior.<div lova></div><div lova></div><b>updates</b>: This is not a valid az aks nodepool command; updates are performed with the upgrade command.<div lova></div><div lova></div><b>--max-count 2</b>: This parameter sets the upper limit of nodes in the pool, not the number of extra nodes during an upgrade.<div lova></div><div lova></div><b>--max-pods 2</b>: This parameter limits the number of pods per node, not the number of nodes during upgrade.<div lova></div><div lova></div><b>--node-count 2</b>: This parameter sets the total number of nodes in the pool, which would not satisfy the requirement to temporarily add two nodes during an upgrade.<div lova></div></span></div></div></div>

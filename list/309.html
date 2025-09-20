@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 57 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription that contains a virtual machine scale set. The scale set contains four instances that have the following configurations:<div lova></div>✑ Operating system: Windows Server 2016<div lova></div>✑ Size: Standard_D1_v2<div lova></div>You run the get-azvmss cmdlet as shown in the following exhibit:<div lova></div><img class="in-exam-image" src="img/309_0.jpg"><div lova></div>Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/309_1.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/309_2.png"><div lova></div><div lova></div>When an administrator changes the virtual machine size, the size will be changed on up to <b>4</b> virtual machines simultaneously.<div lova></div>When a new build of the Windows Server 2016 image is released, the new build will be deployed to up to <b>1</b> virtual machine simultaneously.<div lova></div><div lova></div>Explanation of right options:<div lova></div><b>4</b>: When you manually change the VM size in a scale set, <b>all</b> instances (in this case, 4) will be changed simultaneously.<div lova></div><b>1</b>: With the provided logic of rounding up 0.8 to 1, only 1 VM would be upgraded at a time when a new OS build is released.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>Explanation of other options:<div lova></div><b>0</b>: This would mean no VMs are updated, which is not possible when applying size or image changes.<div lova></div><b>2</b>: This would mean 2 VMs are updated at a time, which does not match the revised rounding logic in your instruction.<div lova></div><b>4</b> (in the second statement): All VMs being upgraded at once would defeat the purpose of rolling upgrades and high availability.<h4><div lova></div>Additional:</h4><b>EnableAutomaticUpdates</b> is a Windows configuration parameter that controls whether Windows Update automatically installs updates inside the guest OS.<div lova></div><div lova></div><b>AutomaticOSUpgradePolicy</b> is an Azure VM scale set configuration that controls whether Azure will automatically apply OS image updates from the Azure platform to the VM instances.<div lova></div><div lova></div><b>EnableAutomaticUpdates</b>: This setting is managed inside the VM's operating system and affects only Windows Update behavior for OS patches and security updates.<div lova></div><b>AutomaticOSUpgradePolicy</b>: This Azure platform setting manages whether the underlying OS image (provided by Azure Marketplace) is automatically upgraded for all VM instances in the scale set when a new version is available.<div lova></div><div lova></div><b>Manual OS upgrades</b>: If <b>AutomaticOSUpgradePolicy</b> is not enabled, you must manually apply new OS images to the scale set VMs.<div lova></div><b>Windows Update GPO</b>: Group Policy settings or registry configurations for Windows Update are separate from Azure's platform image upgrade process.<div lova></div></span></div></div></div>

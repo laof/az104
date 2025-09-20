@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 62 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<div lova></div>After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<div lova></div>You have an Azure subscription that contains the virtual machines shown in the following table.<div lova></div><img class="in-exam-image" src="img/435_0.png"><div lova></div>You deploy a load balancer that has the following configurations:<div lova></div>✑ Name: LB1<div lova></div>✑ Type: Internal<div lova></div>✑ SKU: Standard<div lova></div>✑ Virtual network: VNET1<div lova></div>You need to ensure that you can add VM1 and VM2 to the backend pool of LB1.<div lova></div>Solution: You disassociate the public IP address from the network interface of VM2.<div lova></div>Does this meet the goal?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Yes</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>No</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>A.. <b>Yes</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of right option:</b><div lova></div><div lova></div><b>A.. Yes:</b> For a <b>Standard SKU</b> (internal) load balancer, virtual machines can only be added to the backend pool if they have a <b>Standard SKU public IP</b> or <b>no public IP</b> at all. <b>VM2</b> currently has a <b>Basic SKU public IP</b>, which is not supported for backend pool membership with a Standard SKU load balancer. By disassociating the public IP address from VM2, both <b>VM1</b> (which already has no public IP) and <b>VM2</b> (after removal) will meet the requirements and can be added to the backend pool.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of the other options:</b><div lova></div><div lova></div><b>B.. No:</b> This is incorrect because removing the Basic SKU public IP from VM2 is necessary for it to be eligible for the backend pool of a Standard SKU load balancer; otherwise, it cannot be added.<div lova></div></span></div></div></div>

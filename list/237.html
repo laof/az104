@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 83 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT<div lova></div> -<div lova></div><div lova></div>You have an Azure Storage account named storage1 that contains two containers named container1 and container2. Blob versioning is enabled for both containers.<div lova></div><div lova></div>You periodically take blob snapshots of critical blobs.<div lova></div><div lova></div>You create the following lifecycle management policy.<div lova></div><div lova></div><img src="img/237_0.png"><div lova></div><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/237_1.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/237_2.png"><div lova></div><div lova></div>A blob snapshot automatically moves to the Cool access tier after 15 days. No<div lova></div><div lova></div>A blob version in container2 automatically moves to the Archive access tier after 30 days. No<div lova></div><div lova></div>A rehydrated version automatically moves to the Archive access tier after 30 days. No<div lova></div><div lova></div><h4>Explanation of right options:</h4><div lova></div><b>Blob snapshots</b> are not included in the rule; the policy only targets blob versions, not snapshots, so snapshots are not moved.<div lova></div><b>container2</b> is not included in the policy filter (the filter only applies to container1), so no versions in container2 are affected.<div lova></div><b>Rehydrated versions</b> are not referenced in the policy and there is no rule for automatically moving rehydrated versions to archive.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>The lifecycle rule only applies to <b>blockBlob</b> types in <b>container1</b> and targets blob <b>versions</b>, not snapshots or blobs in other containers, and there is no policy for rehydrated versions.<h4><div lova></div>Additional:</h4>Lifecycle rules are only applied to the blob subtypes explicitly included in the policy. In your scenario, since snapshots are not part of the filter or action scope, they do not follow the tiering rules defined in the policy. This is the expected behavior in Azure Blob Storage.</span></div></div></div>

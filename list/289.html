@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 37 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have Azure subscriptions named Subscription1 and Subscription2.<div lova></div>Subscription1 has following resource groups:<div lova></div><img class="in-exam-image" src="img/289_0.png"><div lova></div>RG1 includes a web app named App1 in the West Europe location.<div lova></div>Subscription2 contains the following resource groups:<div lova></div><img class="in-exam-image" src="img/289_1.png"><div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/289_2.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/289_3.png"><h4><div lova></div>Question 4-37 Answer</h4><div lova></div><div lova></div><b>App1 can be moved to RG2: No</b><div lova></div><div lova></div><b>App1 can be moved to RG3: Yes</b><div lova></div><div lova></div><b>App1 can be moved to RG4: Yes</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div>App1 can be moved to RG2: RG2 has a <b>Read Only</b> lock, which prevents moving resources into the resource group.<div lova></div>App1 can be moved to RG3: Although moving a resource between regions may require additional steps for some types, the question is about lock limitations. RG3 has a <b>Delete</b> lock, which only prevents deletion, not moves, so App1 can be moved to RG3.<div lova></div>App1 can be moved to RG4: RG4 has <b>no lock</b>, so there is no lock limitation to prevent moving App1 to RG4.<div lova></div><div lova></div>Saying retained: While moving between regions may not be possible for all resource types and may require migration, this question focuses only on lock limitations, not technical migration feasibility.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>Azure does allow certain resources to be moved between regions, but <b>not all resource types support cross-region moves</b>. The ability to move resources between regions is limited by the resource type. For example, <b>Azure Web Apps/App Services</b> (such as App1 in your earlier question) <b>cannot be moved between regions</b>; instead, you must create a new resource in the target region and migrate your data or configuration.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>statement: <b>Resources cannot be moved between regions</b> is <b>generally true for resources like App Services, VMs, and similar PaaS offerings</b>. However, for some resources (e.g., storage accounts, VMs with the Azure Resource Mover tool), Azure provides migration paths, but these are considered migrations, not simple "move" operations. Always check the official documentation for each resource type to confirm if cross-region moves are supported.<div lova></div></span></div></div></div>

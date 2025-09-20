@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 73 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription.<div lova></div>You need to use an Azure Resource Manager (ARM) template to create a virtual machine that will have multiple data disks.<div lova></div>How should you complete the template? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/325_0.png"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/325_1.png"><div lova></div><div lova></div>First dropdown: <b>copy</b><div lova></div><div lova></div>Second dropdown: <b>[copyIndex('dataDisks')]</b><div lova></div><div lova></div><b>First dropdown: copy</b> – In an Azure Resource Manager (ARM) template, to create multiple instances of a resource or property (such as multiple data disks), you use the <b>copy</b> element. This allows the template to iterate and create the specified number of data disks based on the parameter value.<div lova></div><div lova></div><b>Second dropdown: [copyIndex('dataDisks')]</b> – The <b>copyIndex()</b> function returns the current iteration index of the copy loop. By specifying <b>[copyIndex('dataDisks')]</b>, each data disk gets a unique Logical Unit Number (LUN), which is required for proper disk assignment in Azure VMs.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>[copyIndex]</b> and <b>[dependsOn]</b> – Incorrect because <b>[copyIndex]</b> without an argument does not specify which copy loop’s index to use (important when using nested copies), and <b>[dependsOn]</b> is used for resource dependencies, not for iteration or LUN assignment in this context.</span></div></div></div>

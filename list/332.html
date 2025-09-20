@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 80 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have an Azure subscription. The subscription contains a virtual machine that runs Windows 10.<div lova></div>You need to join the virtual machine to an Active Directory domain.<div lova></div>How should you complete the Azure Resource Manager (ARM) template? To answer, select the appropriate options in the answer area.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/332_0.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img class="in-exam-image" src="img/332_1.jpg"><div lova></div><div lova></div><b>Type:</b> Microsoft.Compute/virtualMachines/extensions<div lova></div><b>For the password property, use:</b> ProtectedSettings<div lova></div><div lova></div><b>Explanation of right options:</b><div lova></div><div lova></div><b>Microsoft.Compute/virtualMachines/extensions</b> – This is the correct resource type to use when deploying VM extensions, such as the JsonADDomainExtension, which is used to join a VM to an Active Directory domain.<div lova></div><div lova></div><b>ProtectedSettings</b> – The password for joining the domain is sensitive information and must be placed inside the <b>ProtectedSettings</b> section. This ensures that the value is secured and not exposed in ARM template outputs or logs.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Extensions</b> – This is not a valid resource type in Azure Resource Manager templates.<div lova></div><div lova></div><b>Microsoft.Compute/VirtualMachines</b> – This is the resource type for creating a virtual machine, but not for adding extensions to the VM.<div lova></div><div lova></div><b>Settings</b> – The <b>Settings</b> property is used for non-sensitive configuration data, not for sensitive values like passwords.<div lova></div><div lova></div><b>Statuses</b> – This property is not used for configuration or secret management in ARM templates.</span></div></div></div>

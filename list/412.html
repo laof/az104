@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 39 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have the Azure virtual network named VNet1 that contains a subnet named Subnet1. Subnet1 contains three Azure virtual machines. Each virtual machine has a public IP address.<div lova></div>The virtual machines host several applications that are accessible over port 443 to users on the Internet.<div lova></div>Your on-premises network has a site-to-site VPN connection to VNet1.<div lova></div>You discover that the virtual machines can be accessed by using the Remote Desktop Protocol (RDP) from the Internet and from the on-premises network.<div lova></div>You need to prevent RDP access to the virtual machines from the Internet, unless the RDP connection is established from the on-premises network. The solution must ensure that all the applications can still be accessed by the Internet users.<div lova></div>What should you do?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Modify the address space of the local network gateway</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Create a deny rule in a network security group (NSG) that is linked to Subnet1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Remove the public IP addresses from the virtual machines</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Modify the address space of Subnet1</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B</b>..Create a deny rule in a network security group (NSG) that is linked to Subnet1<div lova></div><div lova></div><b>Explanation:</b> The best solution is to <b>create a deny rule in an NSG</b> on Subnet1 that blocks inbound RDP (port 3389) access from all sources except the on-premises network's IP range. This allows only RDP connections from your on-premises network while still allowing Internet users to access the applications over port 443.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..Modify the address space of the local network gateway<div lova></div><b>Explanation:</b> Changing the address space of the local network gateway does not control RDP access and would disrupt your VPN.<div lova></div>C..Remove the public IP addresses from the virtual machines<div lova></div><b>Explanation:</b> Removing public IPs would block all Internet access, including the required application access over port 443.<div lova></div>D..Modify the address space of Subnet1<div lova></div><b>Explanation:</b> Modifying the subnet address space does not affect NSG rules or RDP access control.<div lova></div></span></div></div></div>

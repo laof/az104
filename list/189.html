@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 35 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have a general-purpose v1 Azure Storage account named storage1 that uses locally-redundant storage (LRS).<div lova></div>You need to ensure that the data in the storage account is protected if a zone fails. The solution must minimize costs and administrative effort.<div lova></div>What should you do first?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Create a new storage account.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Configure object replication rules.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Upgrade the account to general-purpose v2.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Modify the Replication setting of storage1.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>The first thing you should do is:</h4>C..Upgrade the account to general-purpose v2.<div lova></div><h4><div lova></div>-----------------</h4><h4><div lova></div>Explanations of right option:</h4><b>C..Upgrade the account to general-purpose v2.</b>: To protect data against zone failures, you need to use zone-redundant storage (ZRS) or geo-redundant storage (GRS), which are only supported on general-purpose v2 accounts. Upgrading to v2 enables you to select these replication options without having to create a new storage account, minimizing cost and administrative effort.<div lova></div><h4><div lova></div>-----------------</h4><h4><div lova></div>Explanation of other options:</h4>A..Create a new storage account: This is not necessary because you can upgrade your existing account to v2.<div lova></div>B..Configure object replication rules: Object replication is for synchronizing blobs between accounts, not for zone failure protection.<div lova></div>D..Modify the Replication setting of storage1: You cannot change the replication type to ZRS or GRS on a v1 account; you must upgrade to v2 first.<h4><div lova></div>Addtional:</h4><b>Standard general-purpose v1 = LRS/GRS/RA-GRS<div lova></div>Blob Storage = LRS/GRS/RA-GRS<div lova></div>Standard general-purpose v2 = LRS/ZRS/GRS/RA-GRS/GZRS/RA-GZRS<div lova></div>Premium block blobs = LRS/ZRS<div lova></div>Premium page blobs = LRS/ZRS<div lova></div>Premium file shares = LRS/ZRS</b></span></div></div></div>

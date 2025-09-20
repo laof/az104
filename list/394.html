@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 21 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains a virtual network named VNET1. VNET1 contains the subnets shown in the following table.<div lova></div><img class="in-exam-image" src="img/394_0.png"><div lova></div>Each virtual machine uses a static IP address.<div lova></div>You need to create network security groups (NSGs) to meet following requirements:<div lova></div>✑ Allow web requests from the internet to VM3, VM4, VM5, and VM6.<div lova></div>✑ Allow all connections between VM1 and VM2.<div lova></div>✑ Allow Remote Desktop connections to VM1.<div lova></div>✑ Prevent all other network traffic to VNET1.<div lova></div>What is the minimum number of NSGs you should create?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>1</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>3</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>4</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>12</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>A. <b>1</b><div lova></div><div lova></div><b>Explanation of right option:</b><div lova></div>A. <b>1</b>: It is technically possible to use a single NSG for all three subnets and write granular rules that reference the specific static IP addresses of the VMs. This NSG can allow web requests from the internet to VM3, VM4, VM5, and VM6, allow all connections between VM1 and VM2, allow Remote Desktop to VM1, and block all other traffic. Since all VMs use static IP addresses, you can use these IPs in your NSG rules to ensure only the required traffic is permitted to each VM, meeting all specified requirements with just one NSG.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Other options:</b><div lova></div>B. 3: Using three NSGs (one for each subnet) is the traditional approach and aligns with Azure best practices for maintainability, clarity, and scalability, but it is not strictly required if you use IP-based rules in one NSG.<div lova></div>C. 4: Four NSGs are unnecessary because all requirements can be met with fewer NSGs.<div lova></div>D. 12: Twelve NSGs (one per VM) is excessive and would create unnecessary complexity with no added benefit for these requirements.</span></div></div></div>

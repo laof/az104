@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 49 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You plan to deploy three Azure virtual machines named VM1, VM2, and VM3. The virtual machines will host a web app named App1.<div lova></div>You need to ensure that at least two virtual machines are available if a single Azure datacenter becomes unavailable.<div lova></div>What should you deploy?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>all three virtual machines in a single Availability Zone</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>all virtual machines in a single Availability Set</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>each virtual machine in a separate Availability Zone</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>each virtual machine in a separate Availability Set</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>C. each virtual machine in a separate Availability Zone</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div>Explanation of correct option:<div lova></div><div lova></div><b>each virtual machine in a separate Availability Zone:</b> By deploying each VM in a different Availability Zone, the solution ensures that if a single Azure datacenter (which corresponds to a single Availability Zone) becomes unavailable, the other VMs in the remaining zones will continue to operate. This provides the highest level of resilience against datacenter failures.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>Explanation of other options:<div lova></div><div lova></div>A. all three virtual machines in a single Availability Zone: This would place all VMs in the same datacenter, so if that zone is unavailable, all VMs go down.<div lova></div><div lova></div>B. all virtual machines in a single Availability Set: Availability Sets protect against failures within a datacenter (e.g., hardware or rack failures) but do not help if the entire datacenter (Availability Zone) goes down.<div lova></div><div lova></div>D. each virtual machine in a separate Availability Set: Availability Sets cannot span multiple datacenters, so this does not provide resilience if a whole datacenter fails.<div lova></div></span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 15 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains the storage accounts shown in the following table.<div lova></div><img class="in-exam-image" src="img/169_0.png"><div lova></div>You need to identify which storage account can be converted to zone-redundant storage (ZRS) replication by requesting a live migration from Azure support.<div lova></div>What should you identify?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>storage1</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>storage2</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>storage3</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>storage4</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Question 3-15</h4><b>Answer: B. Storage2</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of correct option:</b><div lova></div><div lova></div><b>B. Storage2</b> — This is a <b>StorageV2</b> account with <b>Standard</b> performance and <b>LRS</b> replication, which meets the requirements for live migration to <b>ZRS</b>. Azure supports live migration from LRS to ZRS for eligible StorageV2 accounts.<div lova></div><div lova></div><b>Explanation of other options:</b><div lova></div><div lova></div><b>A. Storage1</b> — Incorrect because it is a <b>general purpose v1</b> account and uses <b>Premium</b> performance. Live migration to ZRS is not supported for this configuration.<div lova></div><div lova></div><b>C. Storage3</b> — Incorrect because it uses <b>Premium</b> performance and <b>RA-GRS</b> replication. Live migration to ZRS is not supported from RA-GRS or for Premium performance tiers.<div lova></div><div lova></div><b>D. Storage4</b> — Incorrect because it is a <b>BlobStorage</b> account, not a general-purpose v2 account. BlobStorage accounts are not eligible for live migration to ZRS.<h4><div lova></div>ZRS Support and Conversion Rules</h4><b>ZRS</b> supports the following <b>Storage Account Types</b>:<div lova></div><div lova></div>- <b>Standard General-purpose v2 Accounts</b><div lova></div><div lova></div>- <b>Premium File Share Accounts</b><div lova></div><div lova></div>- <b>Premium Block Blob Accounts</b><div lova></div><div lova></div><b>Conversion</b> is only supported for <b>GPv2</b> and <b>Premium File Share</b> storage accounts (not for <b>Blob Accounts</b>).<div lova></div><div lova></div>To convert from <b>GRS/RA-GRS</b> to <b>ZRS</b>, you must first switch to <b>LRS</b> (direct conversion from <b>RA-GRS</b> is not possible).</span></div></div></div>

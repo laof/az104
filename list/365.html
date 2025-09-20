@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 113 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<div lova></div><div lova></div>After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<div lova></div><div lova></div>You have an Azure container registry named Registry1 that contains an image named image1.<div lova></div><div lova></div>You receive an error message when you attempt to deploy a container instance by using image1.<div lova></div><div lova></div>You need to be able to deploy a container instance by using image1.<div lova></div><div lova></div>Solution: You assign the AcrPull role to ACR-Tasks-Network for Registry1.<div lova></div><div lova></div>Does this meet the goal?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Yes</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>No</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>B..No<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of right option:</b> <div lova></div><b>B..No</b>AcrPull role to <b>ACR-Tasks-Network</b> only grants pull permissions to that specific identity. To deploy a container instance from Registry1, the identity used by the <b>Azure Container Instance</b> resource must have <b>AcrPull</b> on Registry1, not ACR-Tasks-Network. Therefore, this solution does not meet the goal.<div lova></div><div lova></div><b>Other options explained:</b> <div lova></div><b>A..Yes</b> — The solution would only work if the correct identity (used by the container instance) was granted <b>AcrPull</b>. Assigning the role to a different identity does not resolve the deployment error.<div lova></div></span></div></div></div>

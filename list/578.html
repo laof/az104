@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 55 Topic: 6</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription. The subscription contains virtual machines that run Windows Server.<div lova></div><div lova></div>You have a data collection rule (DCR) named Rule1.<div lova></div><div lova></div>You plan to use the Azure Monitor Agent to collect events from Windows System event logs.<div lova></div><div lova></div>You only need to collect system events that have an ID of 1001.<div lova></div><div lova></div>Which type of query should you use for the data source in Rule1?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>SQL</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>XPath</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>KQL</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B. XPath</b><div lova></div><div lova></div><b>Explanation:</b> To filter and collect specific events (such as those with <b>ID 1001</b>) from Windows event logs using the <b>Azure Monitor Agent</b> and a <b>Data Collection Rule (DCR)</b>, you should use an <b>XPath</b> query. <b>XPath</b> allows you to specify and filter event log data based on event properties like Event ID.<div lova></div><div lova></div>-----------------<h4><div lova></div>Other Options Explanation</h4><b>A. SQL:</b> SQL is not used for querying Windows event logs in Azure Monitor data collection rules.<div lova></div><div lova></div><b>C. KQL:</b> KQL (Kusto Query Language) is used for querying data after it has been collected and stored (e.g., in Log Analytics), not for filtering at the data collection source.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>XPath is a query language used to select nodes from an XML document. The Azure Monitor Agent uses XPath queries to filter events from Windows System event logs.<div lova></div><div lova></div>To collect only system events that have an ID of 1001, you would use the following XPath query:<div lova></div><b>//*[System/@EventID=1001]</b><div lova></div><div lova></div>This query will select all nodes in the XML document where the System element has an EventID attribute equal to 1001.<div lova></div><div lova></div>SQL and KQL are not supported for filtering events from Windows System event logs.</span></div></div></div>

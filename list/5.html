@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 5 Topic: 1</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You are planning to deploy an Ubuntu Server virtual machine to your company's Azure subscription.<div lova></div>You are required to implement a custom deployment that includes adding a particular trusted root certification authority (CA).<div lova></div>Which of the following should you use to create the virtual machine?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>The New-AzureRmVm cmdlet.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>The New-AzVM cmdlet.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>The Create-AzVM cmdlet.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>The az vm create command.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>Correct Option: D. The az vm create command.</b><div lova></div><div lova></div>Explanation: The <b>az vm create</b> command is used in the Azure CLI to create virtual machines. It allows for custom configurations, including adding trusted root certification authorities (CAs) during the deployment process.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Options:</b><div lova></div><div lova></div><b>A. The New-AzureRmVm cmdlet:</b> This cmdlet is part of the older AzureRM module, which has been replaced by the Az module. It is not recommended for new deployments.<div lova></div><div lova></div><b>B. The New-AzVM cmdlet:</b> This cmdlet is used in the Az PowerShell module to create virtual machines, but it does not provide the same level of customization as the az vm create command.<div lova></div><div lova></div><b>C. The Create-AzVM cmdlet:</b> This cmdlet does not exist in the Az PowerShell module. The correct cmdlet for creating VMs in PowerShell is New-AzVM.<h4><div lova></div>Additional:</h4>Example for Creating an Ubuntu Server VM with a Trusted Root CA:<div lova></div><div lova></div>To create an Ubuntu Server virtual machine and add a trusted root certification authority (CA) using the Azure CLI, you can use the following command:<div lova></div><div lova></div><b>az vm create</b> --resource-group <b>RG1</b> --name <b>MyUbuntuVM</b> --image <b>UbuntuLTS</b> --admin-username <b>azureuser</b> --generate-ssh-keys --custom-data <b>cloud-init.txt</b><div lova></div><div lova></div>In this example, <b>cloud-init.txt</b> is a file that contains the cloud-init configuration to add the trusted root CA. The content of <b>cloud-init.txt</b> might look like this:<div lova></div><div lova></div>#cloud-config<div lova></div><div lova></div>ca-certs:<div lova></div><div lova></div>    trusted:<div lova></div><div lova></div>        - <b>content</b>: |<div lova></div><div lova></div>            -----BEGIN CERTIFICATE-----<div lova></div><div lova></div>            MIIDdzCCAl+gAwIBAgIEU1iO/jANBgkqhkiG9w0BAQsFADBoMQswCQYDVQQGEwJV<div lova></div><div lova></div>        ...<div lova></div><div lova></div>        -----END CERTIFICATE-----<div lova></div><div lova></div>      <b>filename</b>: /usr/local/share/ca-certificates/my-ca.crt<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation:</b> This command creates a VM named <b>MyUbuntuVM</b> in the resource group <b>RG1</b> using the UbuntuLTS image. The <b>cloud-init.txt</b> file is used to configure the VM to include the trusted root CA.</span></div></div></div>

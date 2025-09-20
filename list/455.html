@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 82 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have the Azure virtual machines shown in the following table.<div lova></div><img class="in-exam-image" src="img/455_0.png"><div lova></div>VNET1 is linked to a private DNS zone named contoso.com that contains the records shown in the following table.<div lova></div><img class="in-exam-image" src="img/455_1.png"><div lova></div>You need to ping VM2 from VM1.<div lova></div>Which DNS names can you use to ping VM2?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>comp2.contoso.com and comp4.contoso.com only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>comp1.contoso.com, comp2.contoso.com, comp3.contoso.com, and comp4.contoso.com</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>comp2.contoso.com only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>comp1.contoso.com and comp2.contoso.com only</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="E.">E..</span>comp1.contoso.com, comp2.contoso.com, and comp4.contoso.com only</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>C..comp2.contoso.com only</b> — <b>comp2.contoso.com</b> is an A record pointing to 10.0.0.5 (VM2), allowing ping. Only A or CNAME-to-A records that resolve to VM2's IP can be used for ping. <div lova></div><div lova></div><b>comp1.contoso.com</b> is a TXT record and <b>comp3.contoso.com</b> is a CNAME to a TXT, not an A record, so these cannot be used to ping VM2. <b>comp4.contoso.com</b> is a PTR record, which only maps IP to name (reverse lookup) and cannot be used to resolve the IP from the name for ping.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of other options:</b><div lova></div><b>B..comp1.contoso.com, comp2.contoso.com, comp3.contoso.com, and comp4.contoso.com</b> is incorrect because <b>comp1.contoso.com</b> is a TXT record (not used for ping), <b>comp3.contoso.com</b> is a CNAME pointing to a TXT record (not an A record), and <b>comp4.contoso.com</b> is a PTR record for reverse lookups only.<div lova></div><b>D..comp1.contoso.com and comp2.contoso.com only</b> is incorrect because <b>comp1.contoso.com</b> is not an A/CNAME-to-A record.<div lova></div><b>E..comp1.contoso.com, comp2.contoso.com, and comp4.contoso.com only</b> is incorrect for the same reason; <b>comp1.contoso.com</b> and <b>comp4.contoso.com</b> cannot be used to ping VM2.</span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 52 Topic: 4</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You plan to deploy several Azure virtual machines that will run Windows Server 2019 in a virtual machine scale set by using an Azure Resource Manager template.<div lova></div>You need to ensure that NGINX is available on all the virtual machines after they are deployed.<div lova></div>What should you use?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Deployment Center in Azure App Service</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>A Desired State Configuration (DSC) extension</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>the New-AzConfigurationAssignment cmdlet</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>a Microsoft Intune device configuration profile</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>B. A Desired State Configuration (DSC) extension</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation:</b><div lova></div><div lova></div>To ensure that NGINX is installed and available on all virtual machines in a scale set immediately after deployment using an Azure Resource Manager template, you should use the <b>Desired State Configuration (DSC) extension</b>. The DSC extension allows you to define and enforce the configuration of software (like NGINX) on Azure VMs during deployment.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of other options:</b><div lova></div><div lova></div>A. Deployment Center in Azure App Service: This is used for deploying code to Azure App Service, not for configuring VM software.<div lova></div><div lova></div>C. the New-AzConfigurationAssignment cmdlet: This is used with Azure Policy and Azure Blueprints, not for directly configuring VM extensions.<div lova></div><div lova></div>D. a Microsoft Intune device configuration profile: Intune is for endpoint management, typically for client devices, not for configuring server VM workloads in Azure.<div lova></div><div lova></div>An example<div lova></div><div lova></div>Azure Virtual Machine extension run post-deployment configuration and uatomation on Azure virtual machines; it will run the specified script each time the extension is applied or updated to the VM, not only once at the first VM startup. below is a example:<div lova></div><b> az vm extension set \<div lova></div>&nbsp; --resource-group MyResourceGroup \<div lova></div>&nbsp; --vm-name MyVM \<div lova></div>&nbsp; --name CustomScript \<div lova></div>&nbsp; --publisher Microsoft.Azure.Extensions \<div lova></div>&nbsp; --settings '{"commandToExecute":"apt-get update &amp;&amp; apt-get install -y nginx"}'</b><div lova></div></span></div></div></div>

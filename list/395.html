@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 22 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription that contains the resources shown in the following table.<div lova></div><img class="in-exam-image" src="img/395_0.png"><div lova></div>The Not allowed resource types Azure policy that has policy enforcement enabled is assigned to RG1 and uses the following parameters:<div lova></div>Microsoft.Network/virtualNetworks<div lova></div>Microsoft.Compute/virtualMachines<div lova></div>In RG1, you need to create a new virtual machine named VM2, and then connect VM2 to VNET1.<div lova></div>What should you do first?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Remove Microsoft.Compute/virtualMachines from the policy.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Create an Azure Resource Manager template</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Add a subnet to VNET1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Remove Microsoft.Network/virtualNetworks from the policy.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>A. <b>Remove Microsoft.Compute/virtualMachines from the policy.</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of right option:</b><div lova></div>A. <b>Remove Microsoft.Compute/virtualMachines from the policy.</b>: The current Azure policy explicitly blocks the creation of both virtual networks and virtual machines in RG1. To create a new VM (VM2) in RG1, you must first remove the restriction on Microsoft.Compute/virtualMachines in the policy, otherwise the creation will be denied by policy enforcement.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Other options:</b><div lova></div>B. Create an Azure Resource Manager template: This is a deployment method, but does not address the policy restriction that prevents VM creation.<div lova></div>C. Add a subnet to VNET1: This is not needed for the initial step, since the main blocker is the policy preventing VM creation.<div lova></div>D. Remove Microsoft.Network/virtualNetworks from the policy: This would allow you to create virtual networks, but the question requires you to create a virtual machine, so the first step must be to allow VM creation.</span></div></div></div>

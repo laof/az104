@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 36 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure subscription named Subscription1. Subscription1 contains a virtual machine named VM1.<div lova></div>You have a computer named Computer1 that runs Windows 10. Computer1 is connected to the Internet.<div lova></div>You add a network interface named vm1173 to VM1 as shown in the exhibit. (Click the Exhibit tab.)<div lova></div><img class="in-exam-image" src="img/409_0.png"><div lova></div>From Computer1, you attempt to connect to VM1 by using Remote Desktop, but the connection fails.<div lova></div>You need to establish a Remote Desktop connection to VM1.<div lova></div>What should you do first?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Change the priority of the RDP rule</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Attach a network interface</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Delete the DenyAllInBound rule</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Start VM1</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>D..Start VM1<div lova></div><div lova></div><b>Explanation:</b> The <b>RDP rule</b> has the highest priority (lowest number, 300), so it is evaluated first and will allow Remote Desktop traffic before the DenyAllInBound rule is processed. Since the NSG rules are correct, the most likely reason for the connection failure is that VM1 is not running. Therefore, you should <b>start VM1</b> to establish a Remote Desktop connection.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A..Change the priority of the RDP rule<div lova></div><b>Explanation:</b> The RDP rule already has the highest priority, so changing its priority will not affect the result. The rule is already correctly positioned to allow RDP traffic.<div lova></div>B..Attach a network interface<div lova></div><b>Explanation:</b> The network interface (vm1173) is already attached to VM1 as shown in the exhibit, so attaching another interface is unnecessary.<div lova></div>C..Delete the DenyAllInBound rule<div lova></div><b>Explanation:</b> Deleting the DenyAllInBound rule is not required because the RDP rule already permits the necessary traffic before the deny rule is evaluated. Removing DenyAllInBound could reduce security by allowing unwanted inbound traffic.<div lova></div></span></div></div></div>

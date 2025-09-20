@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 32 Topic: 6</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have a subnet named Subnet1 that contains Azure virtual machines. A network security group (NSG) named NSG1 is associated to Subnet1. NSG1 only contains the default rules.<div lova></div>You need to create a rule in NSG1 to prevent the hosts on Subnet1 form connecting to the Azure portal. The hosts must be able to connect to other internet hosts.<div lova></div>To what should you set Destination in the rule?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Application security group</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>IP Addresses</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Service Tag</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Any</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>C. Service Tag</b>: <div lova></div><div lova></div>You should set <b>Destination</b> to <b>Service Tag</b> in the NSG rule. Service tags represent groups of IP addresses for Azure services. By selecting the appropriate service tag (such as <b>AzurePortal</b> or <b>AzureCloud</b>), you can block access to the Azure portal while still allowing other internet traffic. This is the recommended, scalable, and maintainable approach since Azure manages the underlying IP ranges for service tags.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Options:</b><div lova></div><div lova></div><b>Application security group</b>: This is used to group and manage VM resources within your own environment, not to represent external or Microsoft-managed services, so it cannot be used to block the Azure portal.<div lova></div><div lova></div><b>IP Addresses</b>: While technically possible, blocking by IP address is not recommended for the Azure portal because its IP ranges change frequently, making this approach hard to maintain and unreliable.<div lova></div><div lova></div><b>Any</b>: Setting the destination to "Any" would block all outbound traffic from Subnet1, preventing all internet access, which does not meet the requirement to allow connectivity to other internet hosts.<div lova></div></span></div></div></div>

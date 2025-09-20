@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 8 Topic: 6</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have an Azure virtual machine named VM1.<div lova></div>You use Azure Backup to create a backup of VM1 named Backup1.<div lova></div>After creating Backup1, you perform the following changes to VM1:<div lova></div>✑ Modify the size of VM1.<div lova></div>✑ Copy a file named Budget.xls to a folder named Data.<div lova></div>✑ Reset the password for the built-in administrator account.<div lova></div>✑ Add a data disk to VM1.<div lova></div>An administrator uses the Replace existing option to restore VM1 from Backup1.<div lova></div>You need to ensure that all the changes to VM1 are restored.<div lova></div>Which change should you perform again?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Modify the size of VM1.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>Reset the password for the built-in administrator account.</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>Add a data disk.</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Copy Budget.xls to Data.</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>D..Copy Budget.xls to Data.</b><div lova></div><div lova></div><b>Explanation:</b> is the correct answer because when restoring a VM from an Azure Backup using the "Replace existing" option, the VM is reverted to the state it was in at the time of the backup; any files or data added after the backup, such as Budget.xls, will not be present and must be recopied to the VM after restore.<h4><div lova></div>Explanation of Other Options</h4><b>A..Modify the size of VM1</b> is an Azure-level configuration that can be reapplied at any time and is not directly related to the data or state of the VM disks restored from backup.<div lova></div><div lova></div><b>B..Reset the password for the built-in administrator account</b> is a configuration change that will revert to the password set at backup time, but it can be reset again easily after restore.<div lova></div><div lova></div><b>C..Add a data disk</b> refers to adding disks after backup; if the disk was not present at backup time, it will not be in the restored VM, but the primary focus of the question is on the specific file copy (option D) rather than hardware configuration.</span></div></div></div>

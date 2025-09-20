@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 17 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<div lova></div>After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<div lova></div>You have an Azure subscription that contains the following resources:<div lova></div>✑ A virtual network that has a subnet named Subnet1<div lova></div>✑ Two network security groups (NSGs) named NSG-VM1 and NSG-Subnet1<div lova></div>✑ A virtual machine named VM1 that has the required Windows Server configurations to allow Remote Desktop connections<div lova></div>NSG-Subnet1 has the default inbound security rules only.<div lova></div>NSG-VM1 has the default inbound security rules and the following custom inbound security rule:<div lova></div>✑ Priority: 100<div lova></div>✑ Source: Any<div lova></div>✑ Source port range: *<div lova></div>✑ Destination: *<div lova></div>✑ Destination port range: 3389<div lova></div>✑ Protocol: UDP<div lova></div>✑ Action: Allow<div lova></div>VM1 has a public IP address and is connected to Subnet1. NSG-VM1 is associated to the network interface of VM1. NSG-Subnet1 is associated to Subnet1.<div lova></div>You need to be able to establish Remote Desktop connections from the internet to VM1.<div lova></div>Solution: You add an inbound security rule to NSG-Subnet1 that allows connections from the Any source to the *destination for port range 3389 and uses the TCP protocol. You remove NSG-VM1 from the network interface of VM1.<div lova></div>Does this meet the goal?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Yes</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>No</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div><b>A. Yes</b> <div lova></div><div lova></div>This is the correct option. By adding an inbound rule to <b>NSG-Subnet1</b> that allows TCP connections on port 3389 from any source, and removing <b>NSG-VM1</b> from the VM's network interface, you ensure that only the subnet-level NSG controls inbound traffic. Since NSG-Subnet1 now allows TCP connections on port 3389, and VM1 has a public IP, RDP from the internet will be permitted.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>B. No</b> <div lova></div><div lova></div>This is incorrect because the solution does allow the required TCP traffic on port 3389 by configuring the subnet-level NSG appropriately and removing any conflicting rules at the NIC level.<div lova></div><div lova></div><b>Additional:</b><div lova></div><div lova></div>Default inbound security rules don’t allow internet access.</span></div></div></div>

@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 107 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT<div lova></div> -<div lova></div><div lova></div>Your network contains an on-premises Active Directory Domain Services (AD DS) domain named contoso.com. The domain contains the servers shown in the following table.<div lova></div><div lova></div><img src="img/480_0.png"><div lova></div><div lova></div>You plan to migrate contoso.com to Azure.<div lova></div><div lova></div>You create an Azure virtual network named VNET1 that has the following settings:<div lova></div><div lova></div>•	Address space: 10.0.0.0/16<div lova></div>•	Subnet:<div lova></div>o	  Name: Subnet1<div lova></div>o	  IPv4: 10.0.1.0/24<div lova></div><div lova></div>You need to move DC1 to VNET1. The solution must ensure that the member servers in contoso.com can resolve AD DS DNS names.<div lova></div><div lova></div>How should you configure DC1? To answer, select the appropriate options in the answer area.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/480_1.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/480_2.png"><div lova></div><div lova></div>IP address: <b>Use 10.0.1.3</b><div lova></div>Name resolution: <b>Configure VNET1 to use a custom DNS server</b><div lova></div><div lova></div><b>Explanation:</b> <div lova></div> - When moving DC1 (the domain controller and DNS server) to Azure, you should assign it a static private IP address from the target subnet's range (10.0.1.0/24, so 10.0.1.3 is correct). <div lova></div> - For name resolution, to ensure member servers in contoso.com can resolve AD DS DNS names, you must configure VNET1 to use a custom DNS server (pointing to the new DC1 IP), not the default Azure DNS.<div lova></div></span></div></div></div>

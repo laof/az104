@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 36 Topic: 6</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div><div lova></div>You have an Azure subscription that is linked to an Azure AD tenant. The tenant contains two users named User1 and User2.<div lova></div><div lova></div>The subscription contains the resources shown in the following table.<div lova></div><div lova></div><img src="img/559_0.png"><div lova></div><div lova></div>The subscription contains the alert rules shown in the following table.<div lova></div><div lova></div><img src="img/559_1.png"><div lova></div><div lova></div>The users perform the following action:<div lova></div><div lova></div>•	User1 creates a new virtual disk and attaches the disk to VM1<div lova></div>•	User2 creates a new resource tag and assigns the tag to RG1 and VM1<div lova></div><div lova></div>Which alert rules are triggered by each user? To answer, select the appropriate options in the answer area.<div lova></div><div lova></div>NOTE: Each correct selection is worth one point.<div lova></div><div lova></div><img src="img/559_2.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/559_3.png"><div lova></div><div lova></div><b>User1</b>: <b>Alert1 and Alert2 are triggered</b><div lova></div><div lova></div><b>User2</b>: <b>Alert1 and Alert2 are triggered</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Right Options:</b><div lova></div><div lova></div><b>User1</b>: Creating and attaching a new virtual disk to <b>VM1</b> is an administrative operation on <b>VM1</b>, which triggers <b>Alert2</b> (scope: <b>VM1</b>, condition: all administrative operations); since <b>VM1</b> is in <b>RG1</b>, and <b>Alert1</b> (scope: <b>RG1</b>) applies to administrative operations for any resource in the group, <b>Alert1</b> is also triggered.<div lova></div><div lova></div><b>User2</b>: Assigning a tag to both <b>RG1</b> and <b>VM1</b> is an administrative operation for each resource, so tagging <b>RG1</b> triggers <b>Alert1</b>, and tagging <b>VM1</b> triggers both <b>Alert1</b> (because it's in <b>RG1</b>) and <b>Alert2</b> (scope: <b>VM1</b>), so both alerts are triggered.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of Other Options:</b><div lova></div><div lova></div><b>No alert is triggered</b>: Incorrect, because both users perform administrative operations that match the scope and condition of at least one alert.<div lova></div><div lova></div><b>Only Alert1 is triggered</b>: Incorrect, because actions on <b>VM1</b> also trigger <b>Alert2</b> in addition to <b>Alert1</b>.<div lova></div><div lova></div><b>Only Alert2 is triggered</b>: Incorrect, because administrative operations on <b>VM1</b> and <b>RG1</b> both fall under <b>Alert1</b>'s scope, so both alerts are triggered.<div lova></div></span></div></div></div>

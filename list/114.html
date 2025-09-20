@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 74 Topic: 2</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">Your on-premises network contains a VPN gateway.<div lova></div><div lova></div>You have an Azure subscription that contains the resources shown in the following table.<div lova></div><div lova></div><img src="img/114_0.png"><div lova></div><div lova></div>You need to ensure that all the traffic from VM1 to storage1 travels across the Microsoft backbone network.<div lova></div><div lova></div>What should you configure?</p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">A..</span>Azure Application Gateway</li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">B..</span>private endpoints</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>a network security group (NSG)</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>Azure Virtual WAN</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><h4><div lova></div>Correct Answer:</h4>B. <b>private endpoints</b><div lova></div><div lova></div><b>Explanation:</b> To ensure traffic from <b>VM1</b> to <b>storage1</b> travels across the <b>Microsoft backbone network</b>, configure a <b>private endpoint</b> for the storage account. This maps a private IP from the VNet to the storage account, keeping traffic within Microsoft’s network even with forced tunneling enabled.<div lova></div><div lova></div>-----------------<h4><div lova></div>Explanation of Other Options:</h4>A. <b>Azure Application Gateway</b> — Used for web traffic load balancing, not for routing VM-to-storage traffic.<div lova></div><div lova></div>C. <b>Network Security Group (NSG)</b> — Controls traffic flow but does not affect routing paths or ensure backbone usage.<div lova></div><div lova></div>D. <b>Azure Virtual WAN</b> — Designed for large-scale branch connectivity, not required for VM-to-storage routing within the same region.<div lova></div><div lova></div>-----------------<h4><div lova></div>Additional:</h4>To ensure that all traffic from your VMs to your Storage Account stays within the Microsoft backbone network, you can use either <b>Virtual Network (VNet) Service Endpoints</b> or <b>Azure Private Link</b>. Service Endpoints allow secure access to the storage account from the VNet, while Private Link assigns a private IP from the VNet to the storage account, ensuring all traffic remains on the Azure backbone. Both options provide secure and optimized routing.</span></div></div></div>

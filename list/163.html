@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 9 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div>You have Azure subscription that includes following Azure file shares:<div lova></div><img class="in-exam-image" src="img/163_0.png"><div lova></div>You have the following on-premises servers:<div lova></div><img class="in-exam-image" src="img/163_1.png"><div lova></div>You create a Storage Sync Service named Sync1 and an Azure File Sync group named Group1. Group1 uses share1 as a cloud endpoint.<div lova></div>You register Server1 and Server2 in Sync1. You add D:\Folder1 on Server1 as a server endpoint of Group1.<div lova></div>For each of the following statements, select Yes if the statement is true. Otherwise, select No.<div lova></div>NOTE: Each correct selection is worth one point.<div lova></div>Hot Area:<div lova></div><img class="in-exam-image" src="img/163_2.jpg"><div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/163_3.png"><h4><div lova></div>Correct Answers</h4><b>share2 can be added as a cloud endpoint for Group 1: No</b><div lova></div><div lova></div><b>E:\Folder2 on Server 1 can be added as a server endpoint for Group 1: No</b><div lova></div><div lova></div><b>D:\Data on Server 2 can be added as a server endpoint for Group 1: Yes</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>share2 can be added as a cloud endpoint for Group 1: No</b> – A sync group can only have one <b>cloud endpoint</b>, and <b>share1</b> is already used. You cannot add <b>share2</b> to the same group.<div lova></div><div lova></div><b>E:\Folder2 on Server 1 can be added as a server endpoint for Group 1: No</b> – A server can only have one <b>server endpoint</b> per sync group. Since <b>D:\Folder1</b> is already added from Server1, <b>E:\Folder2</b> cannot be added to the same group.<div lova></div><div lova></div><b>D:\Data on Server 2 can be added as a server endpoint for Group 1: Yes</b> – A registered server can support multiple <b>server endpoints</b> across different sync groups. Since Server2 is registered and not yet used in Group1, it can add <b>D:\Data</b> as a server endpoint in this group.<h4><div lova></div>Additional:</h4>Azure File Sync Server Endpoint Rules<div lova></div><div lova></div><b>✔ A registered server can support multiple server endpoints</b><div lova></div><div lova></div><b>✔ A server can have one server endpoint per sync group</b><div lova></div><div lova></div><b>✔ A server can participate in multiple sync groups</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>What this means:</b><div lova></div><div lova></div>✅ A server can sync multiple folders, but each folder must be part of a different <b>sync group</b>.<div lova></div><div lova></div>✅ Within a single <b>sync group</b>, a server can only contribute <b>one folder</b> as a server endpoint.<div lova></div><div lova></div>✅ So yes, a registered server can have multiple folders as server endpoints, but each must belong to a different sync group.</span></div></div></div>

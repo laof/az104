@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 24 Topic: 5</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">You have a public load balancer that balances ports 80 and 443 across three virtual machines named VM1, VM2, and VM3.<div lova></div>You need to direct all the Remote Desktop Protocol (RDP) connections to VM3 only.<div lova></div>What should you configure?<div lova></div></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">A..</span>an inbound NAT rule</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">B..</span>a new public load balancer for VM3</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">C..</span>a frontend IP configuration</li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">D..</span>a load balancing rule</li></ul></div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><div lova></div><div lova></div>A. <b>an inbound NAT rule</b><div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Explanation of right option:</b><div lova></div>A. <b>an inbound NAT rule</b>: An inbound NAT (Network Address Translation) rule on the public load balancer allows you to direct RDP (typically TCP port 3389) traffic from the public IP to a specific backend VM (VM3). This way, only VM3 will receive RDP connections, even though other traffic (ports 80 and 443) is load balanced across all three VMs.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div><b>Other options:</b><div lova></div>B. a new public load balancer for VM3: Unnecessary, as you can use an inbound NAT rule on the existing load balancer.<div lova></div>C. a frontend IP configuration: This defines the public IP endpoint, but does not control how RDP traffic is routed.<div lova></div>D. a load balancing rule: This would distribute RDP connections across all VMs, rather than directing them to VM3 only.</span></div></div></div>

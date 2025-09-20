@@ -1,0 +1,25 @@
+<div class="discussion-header-container">
+				
+					
+					
+					<!-- Question -->
+					<div class="question-discussion-header">
+						<div id="info">Question : 77 Topic: 3</div>
+					</div>
+					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+						<p class="card-text" id="questionDescription">HOTSPOT -<div lova></div><div lova></div>You have an Azure subscription that contains a virtual machine named VM1.<div lova></div><div lova></div>To VM1, you plan to add a 1-TB data disk that meets the following requirements:<div lova></div><div lova></div>•	Provides data resiliency in the event of a datacenter outage.<div lova></div>•	Provides the lowest latency and the highest performance.<div lova></div>•	Ensures that no data loss occurs if a host fails.<div lova></div><div lova></div>You need to recommend which type of storage and host caching to configure for the new data disk.<div lova></div><div lova></div><img src="img/231_0.png"></p>
+						
+							
+								
+							
+							<div class="question-choices-container" id="questionChoices">
+								
+							</div>
+						
+
+						
+						
+
+						<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>Suggested Answer:</strong></span><span class="answer-description"><img src="img/231_1.png"><div lova></div><div lova></div>Storage type: <b>Premium SSD that uses zone-redundant storage (ZRS)</b><div lova></div>Host caching: <b>None</b><h4><div lova></div>Explanation of right options:</h4> <b>Premium SSD that uses zone-redundant storage (ZRS)</b> provides data resiliency in the event of a datacenter outage by replicating data across availability zones. It also delivers the lowest latency and highest performance. <b>Host caching: None</b> is recommended for data disks requiring write resiliency, because enabling host caching (especially Read/Write) can lead to potential data loss if the host fails.<div lova></div><div lova></div>-----------------<div lova></div><div lova></div>A. <b>Premium SSD that uses locally-redundant storage (LRS)</b>: Only replicates within a single datacenter and does not provide resiliency against datacenter outages.<div lova></div>B. <b>Standard SSD that uses locally-redundant storage (LRS)</b>: Lower performance and no cross-zone resiliency.<div lova></div>C. <b>Standard SSD that uses zone-redundant storage (ZRS)</b>: While it provides zone redundancy, it does not deliver the highest performance.<div lova></div>D. <b>Host caching: Read-only or Read/Write</b>: Both options can risk data loss if the host fails before data is flushed to storage, violating the requirement to ensure no data loss on host failure.<div lova></div></span></div></div></div>

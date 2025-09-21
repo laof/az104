@@ -1,0 +1,129 @@
+名词解释：
+RBAC(基于角色的访问控制)
+NS(Name Server）记录是域名服务器记录，用来指定该域名由哪个DNS服务器来进行解析。
+SMB 服务器消息块（Server Message Block），一种应用层网络传输协议，由微软开发，主要功能是使网络上的机器能够共享计算机文件、打印机、串行端口和通讯等资源
+LB 负载均衡器（Load Balancer）
+
+问题：
+与其各自的部门关联起来: 为虚拟机分配标签
+要实施 Azure AD 条件访问策略: 访问 Azure 门户来更改 Azure AD 条件访问策略的授权控制
+创建虚拟机命令 az vm create 
+将新员工使用多重身份验证: 使用现有多重身份验证提供程序数据的备份来创建一个新的多重身份验证提供程序
+
+在本地 Active Directory 新的用户帐户。需要立即将用户信息复制到 Azure AD。 ??? Q9
+
+将两个数据中心配置为地理集群站点,推荐一个 Azure 存储冗余选项: 只读地理冗余存储（RA-GRS）
+查看使用的 ARM 模板, 访问资源组刀片
+试调整其中一个虚拟机的大小，但返回分配失败消息:应该停止所有三个虚拟机。
+虚拟机 (VM)，数据磁盘, 附加到另一台 Azure VM:分离数据磁盘
+ARM 模板允许尽可能多的虚拟机在发生结构故障或维护时保持可访问, 
+配置platformFaultDomainCount 最大值
+配置platformUpdateDomainCount： 最大为20
+
+Q20 密码不能以纯文本形式存储.An Azure Key Vault（密钥保管库） / an access policy （访问策略）
+
+确保脚本在新虚拟机上运行: 在%windir%\setup\scripts目录下配置一个SetupComplete.cmd批处理文件
+Add -AzVhd 用于将通用 VHD 镜像上传到 Azure，这是使映像可用于创建 VM 所需的第一步。
+Q20 本地虚拟机复制到Azure : Hyper-V site ，Azure Recovery Services Vault (恢复服务保管库), Replication policy(复制策略)
+
+Windows 10建立与 VirtualNetworkB 的连接： 在 Windows 10 工作站上下载并重新安装 VPN 客户端配置包
+远程工作人员需要访问 VNet1 上的虚拟机： 配置点到站点 (P2S) VPN。
+配置 Azure 内部负载均衡器作为可用性组的侦听器：您启用浮动 IP
+为虚拟机配置静态内部 IP 地址： 运行 Set-AzureStaticVNetIP PowerShell cmdlet
+将五台虚拟机部署到虚拟网络子网, 虚拟机的入站和出站安全规则必须相同.
+  最少需要5个网络接口。
+  最少需要1个安全组数量（NSG）
+
+恢复虚拟机的文件： 可以将文件恢复到公司订阅内的任何 VM
+恢复虚拟机：应该将 VM 还原到新的 Azure VM
+Azure 基础架构指标相关的性能问题 使用 Azure Monitor
+公司的虚拟机 (VM) 备份到恢复服务保管库，备份哪些虚拟机
+   运行 Windows 10 的虚拟机
+   运行 Windows Server 2012 或更高版本的虚拟机
+   尚未关闭的虚拟机
+   运行 Debian 8.2+ 的虚拟机
+   已关闭的虚拟机
+为 500 个外部用户中的每个人创建一个来宾用户帐户： 创建一个 PowerShell 脚本，为每个外部用户运行 New-AzureADMSInvitation cmdlet
+
+Q41 资源组 有内部负载均衡器LB1和公共负载均衡器LB2，要确保管理员能够管理它们，应该分配哪些角色： 都是网络参与者（Network Contributor）
+
+向 contoso.com用户授予对 AKS1 的访问权限，首先从 contoso.com 创建一个 OAuth 2.0 授权端点。
+Q43 临时 Microsoft SharePoint 文档库权限， 180 天后自动删除，创建哪两个组：使用已分配成员资格类型的 Microsoft 365 组 & 使用动态用户成员身份类型的 Microsoft 365 组
+
+Q44 ??? 都不能？
+Group1: User1(Member)  User2(Guest)
+Group2: UserA(Member) UserB(Guest)
+User3 是 Group1所有者。 Group2是 Group1 的成员。
+
+Q45 ???
+
+Q46 看图分析： 您只能在 ContosoRG1 中创建 Azure SQL 服务器。分析：范围仅限于订阅1,并阻止创建Microsoft.Sql/servers， 但ContosoRG1被列为排除项
+Q47 看图
+
+可以在同一租户内的不同订阅之间移动的资源： VM1、storage1、VNET1 和 VM1Managed
+
+功部署 Marketplace 资源 报错 错误消息：“用户未能通过验证购买资源，尚未接受此订阅中此项的法律条款..“。从 Azure PowerShell 运行 Set-AzMarketplaceTerms cmdlet
+
+为的 Azure Active Directory (Azure AD) 租户 分配管理员管理角色: 从目录角色边栏选项卡，修改目录角色
+购买了 10 个 Azure AD Premium P2 许可证 , 要确保用户可以使用 Azure AD Premium 所有功能 ： 从 Azure AD 的许可证边栏选项卡中分配许可证
+Azure 订阅内存过低时 ， 要在本地部署的Microsoft System Center Service Manager上报警， 先 部署 IT 服务管理连接器 (ITSM)
+在所有将加入 Azure AD 域的计算机上添加名为[email protected]的用户作为管理员。应该在 Azure AD 中配置什么？  设备设置（来自设备边栏选项卡）
+LINK:Q69 邀请外部合作伙伴登录 Azure AD 租户，并收到以下错误消息：“无法邀请用户[email protected] ”“通用授权异常。”: 从用户设置边栏选项卡中，修改外部协作设置
+
+Q54 看图 所有者手动添加Device1到Group1这样的已分配组。所有者无法手动向动态设备组2 添加设备
+资源组A， 有SQLDB01 和RGV1资源。 SQLDB01 备份到 RGV1，删除资源组A失败。先停止SQLDB01的备份
+
+
+确保 User1 可以将 VNet1 的 Reader读者角色分配给其他用户， 为User1 分配 VNet1的用户访问管理员角色
+
+公共 DNS 区域 作为自定义域名添加到 Azure AD。要确保 Azure 可以验证域名，创建MX的DNS记录。
+Q60为开发人员组提供 在Azure订阅里的Dev 资源组中创建 Azure 逻辑应用的能力： 在 Dev 上， 将贡献者角色 分配给开发人员组。（提代码）
+LINK: Q91 Logic App Contributor
+LINK: Q76 够部署虚拟机并管理虚拟网络 , 分配基于访问控制 (RBAC)角色的贡献者
+
+列出每个部门使用的成本：1，为每个资源分配一个标签。2 .从“成本分析”边栏中，按标签筛选视图。3 下载报告。
+Q62 从 Event 的表中查看错误事件，查询语句： search in (Event) "error"
+LINKQ82 Azure Log Analytics 工作区查询语句:  Event | search "error"
+Q63?
+
+西欧的webapp1, 移动到北欧的资源组里，结果 :应用服务计划任务仍在西欧，但是北欧的policy适用于webapp1.
+
+Q65 看图。创建自定义 RBAC 角色， 阻止对资源组的访问权限的管理
+  /subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e/resourceGroups
+  actions": ["*"] &&“notActions”：[“Microsoft.Authorization/*”]
+app的链接分布到所有虚拟机上：两种服务：内部负载均衡器 && Azure 应用程序网关
+
+快速识别未充分利用的虚拟机: 顾问
+
+Q 68 看图。所有用户在访问 Azure 门户时使用多重身份验证
+ 1.用户和组：选择所有用户 : Select All users
+ 2.云应用：选择Microsoft Azure 管理  Microsoft Azure Management
+ 3.授予：选择授予访问权限和要求多重身份验证 Select Grant access and Require multi-factor authentication
+
+要确保 User1 可以将策略分配给租户根管理组: 将全局管理员角色分配给 User1，然后指示 User1 配置 Azure 资源的访问管理。
+Q72 看图。修改用户的 JobTitle 和 UsageLocation, 仅限于云用户(Azure AD），可以为所有用户修改UsageLocation属性。
+为 Azure 订阅启用流量分析：订阅级别的所有者角色
+Q77  看图，admin1 已经登录。Admin3显示是Owner。 所以1，3都可以将 Admin2 添加为订阅的所有者。Admin2 在订阅级别未分配任何角色
+
+订阅S1->RG1(资源组) -> vm1(虚拟机)。 使用VM1的身份来管理RG1中的资源：修改 VM1 的托管标识设置
+Q79 看图。S1->RG1。删除RG1资源组。先删除资源锁（resource lock） 然后删除备份（backups）
+Q80 为 research.adatum.com 的子域委托给 Azure (adatum.com) 中的其他 DNS 服务器: 在 adatum.com 区域创建名为 research NS 记录
+LINK Q83: 要确保在 contoso.com 区域中创建的记录可以从互联网解析,修改DNS域名注册商中的NS记录
+创建名称包含 @contoso.com 后缀的 Azure AD 用户：
+   1添加自定义名称（在 Azure AD 中添加contoso.com作为自定义域名）。
+   2. 向公共 contoso.com DNS 区域添加记录。
+   3. 验证域。
+Q84 TODO.
+Q85看图 User1是所有者，拥有所有权限，包括添加子网。User3网络参与者，拥有管理子网等网络资源的权限。因此都向VNet1添加子网。User1所有者拥有完全访问权限，能将读者等角色分配给其他用户。
+Q86看图 跟踪资源使用情况并防止删除资源， 标签和锁 都是： Sub1, RG1 and VM1 
+Q87创建并上传一个文件以进行批量删除用户,文件中必须包括 每个用户唯一的用户主体名称
+Q88 看图 tag标签不会被继承，
+向每个办公室的本地管理员授予用户管理权限:行政单元 （administrative units)
+
+Q92 虚拟机贡献值 可删虚拟机。
+Q93 S1->RG1 -> VNet1 确保 User1 可以将 VNet1 的读者角色分配给其他用户:为 User1 分配 VNet1 的所有者角色
+Q94 看图
+Q95 要授予 Group1 安全组针对 share1 的存储文件数据 SMB 共享提升贡献者角色： 为存储 1 启用 Active Directory 域服务 (AD DS) 身份验证。
+Q96 Group管理现有订阅和计划订阅的角色分配, 为 Group1 分配 根管理组的用户访问管理员角色
+Q97 Azure policy可以分配给任何资源。如果在租户根组分配策略，则可以排除任何子范围
+Q98-100 原始租户中的全局管理员，不会自动应用于新租户

@@ -1,12 +1,58 @@
-import express, { Request, Response } from 'express';
-import fs from 'fs';
-import path from 'path';
-import https from 'https';
-import http from 'http';
-import { URL } from 'url';
+import express from 'express';
+import type { Request, Response } from 'express';
+import * as fs from 'node:fs';
+import * as path from 'node:path';
+import * as https from 'node:https';
+import * as http from 'node:http';
+import { URL } from 'node:url';
 
 const app = express();
 const PORT = 3000;
+
+// 中间件 - 配置请求体大小限制为50MB
+app.use(express.json({limit: '50mb'}));
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
+
+// POST /create接口 - 创建HTML文件
+app.post('/create', async (req: Request, res: Response) => {
+  try {
+    const { id, text } = req.body;
+
+    // 验证参数
+    if (id === undefined || text === undefined) {
+      return res.status(400).json({
+        success: false,
+        message: 'id and text are required'
+      });
+    }
+
+    // 确保view文件夹存在
+    const viewDir = path.join(process.cwd(), 'view');
+    if (!fs.existsSync(viewDir)) {
+      fs.mkdirSync(viewDir, { recursive: true });
+    }
+
+    // 写入文件
+    const fileName = `${id}.html`;
+    const filePath = path.join(viewDir, fileName);
+    
+    await fs.promises.writeFile(filePath, text, 'utf8');
+
+    // 返回成功响应
+    res.json({
+      success: true,
+      message: `File ${fileName} created successfully`,
+      filePath: filePath
+    });
+
+  } catch (error) {
+    console.error('Error writing file:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Internal server error'
+    });
+  }
+});
 
 // 图片下载函数
 async function downloadImage(url: string, fileName: string, imgDir: string): Promise<string> {

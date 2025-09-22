@@ -1,243 +1,2054 @@
-<html class="translated-ltr"><head><meta charset="utf-8"><title>。</title><link rel="stylesheet" href="css/css.css"><style>.ours-select{position:relative}.ours-select .selection-item{display:block;cursor:pointer;width:100%;height:36px;line-height:36px;box-sizing:border-box;padding:0 32px 0 10px;position:relative}.ours-select .selection-item .arrow-svg{position:absolute;display:inline-block;width:14px;height:14px;top:50%;transform:translateY(-50%);right:10px}.ours-select .selection-item .arrow-svg path{transition:all .3s}.ours-select .selection-item .arrow-fold::before{right:50%;top:75%;transform:rotate(45deg)}.ours-select .selection-item .arrow-fold::after{left:50%;top:75%;transform:rotate(-45deg)}.ours-select .selection-item .arrow-unfold::before{right:50%;top:25%;transform:rotate(-45deg)}.ours-select .selection-item .arrow-unfold::after{left:50%;top:25%;transform:rotate(45deg)}.ours-select .selector{top:0;position:absolute;border-radius:6px;overflow:hidden;width:100%;background:#f7f7f7}.ours-select .selector:focus{outline:none}.ours-select .selector.z-index{z-index:9999999999999;box-shadow:0px 6px 10px 0px rgba(0,0,0,.14)}.ours-select .selector .select-dropdown{transition:all .2s}.ours-select .selector .select-dropdown.unfold{max-height:252px;overflow-y:auto;z-index:9999999}.ours-select .selector .select-dropdown.fold{max-height:0px;overflow-y:hidden}.ours-select .option-wrapper{cursor:pointer;width:100%;height:36px;line-height:36px;box-sizing:border-box;padding:0 32px 0 10px}.ours-select .option-wrapper:hover{background:#fff}.ours-select .seleted{background:#e6f4ff}.ours-select .option{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;user-select:none}</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.pgV-E-68K-A.L.W.O/am=gMA/d=0/rs=AN8SPfpszKJssl6IA0boGClFdsaAZGtXEQ/m=el_main_css"></head><body><div id="all-html"><div class="item" data-index="0"><h4 class="lova-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">问 0</font></font></h4><div class="discussion-header-container">
-				
-					
-					
-					<!-- Question -->
-					
-					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
-						<p class="card-text" id="questionDescription"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您的公司有多个部门。每个部门都有许多虚拟机（VM）。</font></font></p><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">该公司有一个 Azure 订阅，其中包含一个名为 RG1 的资源组。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">所有虚拟机都位于 RG1。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您希望将每个虚拟机与其</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">各自的部门</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">关联起来。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">你应该怎么做？</font></font><div lova=""></div><p></p>
-						
-							
-								
-							
-							<div class="question-choices-container" id="questionChoices">
-								
-							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">A..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">为每个部门创建 Azure 管理组。</font></font></li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">为每个部门创建一个资源组。</font></font></li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">正确的</font></font></span><span class="multi-choice-letter" data-choice-letter="C."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">C..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">为虚拟机分配标签。</font></font></li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">D..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">修改虚拟机的设置。</font></font></li></ul></div>
-						
+<html class="translated-ltr">
 
-						
-						
+<head>
+	<meta charset="utf-8">
+	<title>。</title>
+	<base href="../../">
+	<link rel="stylesheet" href="css/css.css">
+	<style>
+		.ours-select {
+			position: relative
+		}
 
-						<div class="card-text question-answer bg-light white-text" id="answerText">
+		.ours-select .selection-item {
+			display: block;
+			cursor: pointer;
+			width: 100%;
+			height: 36px;
+			line-height: 36px;
+			box-sizing: border-box;
+			padding: 0 32px 0 10px;
+			position: relative
+		}
 
-						<span class="correct-answer-box"><strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">建议答案：</font></font></strong></span><span class="answer-description"><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">正确选项：C. 为虚拟机分配标签。</font></font></b><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">说明：</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">标签</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">是一种通过将元数据应用于 Azure 资源来组织资源的方法。通过为虚拟机分配标签，您可以将每个 VM 与其各自的部门关联起来，从而更轻松地根据这些标签管理和过滤资源。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">其他选项说明：</font></font></b><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：为每个部门创建 Azure 管理组：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">管理组用于管理跨多个 Azure 订阅的访问权限、策略和合规性。它们不适用于组织单个订阅内的资源。</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B. 为每个部门创建一个资源组：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">资源组用于管理和组织 Azure 订阅中的资源。但是，由于所有虚拟机都已位于 RG1 中，因此创建额外的资源组并非将虚拟机与部门关联的最有效方法。</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">D. 修改虚拟机设置：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">修改虚拟机设置无法提供将虚拟机与部门关联起来的结构化方法。使用标签是一种更有效、更有条理的方法。</font></font></span></div></div></div></div><div class="item" data-index="1"><h4 class="lova-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">问 1</font></font></h4><div class="discussion-header-container">
-				
-					
-					
-					<!-- Question -->
-					
-					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
-						<p class="card-text" id="questionDescription"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您的公司有多个部门。每个部门都有许多虚拟机（VM）。</font></font></p><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">该公司有一个 Azure 订阅，其中包含一个名为 RG1 的资源组。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">所有虚拟机都位于 RG1。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您希望将每个虚拟机与其</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">各自的部门</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">关联起来。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">你应该怎么做？</font></font><div lova=""></div><p></p>
-						
-							
-								
-							
-							<div class="question-choices-container" id="questionChoices">
-								
-							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">A..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">为每个部门创建 Azure 管理组。</font></font></li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">为每个部门创建一个资源组。</font></font></li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">正确的</font></font></span><span class="multi-choice-letter" data-choice-letter="C."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">C..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">为虚拟机分配标签。</font></font></li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">D..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">修改虚拟机的设置。</font></font></li></ul></div>
-						
+		.ours-select .selection-item .arrow-svg {
+			position: absolute;
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 10px
+		}
 
-						
-						
+		.ours-select .selection-item .arrow-svg path {
+			transition: all .3s
+		}
 
-						<div class="card-text question-answer bg-light white-text" id="answerText">
+		.ours-select .selection-item .arrow-fold::before {
+			right: 50%;
+			top: 75%;
+			transform: rotate(45deg)
+		}
 
-						<span class="correct-answer-box"><strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">建议答案：</font></font></strong></span><span class="answer-description"><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">正确选项：C. 为虚拟机分配标签。</font></font></b><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">说明：</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">标签</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">是一种通过将元数据应用于 Azure 资源来组织资源的方法。通过为虚拟机分配标签，您可以将每个 VM 与其各自的部门关联起来，从而更轻松地根据这些标签管理和过滤资源。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">其他选项说明：</font></font></b><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：为每个部门创建 Azure 管理组：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">管理组用于管理跨多个 Azure 订阅的访问权限、策略和合规性。它们不适用于组织单个订阅内的资源。</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B. 为每个部门创建一个资源组：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">资源组用于管理和组织 Azure 订阅中的资源。但是，由于所有虚拟机都已位于 RG1 中，因此创建额外的资源组并非将虚拟机与部门关联的最有效方法。</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">D. 修改虚拟机设置：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">修改虚拟机设置无法提供将虚拟机与部门关联起来的结构化方法。使用标签是一种更有效、更有条理的方法。</font></font></span></div></div></div></div><div class="item" data-index="2"><h4 class="lova-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">问 2</font></font></h4><div class="discussion-header-container">
-				
-					
-					
-					<!-- Question -->
-					
-					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
-						<p class="card-text" id="questionDescription"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font></font></p><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您的公司有 Azure Active Directory (Azure AD) 订阅。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您想要实施 Azure AD 条件访问策略。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">必须将策略配置为要求全局管理员组的成员在从不受信任的位置连接到 Azure AD 时使用多重身份验证和已加入 Azure AD 的设备。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案：您访问多重身份验证页面来更改用户设置。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font></font><div lova=""></div><p></p>
-						
-							
-								
-							
-							<div class="question-choices-container" id="questionChoices">
-								
-							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">是的</font></font></li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">没有</font></font></li></ul></div>
-						
+		.ours-select .selection-item .arrow-fold::after {
+			left: 50%;
+			top: 75%;
+			transform: rotate(-45deg)
+		}
 
-						
-						
+		.ours-select .selection-item .arrow-unfold::before {
+			right: 50%;
+			top: 25%;
+			transform: rotate(-45deg)
+		}
 
-						<div class="card-text question-answer bg-light white-text" id="answerText">
+		.ours-select .selection-item .arrow-unfold::after {
+			left: 50%;
+			top: 25%;
+			transform: rotate(45deg)
+		}
 
-						<span class="correct-answer-box"><strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">建议答案：</font></font></strong></span><span class="answer-description"><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">正确选项：B.否</font></font></b><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">说明：访问多重身份验证页面来更改用户设置不符合目标，因为它未配置</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">条件访问策略</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">。条件访问策略在 Azure AD 条件访问部分创建和管理，您可以在其中指定条件，例如要求多重身份验证以及全局管理员从不受信任位置连接时需要已加入 Azure AD 的设备。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">其他选项说明：</font></font></b><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：是的：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">此选项不正确，因为简单地更改多重身份验证页面上的用户设置并不能创建或配置条件访问策略，而这是满足指定要求所必需的。</font></font></span></div></div></div></div><div class="item" data-index="3"><h4 class="lova-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">问 3</font></font></h4><div class="discussion-header-container">
-				
-					
-					
-					<!-- Question -->
-					
-					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
-						<p class="card-text" id="questionDescription"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font></font></p><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您的公司有 Azure Active Directory (Azure AD) 订阅。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您想要实施 Azure AD 条件访问策略。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">必须将策略配置为要求全局管理员组的成员在从不受信任的位置连接到 Azure AD 时使用多重身份验证和已加入 Azure AD 的设备。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案：您访问 Azure 门户来更改 Azure AD 条件访问策略的会话控制。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font></font><div lova=""></div><p></p>
-						
-							
-								
-							
-							<div class="question-choices-container" id="questionChoices">
-								
-							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">是的</font></font></li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">没有</font></font></li></ul></div>
-						
+		.ours-select .selector {
+			top: 0;
+			position: absolute;
+			border-radius: 6px;
+			overflow: hidden;
+			width: 100%;
+			background: #f7f7f7
+		}
 
-						
-						
+		.ours-select .selector:focus {
+			outline: none
+		}
 
-						<div class="card-text question-answer bg-light white-text" id="answerText">
+		.ours-select .selector.z-index {
+			z-index: 9999999999999;
+			box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, .14)
+		}
 
-						<span class="correct-answer-box"><strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">建议答案：</font></font></strong></span><span class="answer-description"><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">正确选项：B.否</font></font></b><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">说明：更改 Azure AD 条件访问策略的会话控制不符合目标，因为它没有专门配置多重身份验证所需的条件，也没有专门为从不受信任位置连接的全局管理员配置已加入 Azure AD 的设备。正确的方法是</font><font dir="auto" style="vertical-align: inherit;">在 Azure AD 条件访问部分中</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">设置这些特定条件。</font></font></b><font dir="auto" style="vertical-align: inherit;"></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">其他选项说明：</font></font></b><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">A. 是：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">此选项不正确，因为仅改变会话控制不能满足实现目标所需的条件访问策略的要求。</font></font></span></div></div></div></div><div class="item" data-index="4"><h4 class="lova-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">问 4</font></font></h4><div class="discussion-header-container">
-				
-					
-					
-					<!-- Question -->
-					
-					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
-						<p class="card-text" id="questionDescription"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font></font></p><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您的公司有 Azure Active Directory (Azure AD) 订阅。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您想要实施 Azure AD 条件访问策略。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">必须将策略配置为要求全局管理员组的成员在从不受信任的位置连接到 Azure AD 时使用多重身份验证和已加入 Azure AD 的设备。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案：您访问 Azure 门户来更改 Azure AD 条件访问策略的授权控制。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font></font><div lova=""></div><p></p>
-						
-							
-								
-							
-							<div class="question-choices-container" id="questionChoices">
-								
-							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">是的</font></font></li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">没有</font></font></li></ul></div>
-						
+		.ours-select .selector .select-dropdown {
+			transition: all .2s
+		}
 
-						
-						
+		.ours-select .selector .select-dropdown.unfold {
+			max-height: 252px;
+			overflow-y: auto;
+			z-index: 9999999
+		}
 
-						<div class="card-text question-answer bg-light white-text" id="answerText">
+		.ours-select .selector .select-dropdown.fold {
+			max-height: 0px;
+			overflow-y: hidden
+		}
 
-						<span class="correct-answer-box"><strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">建议答案：</font></font></strong></span><span class="answer-description"><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">正确选项：A.是</font></font></b><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">说明：更改Azure AD 条件访问策略的</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">授权控制</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">可以实现此目标，因为它允许您为多重身份验证指定所需的条件，并为从不受信任位置连接的全局管理员指定已加入 Azure AD 的设备。此配置可确保正确实施策略。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">其他选项说明：</font></font></b><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B. 否：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">此选项不正确，因为更改 Azure AD 条件访问策略的授权控制是配置该策略所需条件的正确方法。</font></font><h4><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">额外的：</font></font></h4><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">配置 Azure AD 条件访问策略的过程：</font></font></b><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">1.</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">访问 Azure AD 门户：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">使用管理凭据登录 Azure AD 门户。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">2.</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">导航到条件访问：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">转到安全设置并选择条件访问。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">3.</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">创建新策略：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">点击“新策略”开始创建策略。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">4.</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">定义条件：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">指定策略适用的条件，例如用户组、应用程序和位置。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">5.</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">设置访问控制：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">确定访问控制，例如要求多重身份验证 (MFA) 和设备合规性。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">6.</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">启用并保存：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">启用该策略，并点击“创建”保存。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">授权控制：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> Azure AD 条件访问策略中的授权控制允许您指定授予访问权限必须满足的要求。这包括需要多重身份验证 (MFA)、兼容设备或特定身份验证方法等条件。配置授权控制时，您可以选择用户必须满足的多个要求才能访问资源。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">说明：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">授权控制对于实施安全措施以及确保只有经过身份验证且合规的用户才能访问敏感资源至关重要。通过设置授权控制，您可以增强组织的安全态势并防止未经授权的访问。</font></font></span></div></div></div></div><div class="item" data-index="5"><h4 class="lova-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">问 5</font></font></h4><div class="discussion-header-container">
-				
-					
-					
-					<!-- Question -->
-					
-					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
-						<p class="card-text" id="questionDescription"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您计划将 Ubuntu Server 虚拟机部署到公司的 Azure 订阅。</font></font></p><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您需要实施自定义部署，其中包括添加特定的受信任根证书颁发机构 (CA)。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您应该使用以下哪项来创建虚拟机？</font></font><div lova=""></div><p></p>
-						
-							
-								
-							
-							<div class="question-choices-container" id="questionChoices">
-								
-							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">A..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> New-AzureRmVm cmdlet。</font></font></li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> New-AzVM cmdlet。</font></font></li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">C..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> Create-AzVM cmdlet。</font></font></li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">D..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> az vm create 命令。</font></font></li></ul></div>
-						
+		.ours-select .option-wrapper {
+			cursor: pointer;
+			width: 100%;
+			height: 36px;
+			line-height: 36px;
+			box-sizing: border-box;
+			padding: 0 32px 0 10px
+		}
 
-						
-						
+		.ours-select .option-wrapper:hover {
+			background: #fff
+		}
 
-						<div class="card-text question-answer bg-light white-text" id="answerText">
+		.ours-select .seleted {
+			background: #e6f4ff
+		}
 
-						<span class="correct-answer-box"><strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">建议答案：</font></font></strong></span><span class="answer-description"><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">正确选项：D. az vm create 命令。</font></font></b><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">说明：</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">az vm create</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">命令用于在 Azure CLI 中创建虚拟机。它允许自定义配置，包括在部署过程中添加受信任的根证书颁发机构 (CA)。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">其他选项说明：</font></font></b><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：New-AzureRmVm cmdlet：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">此 cmdlet 是旧版 AzureRM 模块的一部分，该模块已被 Az 模块取代。不建议在新部署中使用它。</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B. New-AzVM cmdlet：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">此 cmdlet 在 Az PowerShell 模块中用于创建虚拟机，但它不提供与 az vm create 命令相同级别的自定义。</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">C. Create-AzVM cmdlet：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">此 cmdlet 在 Az PowerShell 模块中不存在。在 PowerShell 中创建 VM 的正确 cmdlet 是 New-AzVM。</font></font><h4><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">额外的：</font></font></h4><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">使用受信任的根 CA 创建 Ubuntu Server VM 的示例：</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">要使用 Azure CLI 创建 Ubuntu Server 虚拟机并添加受信任的根证书颁发机构 (CA)，可以使用以下命令：</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">az vm create</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> --resource-group </font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">RG1</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> --name </font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">MyUbuntuVM</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> --image </font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">UbuntuLTS</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> --admin-username </font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">azureuser</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> --generate-ssh-keys --custom-data </font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">cloud-init.txt</font></font></b><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">在此示例中，</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">cloud-init.txt是一个包含用于添加受信任根 CA 的 cloud-init 配置的文件。cloud </font></font></b><font dir="auto" style="vertical-align: inherit;"></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-init.txt</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">的内容</font><font dir="auto" style="vertical-align: inherit;">可能如下所示：</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#云配置</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">ca-证书：</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">    值得信赖：</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">        -</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">内容</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">: |</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">            -----开始证书-----</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">            MIIDdzCCAl+gAwIBAgIEU1iO/jANBgkqhkiG9w0BAQsFADBoMQswCQYDVQQGEwJV</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">        ...</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">        -----结束证书-----</font></font><div lova=""></div><div lova=""></div>      <b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">文件名</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">：/usr/local/share/ca-certificates/my-ca.crt</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">说明：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">此命令使用 UbuntuLTS 映像</font><font dir="auto" style="vertical-align: inherit;">在资源组</font><b><font dir="auto" style="vertical-align: inherit;">RG1</font></b><font dir="auto" style="vertical-align: inherit;">中创建名为</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">MyUbuntuVM的虚拟机。cloud </font></font></b><font dir="auto" style="vertical-align: inherit;"><b><font dir="auto" style="vertical-align: inherit;">-init.txt</font></b><font dir="auto" style="vertical-align: inherit;">文件用于配置虚拟机以包含受信任的根 CA。</font></font><b><font dir="auto" style="vertical-align: inherit;"></font></b><font dir="auto" style="vertical-align: inherit;"></font><b><font dir="auto" style="vertical-align: inherit;"></font></b><font dir="auto" style="vertical-align: inherit;"></font></span></div></div></div></div><div class="item" data-index="6"><h4 class="lova-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">问 6</font></font></h4><div class="discussion-header-container">
-				
-					
-					
-					<!-- Question -->
-					
-					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
-						<p class="card-text" id="questionDescription"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font></font></p><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">贵公司在用户不在办公室时使用多重身份验证。“每次身份验证”选项已配置为使用模型。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">在收购一家较小的企业并将新员工添加到 Azure Active Directory (Azure AD) 后，获得另一家公司并将新员工添加到 Azure Active Directory (Azure AD)，您会被告知这些员工也应该使用多重身份验证。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">为了实现这一点，必须为使用模型设置每个启用用户设置。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案：通过 Azure 门户重新配置现有的使用模型。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font></font><div lova=""></div><p></p>
-						
-							
-								
-							
-							<div class="question-choices-container" id="questionChoices">
-								
-							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">是的</font></font></li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">没有</font></font></li></ul></div>
-						
+		.ours-select .option {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			user-select: none
+		}
+	</style>
+	<link type="text/css" rel="stylesheet" charset="UTF-8"
+		href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.pgV-E-68K-A.L.W.O/am=gMA/d=0/rs=AN8SPfpszKJssl6IA0boGClFdsaAZGtXEQ/m=el_main_css">
+</head>
 
-						
-						
+<body>
+	<div id="all-html">
+		<div class="item" data-index="0">
+			<h4 class="lova-title">
+				<font dir="auto" style="vertical-align: inherit;">
+					<font dir="auto" style="vertical-align: inherit;">问 0</font>
+				</font>
+			</h4>
+			<div class="discussion-header-container">
 
-						<div class="card-text question-answer bg-light white-text" id="answerText">
 
-						<span class="correct-answer-box"><strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">建议答案：</font></font></strong></span><span class="answer-description"><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">正确选项：B.否</font></font></b><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">说明：通过 Azure 门户重新配置现有使用模型不符合目标，因为它没有将使用模型从“按身份验证”更改为“按启用用户”。您需要重新创建新的 MFA 身份验证提供程序。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">其他选项说明：</font></font></b><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：是的：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">此选项不正确，因为简单地重新配置现有的使用模型不会将设置更改为每个启用用户，而这是新员工使用多重身份验证所必需的。</font></font></span></div></div></div></div><div class="item" data-index="7"><h4 class="lova-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">问 7</font></font></h4><div class="discussion-header-container">
-				
-					
-					
-					<!-- Question -->
-					
-					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
-						<p class="card-text" id="questionDescription"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font></font></p><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">当用户不在办公室时，贵公司的 Azure 解决方案会使用多重身份验证。“每次身份验证”选项已配置为使用模型。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">在收购一家较小的企业并将新员工添加到 Azure Active Directory (Azure AD) 后，获得另一家公司并将新员工添加到 Azure Active Directory (Azure AD)，您会被告知这些员工也应该使用多重身份验证。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">为了实现这一点，必须为使用模型设置每个启用用户设置。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案：通过 Azure CLI 重新配置现有的使用模型。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font></font><div lova=""></div><p></p>
-						
-							
-								
-							
-							<div class="question-choices-container" id="questionChoices">
-								
-							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">是的</font></font></li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">没有</font></font></li></ul></div>
-						
 
-						
-						
+				<!-- Question -->
 
-						<div class="card-text question-answer bg-light white-text" id="answerText">
+				<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+					<p class="card-text" id="questionDescription">
+						<font dir="auto" style="vertical-align: inherit;">
+							<font dir="auto" style="vertical-align: inherit;">您的公司有多个部门。每个部门都有许多虚拟机（VM）。</font>
+						</font>
+					</p>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">该公司有一个 Azure 订阅，其中包含一个名为 RG1 的资源组。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">所有虚拟机都位于 RG1。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您希望将每个虚拟机与其</font>
+					</font><b>
+						<font dir="auto" style="vertical-align: inherit;">
+							<font dir="auto" style="vertical-align: inherit;">各自的部门</font>
+						</font>
+					</b>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">关联起来。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">你应该怎么做？</font>
+					</font>
+					<div lova=""></div>
+					<p></p>
 
-						<span class="correct-answer-box"><strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">建议答案：</font></font></strong></span><span class="answer-description"><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">正确选项：B.否</font></font></b><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">说明：通过 Azure 门户重新配置现有使用模型不符合目标，因为它没有将使用模型从“按身份验证”更改为“按启用用户”。您需要重新创建新的 MFA 身份验证提供程序。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">其他选项说明：</font></font></b><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：是的：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">此选项不正确，因为简单地重新配置现有的使用模型不会将设置更改为每个启用用户，而这是新员工使用多重身份验证所必需的。</font></font></span></div></div></div></div><div class="item" data-index="8"><h4 class="lova-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">问 8</font></font></h4><div class="discussion-header-container">
-				
-					
-					
-					<!-- Question -->
-					
-					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
-						<p class="card-text" id="questionDescription"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font></font></p><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">当用户不在办公室时，贵公司的 Azure 解决方案会使用多重身份验证。“每次身份验证”选项已配置为使用模型。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">在收购一家较小的企业并将新员工添加到 Azure Active Directory (Azure AD) 后，获得另一家公司并将新员工添加到 Azure Active Directory (Azure AD)，您会被告知这些员工也应该使用多重身份验证。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">为了实现这一点，必须为使用模型设置每个启用用户设置。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案：您可以使用现有多重身份验证提供程序数据的备份来创建一个新的多重身份验证提供程序。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font></font><div lova=""></div><p></p>
-						
-							
-								
-							
-							<div class="question-choices-container" id="questionChoices">
-								
-							<ul><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">是的</font></font></li><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">没有</font></font></li></ul></div>
-						
 
-						
-						
 
-						<div class="card-text question-answer bg-light white-text" id="answerText">
 
-						<span class="correct-answer-box"><strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">建议答案：</font></font></strong></span><span class="answer-description"><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">概括：</font></font></b><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">创建 MFA 提供程序后无法更改使用模型：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">一旦创建 MFA 提供程序，就无法更改使用模型。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">正确流程：</font></font></b><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">要将使用模型更改为“按启用用户”模式，您需要删除现有的 MFA 提供程序，并创建一个具有所需使用模型的新提供程序。请按以下步骤操作：</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">1.</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">删除现有的 MFA 提供程序：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">在 Azure 门户中，导航到 MFA 提供程序并将其删除。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">2.</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">创建新的 MFA 提供商：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">创建一个新的 MFA 提供商，并在设置期间选择每个启用用户的使用模型。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">3.</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">配置 MFA 设置：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">为新提供商配置 MFA 设置，以确保所有用户（包括新添加的员工）都必须使用多重身份验证。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">4.</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">保存更改：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">保存新配置以应用设置。</font></font></span></div></div></div></div><div class="item" data-index="9"><h4 class="lova-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">问 9</font></font></h4><div class="discussion-header-container">
-				
-					
-					
-					<!-- Question -->
-					
-					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
-						<p class="card-text" id="questionDescription"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font></font></p><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您的公司有一个名为 weyland.com 的 Azure Active Directory (Azure AD) 租户，该租户配置为与本地 Active Directory 混合共存</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">目录域。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您有一个名为 DirSync1 的服务器，该服务器配置为 DirSync 服务器。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您在本地 Active Directory 中创建一个新的用户帐户。现在您需要立即将用户信息复制到 Azure AD。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案：运行 Start-ADSyncSyncCycle -PolicyType Initial PowerShell cmdlet。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font></font><div lova=""></div><p></p>
-						
-							
-								
-							
-							<div class="question-choices-container" id="questionChoices">
-								
-							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">是的</font></font></li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">没有</font></font></li></ul></div>
-						
+					<div class="question-choices-container" id="questionChoices">
 
-						
-						
+						<ul>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">A..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">为每个部门创建 Azure 管理组。</font>
+								</font>
+							</li>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">B..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">为每个部门创建一个资源组。</font>
+								</font>
+							</li>
+							<li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge"
+									style="display: none;">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">正确的</font>
+									</font>
+								</span><span class="multi-choice-letter" data-choice-letter="C.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">C..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">为虚拟机分配标签。</font>
+								</font>
+							</li>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">D..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">修改虚拟机的设置。</font>
+								</font>
+							</li>
+						</ul>
+					</div>
 
-						<div class="card-text question-answer bg-light white-text" id="answerText">
 
-						<span class="correct-answer-box"><strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">建议答案：</font></font></strong></span><span class="answer-description"><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">选项 B。否：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">这是不正确的，因为</font><font dir="auto" style="vertical-align: inherit;">cmdlet 中的</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">初始策略类型确实执行了完全同步，其中包括新用户帐户。如果 cmdlet 不正确或不完整（例如，使用</font></font></b><font dir="auto" style="vertical-align: inherit;"></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Delta</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">同步自上次同步以来的新更改）。</font></font><div lova=""></div><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">说明：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> Start </font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">-ADSyncSyncCycle -PolicyType Initial</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> cmdlet 会触发</font><font dir="auto" style="vertical-align: inherit;">本地 Active Directory 和 Azure AD 之间的</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">完整同步周期。这涵盖所有更改，包括</font></font></b><font dir="auto" style="vertical-align: inherit;"></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">新创建的用户</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">。但这可能会花费太长时间。因此，此解决方案</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">无法满足</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">将新用户信息立即复制到 Azure AD 的目标。</font></font></span></div></div></div></div><div class="item" data-index="10"><h4 class="lova-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">问 10</font></font></h4><div class="discussion-header-container">
-				
-					
-					
-					<!-- Question -->
-					
-					<div class="question-body mt-3 pt-3 border-top" data-id="815946">
-						<p class="card-text" id="questionDescription"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font></font></p><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您的公司有一个名为 weyland.com 的 Azure Active Directory (Azure AD) 租户，该租户配置为与本地 Active Directory 混合共存</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">目录域。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您有一个名为 DirSync1 的服务器，该服务器配置为 DirSync 服务器。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您在本地 Active Directory 中创建一个新的用户帐户。现在您需要立即将用户信息复制到 Azure AD。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案：使用 Active Directory 站点和服务强制在域控制器上复制全局目录。</font></font><div lova=""></div><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font></font><div lova=""></div><p></p>
-						
-							
-								
-							
-							<div class="question-choices-container" id="questionChoices">
-								
-							<ul><li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">答：</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">是的</font></font></li><li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge" style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B."><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B..</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">没有</font></font></li></ul></div>
-						
 
-						
-						
 
-						<div class="card-text question-answer bg-light white-text" id="answerText">
 
-						<span class="correct-answer-box"><strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">建议答案：</font></font></strong></span><span class="answer-description"><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B. 否</font></font></b><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">说明：</font></font></b> <b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">强制全局目录复制</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">仅影响</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">本地域控制器</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">，并且</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">不会触发 Azure AD 同步</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">，后者需要</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Azure AD Connect</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">和同步 cmdlet（如</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Start-ADSyncSyncCycle ）</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">。-----------------</font></font><div lova=""></div><div lova=""></div><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">选项 A。是：</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">不正确，因为它假设</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">本地复制</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">会影响</font></font><b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Azure AD</font></font></b><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">，但事实并非如此。</font></font></span></div></div></div></div></div><script src="js/script.js"></script><div class="ByrdhouseOverlay" popover="manual"><div class="Overlay"><div class="Captions" style="font-size: 24px; line-height: 28px; max-height: 112px;"></div></div></div><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""><div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">Original text</div></div><div class="VIpgJd-yAWNEb-hvhgNd-k77Iif"><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div><div id="vidline-ext-0.1.43"></div></body></html>
+					<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">建议答案：</font>
+								</font>
+							</strong></span><span class="answer-description">
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">正确选项：C. 为虚拟机分配标签。</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">说明：</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">标签</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">是一种通过将元数据应用于 Azure 资源来组织资源的方法。通过为虚拟机分配标签，您可以将每个 VM
+									与其各自的部门关联起来，从而更轻松地根据这些标签管理和过滤资源。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">其他选项说明：</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">答：为每个部门创建 Azure 管理组：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">管理组用于管理跨多个 Azure 订阅的访问权限、策略和合规性。它们不适用于组织单个订阅内的资源。
+								</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">B. 为每个部门创建一个资源组：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">资源组用于管理和组织 Azure 订阅中的资源。但是，由于所有虚拟机都已位于 RG1
+									中，因此创建额外的资源组并非将虚拟机与部门关联的最有效方法。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">D. 修改虚拟机设置：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">修改虚拟机设置无法提供将虚拟机与部门关联起来的结构化方法。使用标签是一种更有效、更有条理的方法。
+								</font>
+							</font>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item" data-index="1">
+			<h4 class="lova-title">
+				<font dir="auto" style="vertical-align: inherit;">
+					<font dir="auto" style="vertical-align: inherit;">问 1</font>
+				</font>
+			</h4>
+			<div class="discussion-header-container">
+
+
+
+				<!-- Question -->
+
+				<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+					<p class="card-text" id="questionDescription">
+						<font dir="auto" style="vertical-align: inherit;">
+							<font dir="auto" style="vertical-align: inherit;">您的公司有多个部门。每个部门都有许多虚拟机（VM）。</font>
+						</font>
+					</p>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">该公司有一个 Azure 订阅，其中包含一个名为 RG1 的资源组。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">所有虚拟机都位于 RG1。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您希望将每个虚拟机与其</font>
+					</font><b>
+						<font dir="auto" style="vertical-align: inherit;">
+							<font dir="auto" style="vertical-align: inherit;">各自的部门</font>
+						</font>
+					</b>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">关联起来。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">你应该怎么做？</font>
+					</font>
+					<div lova=""></div>
+					<p></p>
+
+
+
+
+					<div class="question-choices-container" id="questionChoices">
+
+						<ul>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">A..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">为每个部门创建 Azure 管理组。</font>
+								</font>
+							</li>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">B..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">为每个部门创建一个资源组。</font>
+								</font>
+							</li>
+							<li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge"
+									style="display: none;">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">正确的</font>
+									</font>
+								</span><span class="multi-choice-letter" data-choice-letter="C.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">C..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">为虚拟机分配标签。</font>
+								</font>
+							</li>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="D.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">D..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">修改虚拟机的设置。</font>
+								</font>
+							</li>
+						</ul>
+					</div>
+
+
+
+
+
+					<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">建议答案：</font>
+								</font>
+							</strong></span><span class="answer-description">
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">正确选项：C. 为虚拟机分配标签。</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">说明：</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">标签</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">是一种通过将元数据应用于 Azure 资源来组织资源的方法。通过为虚拟机分配标签，您可以将每个 VM
+									与其各自的部门关联起来，从而更轻松地根据这些标签管理和过滤资源。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">其他选项说明：</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">答：为每个部门创建 Azure 管理组：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">管理组用于管理跨多个 Azure 订阅的访问权限、策略和合规性。它们不适用于组织单个订阅内的资源。
+								</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">B. 为每个部门创建一个资源组：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">资源组用于管理和组织 Azure 订阅中的资源。但是，由于所有虚拟机都已位于 RG1
+									中，因此创建额外的资源组并非将虚拟机与部门关联的最有效方法。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">D. 修改虚拟机设置：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">修改虚拟机设置无法提供将虚拟机与部门关联起来的结构化方法。使用标签是一种更有效、更有条理的方法。
+								</font>
+							</font>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item" data-index="2">
+			<h4 class="lova-title">
+				<font dir="auto" style="vertical-align: inherit;">
+					<font dir="auto" style="vertical-align: inherit;">问 2</font>
+				</font>
+			</h4>
+			<div class="discussion-header-container">
+
+
+
+				<!-- Question -->
+
+				<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+					<p class="card-text" id="questionDescription">
+						<font dir="auto" style="vertical-align: inherit;">
+							<font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font>
+						</font>
+					</p>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您的公司有 Azure Active Directory (Azure AD) 订阅。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您想要实施 Azure AD 条件访问策略。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">必须将策略配置为要求全局管理员组的成员在从不受信任的位置连接到 Azure AD 时使用多重身份验证和已加入
+							Azure AD 的设备。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案：您访问多重身份验证页面来更改用户设置。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font>
+					</font>
+					<div lova=""></div>
+					<p></p>
+
+
+
+
+					<div class="question-choices-container" id="questionChoices">
+
+						<ul>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">答：</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">是的</font>
+								</font>
+							</li>
+							<li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge"
+									style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">B..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">没有</font>
+								</font>
+							</li>
+						</ul>
+					</div>
+
+
+
+
+
+					<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">建议答案：</font>
+								</font>
+							</strong></span><span class="answer-description">
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">正确选项：B.否</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">说明：访问多重身份验证页面来更改用户设置不符合目标，因为它未配置</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">条件访问策略</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">。条件访问策略在 Azure AD
+									条件访问部分创建和管理，您可以在其中指定条件，例如要求多重身份验证以及全局管理员从不受信任位置连接时需要已加入 Azure AD 的设备。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">其他选项说明：</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">答：是的：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">
+									此选项不正确，因为简单地更改多重身份验证页面上的用户设置并不能创建或配置条件访问策略，而这是满足指定要求所必需的。</font>
+							</font>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item" data-index="3">
+			<h4 class="lova-title">
+				<font dir="auto" style="vertical-align: inherit;">
+					<font dir="auto" style="vertical-align: inherit;">问 3</font>
+				</font>
+			</h4>
+			<div class="discussion-header-container">
+
+
+
+				<!-- Question -->
+
+				<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+					<p class="card-text" id="questionDescription">
+						<font dir="auto" style="vertical-align: inherit;">
+							<font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font>
+						</font>
+					</p>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您的公司有 Azure Active Directory (Azure AD) 订阅。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您想要实施 Azure AD 条件访问策略。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">必须将策略配置为要求全局管理员组的成员在从不受信任的位置连接到 Azure AD 时使用多重身份验证和已加入
+							Azure AD 的设备。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案：您访问 Azure 门户来更改 Azure AD 条件访问策略的会话控制。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font>
+					</font>
+					<div lova=""></div>
+					<p></p>
+
+
+
+
+					<div class="question-choices-container" id="questionChoices">
+
+						<ul>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">答：</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">是的</font>
+								</font>
+							</li>
+							<li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge"
+									style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">B..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">没有</font>
+								</font>
+							</li>
+						</ul>
+					</div>
+
+
+
+
+
+					<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">建议答案：</font>
+								</font>
+							</strong></span><span class="answer-description">
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">正确选项：B.否</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">说明：更改 Azure AD
+									条件访问策略的会话控制不符合目标，因为它没有专门配置多重身份验证所需的条件，也没有专门为从不受信任位置连接的全局管理员配置已加入 Azure AD 的设备。正确的方法是</font>
+								<font dir="auto" style="vertical-align: inherit;">在 Azure AD 条件访问部分中</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">设置这些特定条件。</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;"></font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">其他选项说明：</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">A. 是：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">此选项不正确，因为仅改变会话控制不能满足实现目标所需的条件访问策略的要求。</font>
+							</font>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item" data-index="4">
+			<h4 class="lova-title">
+				<font dir="auto" style="vertical-align: inherit;">
+					<font dir="auto" style="vertical-align: inherit;">问 4</font>
+				</font>
+			</h4>
+			<div class="discussion-header-container">
+
+
+
+				<!-- Question -->
+
+				<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+					<p class="card-text" id="questionDescription">
+						<font dir="auto" style="vertical-align: inherit;">
+							<font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font>
+						</font>
+					</p>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您的公司有 Azure Active Directory (Azure AD) 订阅。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您想要实施 Azure AD 条件访问策略。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">必须将策略配置为要求全局管理员组的成员在从不受信任的位置连接到 Azure AD 时使用多重身份验证和已加入
+							Azure AD 的设备。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案：您访问 Azure 门户来更改 Azure AD 条件访问策略的授权控制。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font>
+					</font>
+					<div lova=""></div>
+					<p></p>
+
+
+
+
+					<div class="question-choices-container" id="questionChoices">
+
+						<ul>
+							<li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge"
+									style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">答：</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">是的</font>
+								</font>
+							</li>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">B..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">没有</font>
+								</font>
+							</li>
+						</ul>
+					</div>
+
+
+
+
+
+					<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">建议答案：</font>
+								</font>
+							</strong></span><span class="answer-description">
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">正确选项：A.是</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">说明：更改Azure AD 条件访问策略的</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">授权控制</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">可以实现此目标，因为它允许您为多重身份验证指定所需的条件，并为从不受信任位置连接的全局管理员指定已加入
+									Azure AD 的设备。此配置可确保正确实施策略。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">其他选项说明：</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">B. 否：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">此选项不正确，因为更改 Azure AD 条件访问策略的授权控制是配置该策略所需条件的正确方法。
+								</font>
+							</font>
+							<h4>
+								<div lova=""></div>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">额外的：</font>
+								</font>
+							</h4><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">配置 Azure AD 条件访问策略的过程：</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">1.</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">访问 Azure AD 门户：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">使用管理凭据登录 Azure AD 门户。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">2.</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">导航到条件访问：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">转到安全设置并选择条件访问。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">3.</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">创建新策略：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">点击“新策略”开始创建策略。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">4.</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">定义条件：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">指定策略适用的条件，例如用户组、应用程序和位置。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">5.</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">设置访问控制：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">确定访问控制，例如要求多重身份验证 (MFA) 和设备合规性。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">6.</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">启用并保存：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">启用该策略，并点击“创建”保存。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">授权控制：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;"> Azure AD 条件访问策略中的授权控制允许您指定授予访问权限必须满足的要求。这包括需要多重身份验证
+									(MFA)、兼容设备或特定身份验证方法等条件。配置授权控制时，您可以选择用户必须满足的多个要求才能访问资源。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">说明：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">
+									授权控制对于实施安全措施以及确保只有经过身份验证且合规的用户才能访问敏感资源至关重要。通过设置授权控制，您可以增强组织的安全态势并防止未经授权的访问。</font>
+							</font>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item" data-index="5">
+			<h4 class="lova-title">
+				<font dir="auto" style="vertical-align: inherit;">
+					<font dir="auto" style="vertical-align: inherit;">问 5</font>
+				</font>
+			</h4>
+			<div class="discussion-header-container">
+
+
+
+				<!-- Question -->
+
+				<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+					<p class="card-text" id="questionDescription">
+						<font dir="auto" style="vertical-align: inherit;">
+							<font dir="auto" style="vertical-align: inherit;">您计划将 Ubuntu Server 虚拟机部署到公司的 Azure 订阅。</font>
+						</font>
+					</p>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您需要实施自定义部署，其中包括添加特定的受信任根证书颁发机构 (CA)。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您应该使用以下哪项来创建虚拟机？</font>
+					</font>
+					<div lova=""></div>
+					<p></p>
+
+
+
+
+					<div class="question-choices-container" id="questionChoices">
+
+						<ul>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">A..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;"> New-AzureRmVm cmdlet。</font>
+								</font>
+							</li>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">B..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;"> New-AzVM cmdlet。</font>
+								</font>
+							</li>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="C.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">C..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;"> Create-AzVM cmdlet。</font>
+								</font>
+							</li>
+							<li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge"
+									style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="D.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">D..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;"> az vm create 命令。</font>
+								</font>
+							</li>
+						</ul>
+					</div>
+
+
+
+
+
+					<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">建议答案：</font>
+								</font>
+							</strong></span><span class="answer-description">
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">正确选项：D. az vm create 命令。</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">说明：</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">az vm create</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">命令用于在 Azure CLI 中创建虚拟机。它允许自定义配置，包括在部署过程中添加受信任的根证书颁发机构
+									(CA)。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">其他选项说明：</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">答：New-AzureRmVm cmdlet：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">此 cmdlet 是旧版 AzureRM 模块的一部分，该模块已被 Az 模块取代。不建议在新部署中使用它。
+								</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">B. New-AzVM cmdlet：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">此 cmdlet 在 Az PowerShell 模块中用于创建虚拟机，但它不提供与 az vm
+									create 命令相同级别的自定义。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">C. Create-AzVM cmdlet：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">此 cmdlet 在 Az PowerShell 模块中不存在。在 PowerShell 中创建 VM
+									的正确 cmdlet 是 New-AzVM。</font>
+							</font>
+							<h4>
+								<div lova=""></div>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">额外的：</font>
+								</font>
+							</h4>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">使用受信任的根 CA 创建 Ubuntu Server VM 的示例：</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">要使用 Azure CLI 创建 Ubuntu Server 虚拟机并添加受信任的根证书颁发机构
+									(CA)，可以使用以下命令：</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">az vm create</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;"> --resource-group </font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">RG1</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;"> --name </font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">MyUbuntuVM</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;"> --image </font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">UbuntuLTS</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;"> --admin-username </font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">azureuser</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;"> --generate-ssh-keys --custom-data </font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">cloud-init.txt</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">在此示例中，</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">cloud-init.txt是一个包含用于添加受信任根 CA 的 cloud-init
+										配置的文件。cloud </font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;"></font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">-init.txt</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">的内容</font>
+								<font dir="auto" style="vertical-align: inherit;">可能如下所示：</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">#云配置</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">ca-证书：</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;"> 值得信赖：</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;"> -</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">内容</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">: |</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;"> -----开始证书-----</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">
+									MIIDdzCCAl+gAwIBAgIEU1iO/jANBgkqhkiG9w0BAQsFADBoMQswCQYDVQQGEwJV</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;"> ...</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;"> -----结束证书-----</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div> <b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">文件名</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">：/usr/local/share/ca-certificates/my-ca.crt</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">说明：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">此命令使用 UbuntuLTS 映像</font>
+								<font dir="auto" style="vertical-align: inherit;">在资源组</font><b>
+									<font dir="auto" style="vertical-align: inherit;">RG1</font>
+								</b>
+								<font dir="auto" style="vertical-align: inherit;">中创建名为</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">MyUbuntuVM的虚拟机。cloud </font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;"><b>
+									<font dir="auto" style="vertical-align: inherit;">-init.txt</font>
+								</b>
+								<font dir="auto" style="vertical-align: inherit;">文件用于配置虚拟机以包含受信任的根 CA。</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;"></font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;"></font><b>
+								<font dir="auto" style="vertical-align: inherit;"></font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;"></font>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item" data-index="6">
+			<h4 class="lova-title">
+				<font dir="auto" style="vertical-align: inherit;">
+					<font dir="auto" style="vertical-align: inherit;">问 6</font>
+				</font>
+			</h4>
+			<div class="discussion-header-container">
+
+
+
+				<!-- Question -->
+
+				<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+					<p class="card-text" id="questionDescription">
+						<font dir="auto" style="vertical-align: inherit;">
+							<font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font>
+						</font>
+					</p>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">贵公司在用户不在办公室时使用多重身份验证。“每次身份验证”选项已配置为使用模型。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">在收购一家较小的企业并将新员工添加到 Azure Active Directory (Azure AD)
+							后，获得另一家公司并将新员工添加到 Azure Active Directory (Azure AD)，您会被告知这些员工也应该使用多重身份验证。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">为了实现这一点，必须为使用模型设置每个启用用户设置。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案：通过 Azure 门户重新配置现有的使用模型。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font>
+					</font>
+					<div lova=""></div>
+					<p></p>
+
+
+
+
+					<div class="question-choices-container" id="questionChoices">
+
+						<ul>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">答：</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">是的</font>
+								</font>
+							</li>
+							<li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge"
+									style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">B..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">没有</font>
+								</font>
+							</li>
+						</ul>
+					</div>
+
+
+
+
+
+					<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">建议答案：</font>
+								</font>
+							</strong></span><span class="answer-description">
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">正确选项：B.否</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">说明：通过 Azure
+									门户重新配置现有使用模型不符合目标，因为它没有将使用模型从“按身份验证”更改为“按启用用户”。您需要重新创建新的 MFA 身份验证提供程序。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">其他选项说明：</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">答：是的：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">
+									此选项不正确，因为简单地重新配置现有的使用模型不会将设置更改为每个启用用户，而这是新员工使用多重身份验证所必需的。</font>
+							</font>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item" data-index="7">
+			<h4 class="lova-title">
+				<font dir="auto" style="vertical-align: inherit;">
+					<font dir="auto" style="vertical-align: inherit;">问 7</font>
+				</font>
+			</h4>
+			<div class="discussion-header-container">
+
+
+
+				<!-- Question -->
+
+				<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+					<p class="card-text" id="questionDescription">
+						<font dir="auto" style="vertical-align: inherit;">
+							<font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font>
+						</font>
+					</p>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">当用户不在办公室时，贵公司的 Azure 解决方案会使用多重身份验证。“每次身份验证”选项已配置为使用模型。
+						</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">在收购一家较小的企业并将新员工添加到 Azure Active Directory (Azure AD)
+							后，获得另一家公司并将新员工添加到 Azure Active Directory (Azure AD)，您会被告知这些员工也应该使用多重身份验证。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">为了实现这一点，必须为使用模型设置每个启用用户设置。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案：通过 Azure CLI 重新配置现有的使用模型。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font>
+					</font>
+					<div lova=""></div>
+					<p></p>
+
+
+
+
+					<div class="question-choices-container" id="questionChoices">
+
+						<ul>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">答：</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">是的</font>
+								</font>
+							</li>
+							<li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge"
+									style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">B..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">没有</font>
+								</font>
+							</li>
+						</ul>
+					</div>
+
+
+
+
+
+					<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">建议答案：</font>
+								</font>
+							</strong></span><span class="answer-description">
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">正确选项：B.否</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">说明：通过 Azure
+									门户重新配置现有使用模型不符合目标，因为它没有将使用模型从“按身份验证”更改为“按启用用户”。您需要重新创建新的 MFA 身份验证提供程序。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">其他选项说明：</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">答：是的：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">
+									此选项不正确，因为简单地重新配置现有的使用模型不会将设置更改为每个启用用户，而这是新员工使用多重身份验证所必需的。</font>
+							</font>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item" data-index="8">
+			<h4 class="lova-title">
+				<font dir="auto" style="vertical-align: inherit;">
+					<font dir="auto" style="vertical-align: inherit;">问 8</font>
+				</font>
+			</h4>
+			<div class="discussion-header-container">
+
+
+
+				<!-- Question -->
+
+				<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+					<p class="card-text" id="questionDescription">
+						<font dir="auto" style="vertical-align: inherit;">
+							<font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font>
+						</font>
+					</p>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">当用户不在办公室时，贵公司的 Azure 解决方案会使用多重身份验证。“每次身份验证”选项已配置为使用模型。
+						</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">在收购一家较小的企业并将新员工添加到 Azure Active Directory (Azure AD)
+							后，获得另一家公司并将新员工添加到 Azure Active Directory (Azure AD)，您会被告知这些员工也应该使用多重身份验证。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">为了实现这一点，必须为使用模型设置每个启用用户设置。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案：您可以使用现有多重身份验证提供程序数据的备份来创建一个新的多重身份验证提供程序。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font>
+					</font>
+					<div lova=""></div>
+					<p></p>
+
+
+
+
+					<div class="question-choices-container" id="questionChoices">
+
+						<ul>
+							<li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge"
+									style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="A.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">答：</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">是的</font>
+								</font>
+							</li>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="B.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">B..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">没有</font>
+								</font>
+							</li>
+						</ul>
+					</div>
+
+
+
+
+
+					<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">建议答案：</font>
+								</font>
+							</strong></span><span class="answer-description">
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">概括：</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">创建 MFA 提供程序后无法更改使用模型：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">一旦创建 MFA 提供程序，就无法更改使用模型。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">正确流程：</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">要将使用模型更改为“按启用用户”模式，您需要删除现有的 MFA
+									提供程序，并创建一个具有所需使用模型的新提供程序。请按以下步骤操作：</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">1.</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">删除现有的 MFA 提供程序：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">在 Azure 门户中，导航到 MFA 提供程序并将其删除。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">2.</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">创建新的 MFA 提供商：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">创建一个新的 MFA 提供商，并在设置期间选择每个启用用户的使用模型。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">3.</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">配置 MFA 设置：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">为新提供商配置 MFA 设置，以确保所有用户（包括新添加的员工）都必须使用多重身份验证。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">4.</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">保存更改：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">保存新配置以应用设置。</font>
+							</font>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item" data-index="9">
+			<h4 class="lova-title">
+				<font dir="auto" style="vertical-align: inherit;">
+					<font dir="auto" style="vertical-align: inherit;">问 9</font>
+				</font>
+			</h4>
+			<div class="discussion-header-container">
+
+
+
+				<!-- Question -->
+
+				<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+					<p class="card-text" id="questionDescription">
+						<font dir="auto" style="vertical-align: inherit;">
+							<font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font>
+						</font>
+					</p>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您的公司有一个名为 weyland.com 的 Azure Active Directory (Azure AD)
+							租户，该租户配置为与本地 Active Directory 混合共存</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">目录域。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您有一个名为 DirSync1 的服务器，该服务器配置为 DirSync 服务器。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您在本地 Active Directory 中创建一个新的用户帐户。现在您需要立即将用户信息复制到 Azure
+							AD。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案：运行 Start-ADSyncSyncCycle -PolicyType Initial
+							PowerShell cmdlet。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font>
+					</font>
+					<div lova=""></div>
+					<p></p>
+
+
+
+
+					<div class="question-choices-container" id="questionChoices">
+
+						<ul>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">答：</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">是的</font>
+								</font>
+							</li>
+							<li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge"
+									style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">B..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">没有</font>
+								</font>
+							</li>
+						</ul>
+					</div>
+
+
+
+
+
+					<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">建议答案：</font>
+								</font>
+							</strong></span><span class="answer-description">
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">选项 B。否：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">这是不正确的，因为</font>
+								<font dir="auto" style="vertical-align: inherit;">cmdlet 中的</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">初始策略类型确实执行了完全同步，其中包括新用户帐户。如果 cmdlet 不正确或不完整（例如，使用
+									</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;"></font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">Delta</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">同步自上次同步以来的新更改）。</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">说明：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;"> Start </font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">-ADSyncSyncCycle -PolicyType Initial</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;"> cmdlet 会触发</font>
+								<font dir="auto" style="vertical-align: inherit;">本地 Active Directory 和 Azure AD 之间的</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">完整同步周期。这涵盖所有更改，包括</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;"></font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">新创建的用户</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">。但这可能会花费太长时间。因此，此解决方案</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">无法满足</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">将新用户信息立即复制到 Azure AD 的目标。</font>
+							</font>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item" data-index="10">
+			<h4 class="lova-title">
+				<font dir="auto" style="vertical-align: inherit;">
+					<font dir="auto" style="vertical-align: inherit;">问 10</font>
+				</font>
+			</h4>
+			<div class="discussion-header-container">
+
+
+
+				<!-- Question -->
+
+				<div class="question-body mt-3 pt-3 border-top" data-id="815946">
+					<p class="card-text" id="questionDescription">
+						<font dir="auto" style="vertical-align: inherit;">
+							<font dir="auto" style="vertical-align: inherit;">注意：此题包含在多个具有相同设置的题目中。然而，每个题目的结果都不同。请确定答案是否满足要求。</font>
+						</font>
+					</p>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您的公司有一个名为 weyland.com 的 Azure Active Directory (Azure AD)
+							租户，该租户配置为与本地 Active Directory 混合共存</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">目录域。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您有一个名为 DirSync1 的服务器，该服务器配置为 DirSync 服务器。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">您在本地 Active Directory 中创建一个新的用户帐户。现在您需要立即将用户信息复制到 Azure
+							AD。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案：使用 Active Directory 站点和服务强制在域控制器上复制全局目录。</font>
+					</font>
+					<div lova=""></div>
+					<font dir="auto" style="vertical-align: inherit;">
+						<font dir="auto" style="vertical-align: inherit;">解决方案是否达到目标？</font>
+					</font>
+					<div lova=""></div>
+					<p></p>
+
+
+
+
+					<div class="question-choices-container" id="questionChoices">
+
+						<ul>
+							<li class="multi-choice-item"><span class="multi-choice-letter" data-choice-letter="A.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">答：</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">是的</font>
+								</font>
+							</li>
+							<li class="multi-choice-item correct-hidden"><span class="badge badge-success most-voted-answer-badge"
+									style="display: none;">Correct</span><span class="multi-choice-letter" data-choice-letter="B.">
+									<font dir="auto" style="vertical-align: inherit;">
+										<font dir="auto" style="vertical-align: inherit;">B..</font>
+									</font>
+								</span>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">没有</font>
+								</font>
+							</li>
+						</ul>
+					</div>
+
+
+
+
+
+					<div class="card-text question-answer bg-light white-text" id="answerText">
+
+						<span class="correct-answer-box"><strong>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">建议答案：</font>
+								</font>
+							</strong></span><span class="answer-description">
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">B. 否</font>
+								</font>
+							</b>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">说明：</font>
+								</font>
+							</b> <b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">强制全局目录复制</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">仅影响</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">本地域控制器</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">，并且</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">不会触发 Azure AD 同步</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">，后者需要</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">Azure AD Connect</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">和同步 cmdlet（如</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">Start-ADSyncSyncCycle ）</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">。-----------------</font>
+							</font>
+							<div lova=""></div>
+							<div lova=""></div><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">选项 A。是：</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">不正确，因为它假设</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">本地复制</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">会影响</font>
+							</font><b>
+								<font dir="auto" style="vertical-align: inherit;">
+									<font dir="auto" style="vertical-align: inherit;">Azure AD</font>
+								</font>
+							</b>
+							<font dir="auto" style="vertical-align: inherit;">
+								<font dir="auto" style="vertical-align: inherit;">，但事实并非如此。</font>
+							</font>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+	<div class="ByrdhouseOverlay" popover="manual">
+		<div class="Overlay">
+			<div class="Captions" style="font-size: 24px; line-height: 28px; max-height: 112px;"></div>
+		</div>
+	</div>
+	<div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate"
+		style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;"
+		data-id="">
+		<div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd">
+			<div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img
+					src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt="">
+				<div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">Original text</div>
+			</div>
+			<div class="VIpgJd-yAWNEb-hvhgNd-k77Iif">
+				<div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div>
+			</div>
+			<div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr">
+				<div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr">
+					<div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div>
+					<div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div>
+				</div>
+				<div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button"
+						class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation"
+						aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24"
+								focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+								<path
+									d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z">
+								</path>
+							</svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24"
+								focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+								<path
+									d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z">
+								</path>
+							</svg></span></button><button id="goog-gt-thumbDownButton" type="button"
+						class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation"
+						aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24"
+								focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+								<path
+									d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z">
+								</path>
+							</svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24"
+								focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+								<path
+									d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z">
+								</path>
+							</svg></span></button></div>
+			</div>
+			<div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce">
+				<form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te_lib" method="post"
+					target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl"
+						id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input
+						type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans"
+						id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe
+					name="votingFrame" frameborder="0"></iframe>
+			</div>
+		</div>
+	</div>
+	<div id="vidline-ext-0.1.43"></div>
+</body>
+
+</html>

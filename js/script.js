@@ -32,7 +32,6 @@ document.querySelectorAll(".item[data-index]").forEach((ele) => {
     if (f) return item.remove();
 
     const deepest = findDeepestDescendant(item);
-    console.log(deepest.innerText);
     if (deepest.innerText === "-----------------") {
       f = true;
       item.remove();

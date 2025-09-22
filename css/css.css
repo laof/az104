@@ -47,3 +47,7 @@ li{
 .answer-description{
     display: block;
 }
+
+#goog-gt-tt{
+    display: none !important;
+}
